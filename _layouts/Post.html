@@ -36,7 +36,6 @@
         content="Content designer based in London"
         property="og:description">
     <meta content="{{ site.url }}/about/" property="article:author">
-    <meta property="og:image" content="../assets/img/OGImg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
@@ -90,7 +89,7 @@
             </div>
             {%- endif -%}
 
-            <!--- Notes Feed Layout-->
+            <!--- Feedpage Layout-->
             {%- if page.feedformat -%}
             <div class="column is-6-widescreen  is-8-desktop is-8-tablet is-12-mobile">
                 <h5 class="meta-title"><a href="/">← Home</a></h5>
@@ -127,26 +126,6 @@
             </div>
             {%- endif -%}
 
-
-            <!--- Post Feed Layout-->
-            {%- if page.permalink == "/posts" -%}
-            <div class="column is-6-widescreen  is-8-desktop is-8-tablet is-12-mobile">
-                <h5 class="meta-title"><a href="/">← Home</a></h5>
-                <div class="jumbo">{{page.title}}</div>
-                    {%- include Content.html -%}
-                    {% for post in site.posts %}
-                        <div class="list-feed">
-                        <a href="{{ site.baseurl }}{{post.url}}" style="text-decoration: none;display: flex;justify-content: space-between;flex-direction: row;width: 100%;">
-                            <div class="writinglist-title">{{post.title }}</div>
-                        </a>
-                        </div>
-                    {%- endfor -%}
-            </div>
-
-            <ul>
-
-            {%- endif -%}
-
              <!--- Post Layout-->
              {%- if page.content-type == "post"  -%}
              <div class="column is-5-widescreen  is-6-desktop is-8-tablet is-12-mobile">
@@ -160,7 +139,11 @@
                                      <h5 class="meta-title">← BACK</h5>
                              </a>
                          </div>
+                     <h5 class="meta-title"> {{ page.date | date:"%B %Y" }}</h5>
                      <h1>{{page.title}}</h1>
+                     {% if page.image %}
+                         <img style="padding-bottom: 2em;" src="{{page.image}}">
+                     {% endif %}
                      {%- include Content.html -%}
                      {%- include Backlinks.html -%}
                      </div>
