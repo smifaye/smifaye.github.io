@@ -2,10 +2,9 @@
 title: Reusable content
 feed: show
 date : 18-08-2022
-published: true
 ---
 
-I'm currently working on a project to confirm some assumptions we have about our new CMS, Contentful. Contentful's killer feature is reusable content. Using the [content model I designed](future-proofing-our-content) we can reuse content across many different parts of the website and even beyond.
+I'm working on a project to confirm some assumptions we have about our new CMS, Contentful - it's killer feature is reusable content. Using the [content model I designed](future-proofing-our-content) we can reuse content across many different parts of the website and even beyond.
 
 ## What is reusable content?
 Reusable content is the concept of using the same or similar pieces of content in more than one place. 
@@ -34,7 +33,7 @@ There are a few risks with reusable content. It might mean:
 ## Reusable content principles
 Reusable content needs to be:
 -   easy to find
--   easy to share with others - for example, during 2i, fact check and extent check
+-   easy to share with others - for example, during 2i or fact check
 -   generic enough to be reused, but contains all the details that meet a user need
 
 ### Easy to find

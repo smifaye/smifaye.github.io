@@ -64,6 +64,6 @@ To complete this work, I worked with:
 The most important part I needed to get right was making sure the content model made sense for other content designers in the team. They're the ones who'll be using the model in their jobs. I made sure we included them during the early stages of each part of the project to give feedback and get hands-on experience with the model.
 
 ## Future-proofing our content
-This new model unlocks a lot of new things for content designers at Citizens Advice. We're no longer tied to the website as our only way of displaying content to users. In the future, we'll be able to reuse content across different platforms.
+This new model unlocks a lot of new things for content designers at Citizens Advice. We're no longer tied to the website as our only way of displaying content to users. In the future, we'll be able to [reuse content across different platforms](reusable-content).
 
 We're using the new content model on [the immigration and family parts of the Citizens Advice website](https://www.citizensadvice.org.uk/immigration/).
