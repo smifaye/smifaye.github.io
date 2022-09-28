@@ -4,7 +4,7 @@ feed: show
 date : 18-08-2022
 ---
 
-I'm currently working on a project to confirm some assumptions we have about our new CMS, Contentful. Contentful's killer feature is reusable content. Using the [content model I designed](future-proofing-our-content) we can reuse content across multiple different parts of the website and even beyond.
+I'm currently working on a project to confirm some assumptions we have about our new CMS, Contentful. Contentful's killer feature is reusable content. Using the [content model I designed](future-proofing-our-content) we can reuse content across many different parts of the website and even beyond.
 
 ## What is reusable content?
 Reusable content is the concept of using the same or similar pieces of content in more than one place. 
@@ -46,7 +46,7 @@ Views are a way of saving a search filter within Contentful. For example, you co
 ### Easy to share with others
 If we’re editing content that’s reused, we need to understand each context so we can check it. We share our content with the 2i group, expert advice and Citizens Advice Scotland.
 
-We could export reused content to a Google Doc and show how it’s used in each context. For example, if a callout is used in 5 advice collections, you could click a button in Contentful and export the 5 advice collections where that callout is used. This could generate 5 Google Docs or 1 large one. We’ll be able to provide the URL of the page and the URL of the entry in Contentful.
+We could export reused content to a Google Doc and show how it’s used in each context. For example, if we use a callout in 5 advice collections, you could click a button in Contentful and export the 5 advice collections where we use that callout. This could generate 5 Google Docs or 1 large one. We’ll be able to provide the URL of the page and the URL of the entry in Contentful.
 
 We’ll need to run a session with expert advice and agree how we share content in the future.
 
