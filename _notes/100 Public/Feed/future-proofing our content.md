@@ -4,7 +4,7 @@ feed: show
 date : 01-07-2022
 ---
 
-Citizens Advice is currently [migrating from one CMS to another](cms-migration). As part of this work, I designed a new content model that enables Citizens Advice to deliver content across multiple platforms at once.
+Citizens Advice is currently [migrating from one CMS to another](cms-migration). As part of this work, I designed a new content model that enables Citizens Advice to deliver content across many platforms at once.
 
 ## What is a content model?
 A content model is a way to structure content within a CMS. It breaks down content into their component parts - for example, a table or design component. It gives you structure and organisation to your content. 
@@ -15,7 +15,7 @@ Content models have 2 important parts - content types and content fields.
 ### Content types
 Content types are the components you'll see on the website. These could be things like a table of data, a banner or an image.
 
-Content types can also be chunks of data - this is where content models become really powerful for content designers. 
+Content types can also be chunks of data - this is where content models become powerful for content designers. 
 
 ### Content fields
 Content types are made up of content fields. For a simple example like a table of data, the content fields might be:
@@ -53,7 +53,7 @@ This content model is used in our new CMS, Contentful.
 _The content model in our new CMS, Contentful_
 
 ## What did I do?
-To complete this work, I worked closely with:
+To complete this work, I worked with:
 - other content designers on the team
 - front-end developers
 - back-end developers
@@ -61,9 +61,9 @@ To complete this work, I worked closely with:
 - user researchers
 - data analysts
 
-The most important part I needed to get right was making sure the content model made sense for other content designers in the team. They're the ones who'll be using the model in their jobs. I made sure that they were included during the early stages of each part of the project to give feedback and get hands-on experience with the model.
+The most important part I needed to get right was making sure the content model made sense for other content designers in the team. They're the ones who'll be using the model in their jobs. I made sure we included them during the early stages of each part of the project to give feedback and get hands-on experience with the model.
 
 ## Future-proofing our content
 This new model unlocks a lot of new things for content designers at Citizens Advice. We're no longer tied to the website as our only way of displaying content to users. In the future, we'll be able to reuse content across different platforms.
 
-The new content model is currently being used on [the immigration and family parts of the Citizens Advice website](https://www.citizensadvice.org.uk/immigration/).
+We're using the new content model on [the immigration and family parts of the Citizens Advice website](https://www.citizensadvice.org.uk/immigration/).
