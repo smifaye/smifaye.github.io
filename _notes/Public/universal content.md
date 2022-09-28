@@ -2,7 +2,6 @@
 title: Universal Credit content
 notetype : feed
 date : 01-11-2019
-permalink: /universal-credit
 ---
 
 https://docs.google.com/document/d/1cBFGZ11n5S3fh_-PmQOoaiRqAGvmyjZZ-sBBVz0AWMA/edit#heading=h.lnl9pnlndfej

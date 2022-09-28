@@ -2,7 +2,6 @@
 title: Future-proofing our content
 notetype : feed
 date : 01-07-2022
-permalink: /future-proofing
 ---
 
 Citizens Advice is currently [migrating from one CMS to another](cms-migration). As part of this work, I designed a new content model that enables Citizens Advice to deliver content across multiple platforms at once.

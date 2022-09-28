@@ -2,7 +2,6 @@
 title: UX content
 notetype : feed
 date : 01-05-2022
-permalink: /ux-content
 ---
 
 We're building a lot of new features for our [new CMS](cms-migration). My role as a content designer on these features is to design UX content that can be used as part of the UX design.
