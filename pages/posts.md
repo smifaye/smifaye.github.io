@@ -2,5 +2,5 @@
 layout: Post
 permalink: /posts
 title: Blog
-feedformat: card
+feedformat: row
 ---
