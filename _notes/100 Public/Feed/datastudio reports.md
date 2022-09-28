@@ -16,6 +16,7 @@ This report shows what search terms people are using on internal search. You can
 - date range
 
 This data is really important in understanding user behaviour, user language and page performance.
+
 ![Screenshot of a report showing internal search terms and associated stats](/assets/img/internal-search.png)
 
 ### Google search
@@ -35,8 +36,10 @@ This page is a simple view of page views over a period of time. It's often usefu
 
 ### Web stats
 The below screenshot shows the most common web stats someone might ask for. This page of the report is particularly useful for sharing with senior stakeholders.
+
 ![Screenshot of a report showing web stats for individual pages on a website](/assets/img/web-stats.png)
 
 ## Page ratings
 It's important to understand content performance so you can iterate. This report shows very high-level stats on page ratings over a period of time. Citizens Advice uses a Yes/No rating system for the question 'Did this advice help?'.
+
 ![Screenshot of a report showing page ratings for a number of different web pages](/assets/img/page-ratings.png)
