@@ -42,7 +42,7 @@ privatelinks:
 # To enable set "enabled : true" else, use "enabled:false"
 preferences:
   search:
-    enabled: false
+    enabled: true
   wiki_style_link:
     enabled: true
   pagepreview:
@@ -67,7 +67,7 @@ plugins:
 ## Suggested collects are "notes" "lists" and "blog"
 collections:
     notes:
-      output: false
+      output: true
       permalink: /note/:title
 
 markdown: kramdown
