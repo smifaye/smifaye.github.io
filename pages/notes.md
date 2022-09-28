@@ -2,7 +2,7 @@
 layout: Post
 permalink: /notes
 title: Work
-feedformat: card
+feedformat: row
 ---
 
 A selection of my work over the years.
