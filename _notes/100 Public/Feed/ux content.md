@@ -7,12 +7,12 @@ date : 01-05-2022
 We're building a lot of new features for our [new CMS](cms-migration). My role as a content designer is to design UX content that can be used as part of the UX design.
 
 ## Content model
-I talk extensively about [my work on the content model](future-proofing-our-content) but one bit I didn't mention was how important it was to get the wording right for the UX content. The way a content design interacts with the content model is in the CMS. A well designed content model shouldn't need much explanation or training on how to use.
+I talk about [my work on the content model](future-proofing-our-content), but one bit I didn't mention was how important it was to get the wording right for the UX content. The way a content design interacts with the content model is in the CMS. A well designed content model shouldn't need much explanation or training on how to use.
 
 I made sure when I came up with content type names it was clear what they did. For example, we changed the name of 'revealables' to 'targeted content'. Revealables described how the component appeared to the user on a web page, not what the content is. This shift of describing what the content type is for rather than how it appears means we're able to be platform-agnostic.
 
 ## CMS apps
-Some of the features we're building are part of the CMS. They'll be used by content designers as part of the publishing process.
+Some of the features we're building are part of the CMS. Content designers will use them as part of the publishing process.
 
 ### Preview
 This app is a custom-made preview function that allows content designers to check content before publishing. It was important to keep the wording clear and succinct without losing any meaning.
@@ -23,7 +23,7 @@ They're then given the option of which platform they'd like to preview. We can s
 
 ![Screenshot of a button displaying the words 'Open preview'](/assets/img/preview-button.png)
 
-Once they're previewing content they're able to switch views. Citizens Advice has a number of different audiences that view content, like:
+Once they're previewing content they're able to switch views. Citizens Advice has many audiences that view content, like:
 - members of the public in England
 - members of the public in Wales
 - advisers in England
@@ -37,7 +37,7 @@ The screenshot below shows how this is presented to the content designer and how
 ### Discard changes
 Another feature we've been building helps content designers undo changes if they've made a mistake. The CMS we use doesn't have this as a feature so we needed to build it from scratch.
 
-Content designers are presented with this button on the sidebar of the CMS. As you can see from the screenshot below, the button will be greyed-out if there are no changes to discard.
+Content designers see this button on the sidebar of the CMS. As you can see from the screenshot below, the button is greyed-out if there are no changes to discard.
 
 ![Screenshot of a greyed-out button displaying the words 'Discard changes'](/assets/img/discard-changes.png)
 

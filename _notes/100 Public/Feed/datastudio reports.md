@@ -4,7 +4,7 @@ feed: show
 date : 07-03-2021
 ---
 
-I'm really interested in data and use it to inform content decision. Here are a few examples of Google Datastudio reports I've created over the last few years.
+I'm interested in data and use it to inform content decision. Here are a few examples of Google Datastudio reports I've created over the last few years.
 
 ## Search
 It's important to understand how users end up on our website. One of the main ways I do this is by using search. It also tells you what language your users are using.
@@ -15,7 +15,7 @@ This report shows what search terms people are using on internal search. You can
 - search destination page
 - date range
 
-This data is really important in understanding user behaviour, user language and page performance.
+This data is important in understanding user behaviour, user language and page performance.
 
 ![Screenshot of a report showing internal search terms and associated stats](/assets/img/internal-search.png)
 
@@ -31,7 +31,7 @@ This report shows what search terms people are using on Google. You can filter b
 We use Google analytics as web analytics tool. Google analytics can be a bit difficult to navigate so I made a report to make it easier to access.
 
 ### Pageviews
-This page is a simple view of page views over a period of time. It's often useful to narrow it down by just a handful of pages.
+This page is a simple view of page views over a period of time. It's often useful to narrow it down by a handful of pages.
 ![Screenshot of a report showing pageviews over a period of time](/assets/img/pageviews.png)
 
 ### Web stats
