@@ -67,7 +67,7 @@ plugins:
 ## Suggested collects are "notes" "lists" and "blog"
 collections:
     notes:
-      output: true
+      output: false
       permalink: /note/:title
 
 markdown: kramdown
