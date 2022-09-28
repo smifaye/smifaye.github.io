@@ -2,7 +2,7 @@
 layout: Post
 permalink: /notes
 title: Work
-format: list
+format: card
 ---
 
 A selection of my work over the years.
