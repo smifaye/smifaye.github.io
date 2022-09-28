@@ -24,7 +24,6 @@ The website was tested by designers Sonia and Shakira, following recommended pra
 First, we gathered a representative sample of web pages, forms and interactive elements, and crucial functionality like the location switcher and webchat. Next, we tested each web page against the Web Content Accessibility Guidelines (known as [WCAG 2.1](https://www.w3.org/TR/WCAG21/)), using a range of automated tools and manual checks.
 
 ![Spreadsheet showing the list of WCAG success criteria in the first column, the rest of the spreadsheet shows different pages](https://miro.medium.com/max/700/1*6QqmzOE5n_eQdTQC_pS0zw.png)
-_The spreadsheet we used for the accessibility audit_
 
 Finally, we wrote a report for our team that outlined any accessibility issues and recommended how to fix them. The report also emphasised the importance of ongoing testing and research, including regular testing with disabled users.
 
@@ -37,10 +36,10 @@ This meant we could share that knowledge with the rest of the team and other par
 # **Sharing our work**
 
 As part of the new legislation, public sector bodies are required to publish an accessibility statement that explains:
-- how accessible their website is
-- how to request information in a different format
-- which bits of the website don’t meet the accessibility regulations
-- how they plan to fix accessibility issues
+-how accessible their website is
+-how to request information in a different format
+-which bits of the website don’t meet the accessibility regulations
+-how they plan to fix accessibility issues
 
 You can [read our accessibility statement on the Citizens Advice website](https://www.citizensadvice.org.uk/resources-and-tools/about-this-site/accessibility/) .
 
