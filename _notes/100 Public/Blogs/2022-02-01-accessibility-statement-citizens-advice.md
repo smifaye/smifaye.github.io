@@ -1,5 +1,8 @@
 ---
 title: How we’re improving the accessibility of the Citizens Advice website
+feed: hide
+permalink: /posts/Accessibility
+format: list
 ---
 
 This blog was co-authored by Sonia Turcotte and Adam Smith from the customer journey team at Citizens Advice. You can [read the blog on the Citizens Advice blog](https://wearecitizensadvice.org.uk/how-were-improving-the-accessibility-of-our-website-6eb544a712c5).
