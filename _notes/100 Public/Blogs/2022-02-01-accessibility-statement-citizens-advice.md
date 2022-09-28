@@ -37,11 +37,10 @@ This meant we could share that knowledge with the rest of the team and other par
 # **Sharing our work**
 
 As part of the new legislation, public sector bodies are required to publish an accessibility statement that explains:
-
--   how accessible their website is
--   how to request information in a different format
--   which bits of the website don’t meet the accessibility regulations
--   how they plan to fix accessibility issues
+- how accessible their website is
+- how to request information in a different format
+- which bits of the website don’t meet the accessibility regulations
+- how they plan to fix accessibility issues
 
 You can [read our accessibility statement on the Citizens Advice website](https://www.citizensadvice.org.uk/resources-and-tools/about-this-site/accessibility/) .
 
