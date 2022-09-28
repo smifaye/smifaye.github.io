@@ -1,6 +1,6 @@
 ---
 title: Contact
-notetype : unfeed
+feed: hide
 date : 01-01-2019
 ---
 

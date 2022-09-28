@@ -1,6 +1,6 @@
 ---
 title: Universal Credit content
-notetype : feed
+feed: show
 date : 01-11-2019
 ---
 

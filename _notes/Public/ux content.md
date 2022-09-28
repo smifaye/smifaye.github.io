@@ -1,6 +1,6 @@
 ---
 title: UX content
-notetype : feed
+feed: show
 date : 01-05-2022
 ---
 

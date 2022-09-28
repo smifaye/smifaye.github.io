@@ -1,6 +1,6 @@
 ---
 title: Reusable content
-notetype : feed
+feed: show
 date : 18-08-2022
 ---
 

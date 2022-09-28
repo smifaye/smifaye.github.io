@@ -1,6 +1,6 @@
 ---
 title: Future-proofing our content
-notetype : feed
+feed: show
 date : 01-07-2022
 ---
 

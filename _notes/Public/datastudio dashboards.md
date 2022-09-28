@@ -1,6 +1,6 @@
 ---
 title: Datastudio dashboards
-notetype : feed
+feed: show
 date : 07-03-2021
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: CMS migration
-notetype : feed
+feed: show
 date : 01-06-2022
 ---
 
