@@ -2,6 +2,7 @@
 title: Contact
 feed: hide
 date : 01-01-2019
+permalink: /contact
 ---
 
 If you would like to contact me, you can:
