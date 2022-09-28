@@ -1,7 +1,7 @@
 ---
 title: How we’re improving the accessibility of the Citizens Advice website
 feed: hide
-permalink: /posts/Accessibility
+permalink: /posts/accessibility
 format: list
 ---
 
