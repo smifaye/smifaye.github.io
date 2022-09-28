@@ -2,6 +2,7 @@
 title: Reusable content
 feed: show
 date : 18-08-2022
+published: true
 ---
 
 I'm currently working on a project to confirm some assumptions we have about our new CMS, Contentful. Contentful's killer feature is reusable content. Using the [content model I designed](future-proofing-our-content) we can reuse content across many different parts of the website and even beyond.
