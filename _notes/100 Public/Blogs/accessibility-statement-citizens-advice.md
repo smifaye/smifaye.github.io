@@ -6,7 +6,7 @@ permalink: /posts/accessibility
 format: list
 ---
 
-This blog was co-authored by Sonia Turcotte and Adam Smith from the customer journey team at Citizens Advice. You can [read the original on the Citizens Advice blog](https://wearecitizensadvice.org.uk/how-were-improving-the-accessibility-of-our-website-6eb544a712c5).
+This blog was co-authored by me and Sonia Turcotte from the customer journey team at Citizens Advice. You can [read the original on the Citizens Advice blog](https://wearecitizensadvice.org.uk/how-were-improving-the-accessibility-of-our-website-6eb544a712c5).
 
 ---
 
