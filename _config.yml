@@ -5,3 +5,16 @@ theme: just-the-docs
 url: https://smifaye.github.io
 
 favicon_ico: "/assets/img/favicon.ico"
+
+# Enable or disable the side/mobile menu globally
+# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+nav_enabled: true
+
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+#
+# Supports true (default) or false
+heading_anchors: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
