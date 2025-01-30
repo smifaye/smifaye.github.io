@@ -170,6 +170,11 @@
   },
   "active": "78c2fc6f5c6f032c",
   "lastOpenFiles": [
+    "_sass/color_schemes/blue.scss",
+    "_sass/color_schemes",
+    "_sass/untitled folder",
+    "_sass",
+    "untitled folder",
     "docs/blog/accessibility-statement-citizens-advice.md",
     "index.md",
     "docs/blog/index.md",
@@ -196,7 +201,6 @@
     "docs",
     "contact.md",
     "assets",
-    "404.html",
     "README.md"
   ]
 }
