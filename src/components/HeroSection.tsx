@@ -32,7 +32,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-xs uppercase tracking-[0.2em] text-secondary mb-5 font-semibold"
           >
-            Content designer · London
+            Content designer
           </motion.p>
           <h1 className="text-5xl md:text-7xl leading-[1.05] mb-10 text-foreground font-bold tracking-tight">
             Hello, I'm{" "}
@@ -57,9 +57,9 @@ const HeroSection = () => {
                 <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  I'm a content designer based in London with over 7 years of experience 
-                  in the public and charity sectors.
+              <p>
+                I'm a content designer based with over 7 years of experience 
+                in the public and charity sectors.
                 </p>
                 <p>
                   I create user-centred content that puts user needs first. I'm passionate 
