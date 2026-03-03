@@ -17,7 +17,7 @@ const Index = () => {
         <WorkSection />
         <ContactSection />
       </main>
-      <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border bg-secondary/5" role="contentinfo">
+      <footer className="py-10 text-center text-xs text-muted-foreground tracking-wide border-t border-border" role="contentinfo">
         <div className="container">
           © 2026 Adam Smith
         </div>
