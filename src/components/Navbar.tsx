@@ -5,15 +5,16 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { label: "About", href: "#about" },
-    { label: "Work", href: "#work" },
-    { label: "Contact", href: "#contact" },
+    { label: "About", href: "/#about" },
+    { label: "Work", href: "/#work" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="font-serif text-xl text-foreground">
+        <a href="/" className="font-bold text-xl text-foreground">
           Adam Smith
         </a>
         <div className="hidden md:flex gap-8">
