@@ -13,7 +13,7 @@ const WorkSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4 font-medium">
+          <p className="text-sm tracking-wide text-primary mb-4 font-medium">
             Selected Work
           </p>
           <h2 className="text-3xl md:text-4xl text-foreground">
@@ -37,7 +37,7 @@ const WorkSection = () => {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">
                     <p className="text-sm text-muted-foreground mb-2">{project.client}</p>
-                    <h3 className="text-xl md:text-2xl font-serif text-foreground mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed max-w-lg">
