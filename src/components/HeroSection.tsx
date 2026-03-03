@@ -38,15 +38,8 @@ const HeroSection = () => {
             </motion.p>
             <h1 className="text-5xl md:text-7xl leading-[1.05] mb-6 text-foreground font-bold tracking-tight">
               Hello, I'm{" "}
-              <span className="text-primary relative">
+              <span className="text-primary">
                 Adam
-                <motion.span
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-                  className="absolute -bottom-1 left-0 right-0 h-[3px] bg-primary/30 origin-left rounded-full"
-                  aria-hidden="true"
-                />
               </span>
               <br />
               <span className="text-primary">Smith</span>
