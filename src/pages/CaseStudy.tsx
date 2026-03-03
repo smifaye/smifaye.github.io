@@ -93,13 +93,13 @@ const CaseStudyPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <a
-                href="/#work"
+              <Link
+                to="/#work"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
                 Back to all projects
-              </a>
+              </Link>
 
               <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
@@ -123,13 +123,13 @@ const CaseStudyPage = () => {
               </div>
 
               <div className="border-t border-border pt-8 mt-12">
-                <a
-                  href="/#work"
+                <Link
+                  to="/#work"
                   className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
                   Back to all projects
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
