@@ -31,22 +31,27 @@ const BlogPost = () => {
         );
       }
 
-      // Handle images: ![alt](src)
-      const imgMatch = block.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-      if (imgMatch) {
+      // Handle image with optional caption: ![alt](src)\n*caption*
+      const imgWithCaption = block.match(/^!\[([^\]]*)\]\(([^)]+)\)(?:\n\*([^*]+)\*)?$/);
+      if (imgWithCaption) {
         return (
-          <figure key={i} className="mb-2">
+          <figure key={i} className="mb-8">
             <img
-              src={imgMatch[2]}
-              alt={imgMatch[1]}
+              src={imgWithCaption[2]}
+              alt={imgWithCaption[1]}
               className="rounded-xl border border-border w-full"
               loading="lazy"
             />
+            {imgWithCaption[3] && (
+              <figcaption className="text-sm text-muted-foreground mt-2 italic">
+                {imgWithCaption[3]}
+              </figcaption>
+            )}
           </figure>
         );
       }
 
-      // Handle caption (italic line after image)
+      // Handle standalone caption (italic line after image)
       if (block.startsWith("*") && block.endsWith("*") && !block.includes("\n")) {
         return (
           <figcaption key={i} className="text-sm text-muted-foreground mb-8 italic">
