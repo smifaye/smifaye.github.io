@@ -34,14 +34,13 @@ const Blog = () => {
                 Here's a selection of my blogs over the years.
               </p>
 
-              <div className="space-y-6" role="list">
+              <ul className="space-y-6 list-none">
                 {blogPosts.map((post) => (
-                  <Link
-                    key={post.slug}
-                    to={`/blog/${post.slug}`}
-                    role="listitem"
-                    className="block bg-card rounded-2xl p-6 md:p-8 border border-border hover:border-primary/30 transition-colors group"
-                  >
+                  <li key={post.slug} className="list-none">
+                    <Link
+                      to={`/blog/${post.slug}`}
+                      className="block bg-card rounded-2xl p-6 md:p-8 border border-border hover:border-primary/30 transition-colors group"
+                    >
                     <h2 className="text-lg md:text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {post.title}
                     </h2>
@@ -49,8 +48,9 @@ const Blog = () => {
                       {post.intro}
                     </p>
                   </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </motion.div>
           </div>
         </section>

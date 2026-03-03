@@ -28,11 +28,11 @@ const WorkSection = () => {
           </div>
         </motion.div>
 
-        <div className="space-y-4" role="list">
+        <ul className="space-y-4 list-none">
           {caseStudies.map((project, i) => (
-            <motion.article
+            <motion.li
               key={project.slug}
-              role="listitem"
+              className="list-none"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -74,9 +74,9 @@ const WorkSection = () => {
                   </div>
                 </div>
               </Link>
-            </motion.article>
+            </motion.li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

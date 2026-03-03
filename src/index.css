@@ -22,7 +22,7 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 40 20% 91%;
-    --muted-foreground: 160 12% 35%;
+    --muted-foreground: 160 12% 30%;
 
     --accent: 152 25% 90%;
     --accent-foreground: 152 40% 18%;
@@ -87,6 +87,11 @@
   h1, h2, h3, h4 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
+  }
+
+  /* Scroll margin for fixed navbar — WCAG 2.4.13 Focus Not Obscured */
+  [id] {
+    scroll-margin-top: 5rem;
   }
 
   /* Visible focus indicators for keyboard navigation (WCAG 2.4.7 / 2.4.11) */
