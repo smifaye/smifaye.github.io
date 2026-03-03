@@ -6,7 +6,16 @@ export const ScrollToTop = () => {
   const navType = useNavigationType();
 
   useEffect(() => {
-    if (navType !== "POP" && !hash) {
+    if (hash) {
+      // Wait for the page to render, then scroll to the hash element
+      const timer = setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "instant" });
+        }
+      }, 100);
+      return () => clearTimeout(timer);
+    } else if (navType !== "POP") {
       window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
   }, [pathname, hash, navType]);
