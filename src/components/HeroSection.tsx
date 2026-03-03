@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-organic.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden" aria-label="Introduction">
+    <section className="relative min-h-[75vh] flex items-center overflow-hidden" aria-label="Introduction">
       <div className="absolute inset-0 z-0" aria-hidden="true">
         <img
           src={heroImage}
@@ -12,17 +12,17 @@ const HeroSection = () => {
           role="presentation"
         />
       </div>
-      <div className="container relative z-10 py-20">
+      <div className="container relative z-10 py-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-secondary mb-8 font-semibold">
+          <p className="text-xs uppercase tracking-[0.2em] text-secondary mb-5 font-semibold">
             Content designer · London
           </p>
-          <h1 className="text-5xl md:text-7xl leading-[1.05] mb-8 text-foreground font-bold tracking-tight">
+          <h1 className="text-5xl md:text-7xl leading-[1.05] mb-6 text-foreground font-bold tracking-tight">
             Hello, I'm{" "}
             <span className="text-primary">Adam</span>
             <br />
@@ -32,7 +32,7 @@ const HeroSection = () => {
             I create user-centred content that puts user needs first. 
             Passionate about accessibility, plain English and content that helps people do what they need to.
           </p>
-          <div className="mt-12 flex gap-4">
+          <div className="mt-8 flex gap-4">
             <a
               href="#work"
               className="inline-block px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all"
@@ -48,8 +48,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-      {/* Subtle bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10" aria-hidden="true" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10" aria-hidden="true" />
     </section>
   );
 };
