@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import { PenLine, Compass, BarChart3, Accessibility } from "lucide-react";
 
 const skills = [
-  { label: "UX writing", desc: "Microcopy and interface content", accent: "bg-primary", icon: "✏️" },
-  { label: "Content strategy", desc: "Models and systems", accent: "bg-secondary", icon: "🧭" },
-  { label: "Data and analytics", desc: "Insights-driven decisions", accent: "bg-secondary", icon: "📊" },
-  { label: "Accessibility", desc: "Plain English and inclusive design", accent: "bg-primary", icon: "♿" },
+  { label: "UX writing", desc: "Microcopy and interface content", accent: "bg-primary", icon: PenLine },
+  { label: "Content strategy", desc: "Models and systems", accent: "bg-secondary", icon: Compass },
+  { label: "Data and analytics", desc: "Insights-driven decisions", accent: "bg-secondary", icon: BarChart3 },
+  { label: "Accessibility", desc: "Plain English and inclusive design", accent: "bg-primary", icon: Accessibility },
 ];
 
 const AboutSection = () => {
@@ -62,7 +63,7 @@ const AboutSection = () => {
                 className="bg-card rounded-xl p-5 border border-border/60 relative overflow-hidden group cursor-default"
               >
                 <div className={`absolute top-0 left-0 right-0 h-1 ${skill.accent} transition-all group-hover:h-1.5`} aria-hidden="true" />
-                <span className="text-lg mb-2 block" aria-hidden="true">{skill.icon}</span>
+                <skill.icon className="w-5 h-5 text-muted-foreground mb-2" aria-hidden="true" />
                 <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
                 <p className="text-xs text-muted-foreground leading-snug">{skill.desc}</p>
               </motion.div>
