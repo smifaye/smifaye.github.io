@@ -3,7 +3,7 @@ import { Mail, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-16 md:py-20 relative" aria-label="Contact information">
+    <section id="contact" className="py-10 md:py-14 relative" aria-label="Contact information">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
