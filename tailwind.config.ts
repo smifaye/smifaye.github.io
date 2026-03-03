@@ -13,7 +13,17 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["'DM Sans'", "sans-serif"],
+        serif: ["'DM Serif Display'", "serif"],
+      },
       colors: {
+        "warm-cream": "hsl(var(--warm-cream))",
+        "warm-sand": "hsl(var(--warm-sand))",
+        terracotta: "hsl(var(--terracotta))",
+        sage: "hsl(var(--sage))",
+        "deep-brown": "hsl(var(--deep-brown))",
+        "soft-peach": "hsl(var(--soft-peach))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

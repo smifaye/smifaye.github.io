@@ -1,0 +1,71 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const links = [
+    { label: "About", href: "#about" },
+    { label: "Work", href: "#work" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+      <div className="container flex items-center justify-between h-16">
+        <a href="#" className="font-serif text-xl text-foreground">
+          Portfolio
+        </a>
+        <div className="hidden md:flex gap-8">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-foreground p-2"
+          aria-label="Toggle menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            {open ? (
+              <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
+            ) : (
+              <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+            )}
+          </svg>
+        </button>
+      </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="md:hidden overflow-hidden bg-background border-b border-border"
+          >
+            <div className="container py-4 flex flex-col gap-4">
+              {links.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
+  );
+};
+
+export default Navbar;
