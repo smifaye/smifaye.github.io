@@ -37,10 +37,10 @@ const AboutSection = () => {
             className="grid grid-cols-2 gap-4"
           >
             {[
-              { label: "UX writing", desc: "Microcopy & interface content" },
-              { label: "Content strategy", desc: "Models & systems" },
-              { label: "Data & analytics", desc: "Insights-driven decisions" },
-              { label: "Accessibility", desc: "Plain English & inclusive design" },
+              { label: "UX writing", desc: "Microcopy and interface content" },
+              { label: "Content strategy", desc: "Models and systems" },
+              { label: "Data and analytics", desc: "Insights-driven decisions" },
+              { label: "Accessibility", desc: "Plain English and inclusive design" },
             ].map((skill) => (
               <div
                 key={skill.label}
