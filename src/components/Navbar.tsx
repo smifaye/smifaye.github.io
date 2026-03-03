@@ -20,21 +20,21 @@ const Navbar = () => {
         <a href="/" className="font-bold text-xl text-foreground">
           Adam Smith
         </a>
-        <div className="hidden md:flex gap-8" role="list">
+        <ul className="hidden md:flex gap-8">
           {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              role="listitem"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide"
-            >
-              {link.label}
-            </a>
+            <li key={link.label}>
+              <a
+                href={link.href}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide"
+              >
+                {link.label}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-foreground p-2"
+          className="md:hidden text-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -56,21 +56,20 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden overflow-hidden bg-background border-b border-border"
-            role="list"
           >
-            <div className="container py-4 flex flex-col gap-4">
+            <ul className="container py-4 flex flex-col gap-1">
               {links.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  role="listitem"
-                  onClick={() => setOpen(false)}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </a>
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-3 min-h-[44px] flex items-center"
+                  >
+                    {link.label}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </motion.div>
         )}
       </AnimatePresence>
