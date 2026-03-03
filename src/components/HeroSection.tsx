@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="absolute top-1/2 right-[20%] w-3 h-3 rounded-full bg-primary/30" aria-hidden="true" />
       <div className="absolute top-[30%] right-[35%] w-2 h-2 rounded-full bg-secondary/40" aria-hidden="true" />
 
-      <div className="container relative z-10 py-16">
+      <div className="container relative z-10 py-20 md:py-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
