@@ -21,7 +21,7 @@ export interface CaseStudy {
 export const caseStudies: CaseStudy[] = [
   {
     slug: "cms-migration",
-    title: "CMS Migration",
+    title: "CMS migration",
     client: "Citizens Advice",
     tags: ["Collaboration", "CMS"],
     summary:
@@ -71,9 +71,9 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "future-proofing-content",
-    title: "Future-proofing Our Content",
+    title: "Future-proofing our content",
     client: "Citizens Advice",
-    tags: ["Content Strategy", "Content Modelling"],
+    tags: ["Content strategy", "Content modelling"],
     summary:
       "Designed a new content model that enables delivering content across many platforms at once.",
     sections: [
@@ -204,9 +204,9 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "reusable-content",
-    title: "Reusable Content",
+    title: "Reusable content",
     client: "Citizens Advice",
-    tags: ["Content Strategy", "CMS"],
+    tags: ["Content strategy", "CMS"],
     summary:
       "Led a project to validate and implement reusable content principles — reducing duplication, saving time, and creating consistency.",
     sections: [
@@ -300,9 +300,9 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "ux-content",
-    title: "UX Content",
+    title: "UX content",
     client: "Citizens Advice",
-    tags: ["UX Writing", "Product Design"],
+    tags: ["UX writing", "Product design"],
     summary:
       "Designed UX content for CMS features including preview tools, publishing workflows, and content type naming.",
     sections: [
@@ -404,9 +404,9 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "data-visualisation",
-    title: "Data Visualisation",
+    title: "Data visualisation",
     client: "Citizens Advice",
-    tags: ["Data & Analytics", "Reporting"],
+    tags: ["Data and analytics", "Reporting"],
     summary:
       "Created Google Looker Studio reports for search analytics, page views and web stats.",
     sections: [
