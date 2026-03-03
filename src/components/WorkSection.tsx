@@ -6,9 +6,6 @@ import { caseStudies } from "@/data/caseStudies";
 const WorkSection = () => {
   return (
     <section id="work" className="py-10 md:py-14 bg-card/40 relative overflow-hidden" aria-label="Selected work">
-      {/* Decorative corner accent */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/[0.04] to-transparent rounded-bl-full" aria-hidden="true" />
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-secondary/[0.04] to-transparent rounded-tr-full" aria-hidden="true" />
 
       <div className="container relative">
         <motion.div
