@@ -19,14 +19,14 @@ const HeroSection = () => {
           className="max-w-2xl"
         >
           <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6 font-medium">
-            Content Designer
+            Content Designer · London
           </p>
           <h1 className="text-5xl md:text-7xl leading-[1.1] mb-6 text-foreground">
-            Crafting words that <em className="font-serif italic text-primary">move</em> people
+            Hello, I'm <em className="font-serif italic text-primary">Adam Smith</em>
           </h1>
           <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-            I design content experiences that are clear, human, and purposeful — 
-            helping products speak with intention.
+            I create user-centred content that puts user needs first. 
+            Passionate about accessibility, plain English and content that helps people do what they need to.
           </p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -38,13 +38,13 @@ const HeroSection = () => {
               href="#work"
               className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:opacity-90 transition-opacity"
             >
-              View Work
+              View My Work
             </a>
             <a
               href="#contact"
               className="inline-block px-8 py-3 rounded-full border border-border text-foreground font-medium text-sm tracking-wide hover:bg-accent transition-colors"
             >
-              Say Hello
+              Get in Touch
             </a>
           </motion.div>
         </motion.div>
