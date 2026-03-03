@@ -11,24 +11,37 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-xl mx-auto text-center"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4 font-medium">
-            Get in Touch
+          <p className="text-sm tracking-wide text-primary mb-4 font-medium">
+            Contact
           </p>
           <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-            Let's work together
+            Get in touch
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-10">
-            Whether you need help with content design, UX writing, or content strategy — 
-            I'd love to hear from you.
+            If you'd like to get in touch, you can reach me at the email address below.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="mailto:adamsmith@example.com"
+            className="text-primary hover:underline text-lg font-medium"
+          >
+            adamsmith@example.com
+          </a>
+          <div className="flex justify-center gap-6 mt-8">
             <a
-              href="https://smifaye.github.io/"
+              href="https://www.linkedin.com/in/adamsmithcd/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-10 py-4 rounded-full bg-primary text-primary-foreground font-medium tracking-wide hover:opacity-90 transition-opacity text-sm"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
-              Visit My Site
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/smifaye"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              GitHub
             </a>
           </div>
         </motion.div>

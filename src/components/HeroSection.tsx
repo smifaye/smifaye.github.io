@@ -18,11 +18,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6 font-medium">
+          <p className="text-sm tracking-wide text-muted-foreground mb-6 font-medium">
             Content Designer · London
           </p>
-          <h1 className="text-5xl md:text-7xl leading-[1.1] mb-6 text-foreground">
-            Hello, I'm <em className="font-serif italic text-primary">Adam Smith</em>
+          <h1 className="text-5xl md:text-7xl leading-[1.1] mb-6 text-foreground font-bold">
+            Hello, I'm <span className="text-primary">Adam Smith</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
             I create user-centred content that puts user needs first. 

@@ -13,8 +13,8 @@ const SectionRenderer = ({ section }: { section: CaseStudySection }) => {
           <Heading
             className={
               section.headingLevel === 3
-                ? "text-xl font-serif text-foreground mb-3"
-                : "text-2xl md:text-3xl font-serif text-foreground mb-4 mt-10"
+                ? "text-xl font-bold text-foreground mb-3"
+                : "text-2xl md:text-3xl font-bold text-foreground mb-4 mt-10"
             }
           >
             {section.heading}
@@ -70,7 +70,7 @@ const CaseStudyPage = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-serif text-foreground mb-4">Project not found</h1>
+          <h1 className="text-2xl font-bold text-foreground mb-4">Project not found</h1>
           <Link to="/" className="text-primary hover:underline">
             Back to home
           </Link>
@@ -98,7 +98,7 @@ const CaseStudyPage = () => {
             </Link>
 
             <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
-            <h1 className="text-3xl md:text-5xl font-serif text-foreground mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
               {study.title}
             </h1>
             <div className="flex gap-2 flex-wrap mb-10">

@@ -11,7 +11,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4 font-medium">
+            <p className="text-sm tracking-wide text-primary mb-4 font-medium">
               About
             </p>
             <h2 className="text-3xl md:text-4xl mb-6 text-foreground">
@@ -46,7 +46,7 @@ const AboutSection = () => {
                 key={skill.label}
                 className="bg-card rounded-2xl p-6 border border-border"
               >
-                <h3 className="text-base font-serif text-foreground mb-1">{skill.label}</h3>
+                <h3 className="text-base font-semibold text-foreground mb-1">{skill.label}</h3>
                 <p className="text-sm text-muted-foreground">{skill.desc}</p>
               </div>
             ))}
