@@ -15,16 +15,17 @@ const AboutSection = () => {
               About
             </p>
             <h2 className="text-3xl md:text-4xl mb-6 text-foreground">
-              Words are my design material
+              7+ years designing content that works
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a content designer who believes that the best interfaces 
-                feel like a conversation — warm, clear, and respectful of your time.
+                I'm a content designer based in London with over 7 years of experience 
+                in the public and charity sectors.
               </p>
               <p>
-                With 6+ years of experience across product, brand, and UX writing, 
-                I help teams shape language that guides, reassures, and delights.
+                I create user-centred content that puts user needs first. I'm passionate 
+                about accessibility, plain English and content that helps people do what 
+                they need to.
               </p>
             </div>
           </motion.div>
@@ -36,10 +37,10 @@ const AboutSection = () => {
             className="grid grid-cols-2 gap-4"
           >
             {[
-              { label: "UX Writing", desc: "Microcopy & flows" },
-              { label: "Content Strategy", desc: "Structure & systems" },
-              { label: "Brand Voice", desc: "Tone & guidelines" },
-              { label: "Information Architecture", desc: "Navigation & hierarchy" },
+              { label: "UX Writing", desc: "Microcopy & interface content" },
+              { label: "Content Strategy", desc: "Models & systems" },
+              { label: "Data & Analytics", desc: "Insights-driven decisions" },
+              { label: "Accessibility", desc: "Plain English & inclusive design" },
             ].map((skill) => (
               <div
                 key={skill.label}

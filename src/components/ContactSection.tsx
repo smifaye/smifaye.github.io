@@ -15,18 +15,22 @@ const ContactSection = () => {
             Get in Touch
           </p>
           <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-            Let's create something meaningful
+            Let's work together
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-10">
-            Whether you need help shaping your product's voice, writing clearer UX copy, 
-            or building a content strategy — I'd love to hear from you.
+            Whether you need help with content design, UX writing, or content strategy — 
+            I'd love to hear from you.
           </p>
-          <a
-            href="mailto:hello@example.com"
-            className="inline-block px-10 py-4 rounded-full bg-primary text-primary-foreground font-medium tracking-wide hover:opacity-90 transition-opacity text-sm"
-          >
-            hello@example.com
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://smifaye.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-10 py-4 rounded-full bg-primary text-primary-foreground font-medium tracking-wide hover:opacity-90 transition-opacity text-sm"
+            >
+              Visit My Site
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
