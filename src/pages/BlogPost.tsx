@@ -32,6 +32,44 @@ const BlogPost = () => {
         );
       }
 
+      // Handle images: ![alt](src)
+      const imgMatch = block.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+      if (imgMatch) {
+        return (
+          <figure key={i} className="mb-2">
+            <img
+              src={imgMatch[2]}
+              alt={imgMatch[1]}
+              className="rounded-xl border border-border w-full"
+              loading="lazy"
+            />
+          </figure>
+        );
+      }
+
+      // Handle caption (italic line after image)
+      if (block.startsWith("*") && block.endsWith("*") && !block.includes("\n")) {
+        return (
+          <figcaption key={i} className="text-sm text-muted-foreground mb-8 italic">
+            {block.slice(1, -1)}
+          </figcaption>
+        );
+      }
+
+      // Handle unordered lists
+      if (block.startsWith("- ")) {
+        const items = block.split("\n").filter((line) => line.startsWith("- "));
+        return (
+          <ul key={i} className="list-disc pl-6 mb-6 space-y-2">
+            {items.map((item, j) => (
+              <li key={j} className="text-muted-foreground leading-relaxed">
+                {item.replace(/^- /, "")}
+              </li>
+            ))}
+          </ul>
+        );
+      }
+
       // Handle italic blocks and links
       const rendered = block
         .replace(/\*([^*]+)\*/g, "<em>$1</em>")
