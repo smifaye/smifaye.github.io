@@ -15,9 +15,6 @@ const WorkSection = () => {
           className="mb-16"
         >
           <div className="h-1 w-12 bg-primary rounded-full mb-6" aria-hidden="true" />
-          <p className="text-sm tracking-wide text-primary mb-4 font-semibold">
-            Selected work
-          </p>
           <h2 className="text-3xl md:text-4xl text-secondary-foreground">
             Projects I've worked on
           </h2>

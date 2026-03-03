@@ -12,9 +12,6 @@ const ContactSection = () => {
           className="max-w-xl mx-auto"
         >
           <div className="h-1 w-12 bg-primary rounded-full mb-6" aria-hidden="true" />
-          <p className="text-sm tracking-wide text-secondary mb-4 font-semibold">
-            Contact
-          </p>
           <h2 className="text-3xl md:text-4xl text-foreground mb-6">
             Get in touch
           </h2>
