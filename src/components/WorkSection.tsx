@@ -18,11 +18,6 @@ const WorkSection = () => {
           <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
             Selected work
           </h2>
-          <div className="flex gap-1 mt-4" aria-hidden="true">
-            <div className="h-[3px] w-8 bg-primary rounded-full" />
-            <div className="h-[3px] w-3 bg-secondary rounded-full" />
-            <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
-          </div>
         </motion.div>
 
         <ul className="space-y-4 list-none">
