@@ -24,9 +24,8 @@ const ContactSection = () => {
             If you would like to contact me, you can:
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <motion.a
+            <a
               href="mailto:smifaye@duck.com"
-              whileHover={{ y: -3, transition: { duration: 0.2 } }}
               className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all flex-1"
             >
               <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -36,23 +35,22 @@ const ContactSection = () => {
                 <p className="font-semibold text-foreground text-sm">Email me</p>
                 <p className="text-xs text-muted-foreground">smifaye@duck.com</p>
               </div>
-            </motion.a>
-            <motion.a
+            </a>
+            <a
               href="https://www.linkedin.com/in/adam-smith-content-design/"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ y: -3, transition: { duration: 0.2 } }}
-              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-secondary/30 hover:shadow-md hover:shadow-secondary/5 transition-all flex-1"
+              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all flex-1"
             >
-              <span className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
-                <Linkedin className="w-4 h-4 text-secondary" aria-hidden="true" />
+              <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                <Linkedin className="w-4 h-4 text-primary" aria-hidden="true" />
               </span>
               <div>
                 <p className="font-semibold text-foreground text-sm">LinkedIn</p>
                 <p className="text-xs text-muted-foreground">Message me there</p>
               </div>
               <span className="sr-only"> (opens in new tab)</span>
-            </motion.a>
+            </a>
           </div>
         </motion.div>
       </div>
