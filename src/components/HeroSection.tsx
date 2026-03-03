@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-organic.jpg";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
@@ -84,13 +85,15 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
             className="hidden md:flex items-center justify-center"
-            aria-hidden="true"
           >
-            <div className="relative w-64 h-64">
-              <div className="absolute inset-0 rounded-full border-2 border-dashed border-border/60 animate-[spin_30s_linear_infinite]" />
-              <div className="absolute inset-4 rounded-full border border-primary/20" />
-              <div className="absolute inset-12 rounded-full bg-gradient-to-br from-primary/10 to-secondary/10" />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 backdrop-blur-sm" />
+            <div className="relative w-56 h-56">
+              <div className="absolute -inset-3 rounded-full border-2 border-dashed border-border/40 animate-[spin_30s_linear_infinite]" aria-hidden="true" />
+              <div className="absolute -inset-1 rounded-full border border-primary/20" aria-hidden="true" />
+              <img
+                src={profilePhoto}
+                alt="Adam Smith"
+                className="w-full h-full rounded-full object-cover shadow-lg shadow-foreground/10"
+              />
             </div>
           </motion.div>
         </div>
