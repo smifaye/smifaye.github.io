@@ -15,29 +15,29 @@
     --popover: 40 33% 97%;
     --popover-foreground: 160 25% 12%;
 
-    --primary: 22 80% 50%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 22 85% 38%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 152 35% 28%;
-    --secondary-foreground: 40 33% 97%;
+    --secondary: 152 40% 24%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 40 20% 91%;
-    --muted-foreground: 160 10% 40%;
+    --muted-foreground: 160 12% 35%;
 
     --accent: 152 25% 90%;
-    --accent-foreground: 152 35% 20%;
+    --accent-foreground: 152 40% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 40 15% 85%;
     --input: 40 15% 85%;
-    --ring: 22 80% 50%;
+    --ring: 22 85% 38%;
 
     --radius: 0.75rem;
 
-    --burnt-orange: 22 80% 50%;
-    --dark-green: 152 35% 28%;
+    --burnt-orange: 22 85% 38%;
+    --dark-green: 152 40% 24%;
     --forest: 152 40% 22%;
     --warm-cream: 40 33% 97%;
     --warm-sand: 38 25% 85%;
@@ -61,10 +61,10 @@
     --popover-foreground: 40 25% 92%;
     --primary: 22 80% 55%;
     --primary-foreground: 160 20% 8%;
-    --secondary: 152 30% 35%;
-    --secondary-foreground: 40 25% 92%;
+    --secondary: 152 30% 40%;
+    --secondary-foreground: 0 0% 100%;
     --muted: 160 12% 16%;
-    --muted-foreground: 40 12% 55%;
+    --muted-foreground: 40 12% 60%;
     --accent: 152 20% 18%;
     --accent-foreground: 40 25% 92%;
     --destructive: 0 62.8% 30.6%;
@@ -87,5 +87,30 @@
   h1, h2, h3, h4 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
+  }
+
+  /* Visible focus indicators for keyboard navigation (WCAG 2.4.7 / 2.4.11) */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring rounded-sm;
+  }
+
+  /* Skip to main content link (WCAG 2.4.1) */
+  .skip-link {
+    @apply absolute -top-full left-4 z-[100] bg-primary text-primary-foreground px-4 py-2 rounded-b-lg font-medium text-sm;
+    transition: top 0.2s;
+  }
+
+  .skip-link:focus {
+    @apply top-0;
+  }
+
+  /* Respect prefers-reduced-motion (WCAG 2.3.3) */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

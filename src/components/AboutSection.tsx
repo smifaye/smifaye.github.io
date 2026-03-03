@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 md:py-32">
+    <section id="about" className="py-24 md:py-32" aria-label="About me">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -11,7 +11,7 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="h-1 w-12 bg-secondary rounded-full mb-6" />
+            <div className="h-1 w-12 bg-secondary rounded-full mb-6" aria-hidden="true" />
             <p className="text-sm tracking-wide text-secondary mb-4 font-semibold">
               About
             </p>
@@ -36,6 +36,8 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid grid-cols-2 gap-4"
+            role="list"
+            aria-label="Skills"
           >
             {[
               { label: "UX writing", desc: "Microcopy and interface content", color: "border-l-primary" },
@@ -45,6 +47,7 @@ const AboutSection = () => {
             ].map((skill) => (
               <div
                 key={skill.label}
+                role="listitem"
                 className={`bg-card rounded-2xl p-6 border border-border ${skill.color} border-l-4`}
               >
                 <h3 className="text-base font-semibold text-foreground mb-1">{skill.label}</h3>

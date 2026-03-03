@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 md:py-32">
+    <section id="contact" className="py-24 md:py-32" aria-label="Contact information">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,7 +11,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-xl mx-auto"
         >
-          <div className="h-1 w-12 bg-primary rounded-full mb-6" />
+          <div className="h-1 w-12 bg-primary rounded-full mb-6" aria-hidden="true" />
           <p className="text-sm tracking-wide text-secondary mb-4 font-semibold">
             Contact
           </p>
@@ -21,23 +21,24 @@ const ContactSection = () => {
           <p className="text-muted-foreground leading-relaxed mb-6">
             If you would like to contact me, you can:
           </p>
-          <ul className="space-y-3">
-            <li>
+          <ul className="space-y-3 list-disc pl-6">
+            <li className="text-muted-foreground">
               <a
                 href="mailto:smifaye@duck.com"
-                className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+                className="text-primary hover:underline font-medium"
               >
                 email me
               </a>
             </li>
-            <li>
+            <li className="text-muted-foreground">
               <a
                 href="https://www.linkedin.com/in/adam-smith-content-design/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+                className="text-primary hover:underline font-medium"
               >
                 message me on LinkedIn
+                <span className="sr-only"> (opens in new tab)</span>
               </a>
             </li>
           </ul>

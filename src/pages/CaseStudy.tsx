@@ -69,67 +69,72 @@ const CaseStudyPage = () => {
   if (!study) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="text-center">
+        <main className="text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Project not found</h1>
           <Link to="/" className="text-primary hover:underline">
             Back to home
           </Link>
-        </div>
+        </main>
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-background">
+      <a href="#case-study-content" className="skip-link">
+        Skip to content
+      </a>
       <Navbar />
-      <article className="pt-24 pb-20">
-        <div className="container max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Link
-              to="/#work"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
+      <main id="case-study-content">
+        <article className="pt-24 pb-20">
+          <div className="container max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
             >
-              <ArrowLeft className="w-4 h-4" />
-              Back to all projects
-            </Link>
-
-            <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
-            <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              {study.title}
-            </h1>
-            <div className="flex gap-2 flex-wrap mb-10">
-              {study.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs px-3 py-1 rounded-full bg-accent text-accent-foreground"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            <div className="border-t border-border pt-10">
-              {study.sections.map((section, i) => (
-                <SectionRenderer key={i} section={section} />
-              ))}
-            </div>
-
-            <div className="border-t border-border pt-8 mt-12">
               <Link
                 to="/#work"
-                className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
                 Back to all projects
               </Link>
-            </div>
-          </motion.div>
-        </div>
-      </article>
+
+              <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
+              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+                {study.title}
+              </h1>
+              <div className="flex gap-2 flex-wrap mb-10" aria-label="Project tags">
+                {study.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs px-3 py-1 rounded-full bg-accent text-accent-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="border-t border-border pt-10">
+                {study.sections.map((section, i) => (
+                  <SectionRenderer key={i} section={section} />
+                ))}
+              </div>
+
+              <div className="border-t border-border pt-8 mt-12">
+                <Link
+                  to="/#work"
+                  className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                >
+                  <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                  Back to all projects
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </article>
+      </main>
     </div>
   );
 };

@@ -12,16 +12,20 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50"
+      aria-label="Main navigation"
+    >
       <div className="container flex items-center justify-between h-16">
         <a href="/" className="font-bold text-xl text-foreground">
           Adam Smith
         </a>
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8" role="list">
           {links.map((link) => (
             <a
               key={link.label}
               href={link.href}
+              role="listitem"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors tracking-wide"
             >
               {link.label}
@@ -31,9 +35,11 @@ const Navbar = () => {
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-foreground p-2"
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             {open ? (
               <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
             ) : (
@@ -45,16 +51,19 @@ const Navbar = () => {
       <AnimatePresence>
         {open && (
           <motion.div
+            id="mobile-menu"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden overflow-hidden bg-background border-b border-border"
+            role="list"
           >
             <div className="container py-4 flex flex-col gap-4">
               {links.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
+                  role="listitem"
                   onClick={() => setOpen(false)}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
