@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { PenLine, Compass, BarChart3, Accessibility } from "lucide-react";
-import heroImage from "@/assets/hero-organic.jpg";
+
 
 const skills = [
   { label: "UX writing", desc: "Microcopy and interface content", accent: "bg-primary", icon: PenLine },
@@ -12,20 +12,13 @@ const skills = [
 const HeroSection = () => {
   return (
     <section id="about" className="relative min-h-[75vh] flex items-center overflow-hidden" aria-label="Introduction">
-      <div className="absolute inset-0 z-0" aria-hidden="true">
-        <img
-          src={heroImage}
-          alt=""
-          className="w-full h-full object-cover opacity-[0.06]"
-          role="presentation"
-        />
-      </div>
+      {/* Subtle grain texture */}
+      <div className="absolute inset-0 z-0 opacity-[0.03]" aria-hidden="true"
+        style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }}
+      />
 
-      {/* Decorative circles */}
-      <div className="absolute top-20 right-[10%] w-72 h-72 rounded-full bg-primary/[0.04] blur-2xl" aria-hidden="true" />
-      <div className="absolute bottom-10 left-[5%] w-96 h-96 rounded-full bg-secondary/[0.06] blur-3xl" aria-hidden="true" />
-      <div className="absolute top-1/2 right-[20%] w-3 h-3 rounded-full bg-primary/30" aria-hidden="true" />
-      <div className="absolute top-[30%] right-[35%] w-2 h-2 rounded-full bg-secondary/40" aria-hidden="true" />
+      {/* Soft warm gradient */}
+      <div className="absolute top-0 right-0 w-[60%] h-[70%] bg-gradient-to-bl from-primary/[0.04] via-transparent to-transparent rounded-bl-full" aria-hidden="true" />
 
       <div className="container relative z-10 py-20 md:py-24">
         <motion.div
