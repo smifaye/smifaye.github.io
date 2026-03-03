@@ -11,7 +11,8 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm tracking-wide text-primary mb-4 font-medium">
+            <div className="h-1 w-12 bg-secondary rounded-full mb-6" />
+            <p className="text-sm tracking-wide text-secondary mb-4 font-semibold">
               About
             </p>
             <h2 className="text-3xl md:text-4xl mb-6 text-foreground">
@@ -37,14 +38,14 @@ const AboutSection = () => {
             className="grid grid-cols-2 gap-4"
           >
             {[
-              { label: "UX writing", desc: "Microcopy and interface content" },
-              { label: "Content strategy", desc: "Models and systems" },
-              { label: "Data and analytics", desc: "Insights-driven decisions" },
-              { label: "Accessibility", desc: "Plain English and inclusive design" },
+              { label: "UX writing", desc: "Microcopy and interface content", color: "border-l-primary" },
+              { label: "Content strategy", desc: "Models and systems", color: "border-l-secondary" },
+              { label: "Data and analytics", desc: "Insights-driven decisions", color: "border-l-secondary" },
+              { label: "Accessibility", desc: "Plain English and inclusive design", color: "border-l-primary" },
             ].map((skill) => (
               <div
                 key={skill.label}
-                className="bg-card rounded-2xl p-6 border border-border"
+                className={`bg-card rounded-2xl p-6 border border-border ${skill.color} border-l-4`}
               >
                 <h3 className="text-base font-semibold text-foreground mb-1">{skill.label}</h3>
                 <p className="text-sm text-muted-foreground">{skill.desc}</p>

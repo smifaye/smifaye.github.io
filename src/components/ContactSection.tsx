@@ -11,20 +11,21 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-xl mx-auto"
         >
-          <p className="text-sm tracking-wide text-primary mb-4 font-medium">
+          <div className="h-1 w-12 bg-primary rounded-full mb-6" />
+          <p className="text-sm tracking-wide text-secondary mb-4 font-semibold">
             Contact
           </p>
           <h2 className="text-3xl md:text-4xl text-foreground mb-6">
-            Contact
+            Get in touch
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             If you would like to contact me, you can:
           </p>
-          <ul className="list-disc pl-6 space-y-2">
+          <ul className="space-y-3">
             <li>
               <a
                 href="mailto:smifaye@duck.com"
-                className="text-primary hover:underline"
+                className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
               >
                 email me
               </a>
@@ -34,7 +35,7 @@ const ContactSection = () => {
                 href="https://www.linkedin.com/in/adam-smith-content-design/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:underline"
+                className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
               >
                 message me on LinkedIn
               </a>

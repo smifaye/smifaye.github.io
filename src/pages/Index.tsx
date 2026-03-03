@@ -12,9 +12,9 @@ const Index = () => {
       <AboutSection />
       <WorkSection />
       <ContactSection />
-      <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
+      <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border bg-secondary/5">
         <div className="container">
-          © 2026 — Designed with care
+          © 2026 Adam Smith
         </div>
       </footer>
     </div>

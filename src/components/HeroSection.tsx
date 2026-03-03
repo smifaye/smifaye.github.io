@@ -7,9 +7,10 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Abstract organic shapes"
-          className="w-full h-full object-cover opacity-30"
+          alt="Abstract organic shapes in burnt orange and dark green"
+          className="w-full h-full object-cover opacity-20"
         />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/80 to-transparent" />
       </div>
       <div className="container relative z-10 py-20">
         <motion.div
@@ -18,8 +19,14 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <p className="text-sm tracking-wide text-muted-foreground mb-6 font-medium">
-            Content Designer · London
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "3rem" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="h-1 bg-primary mb-8 rounded-full"
+          />
+          <p className="text-sm tracking-wide text-secondary mb-6 font-semibold">
+            Content designer · London
           </p>
           <h1 className="text-5xl md:text-7xl leading-[1.1] mb-6 text-foreground font-bold">
             Hello, I'm <span className="text-primary">Adam Smith</span>
@@ -38,13 +45,13 @@ const HeroSection = () => {
               href="#work"
               className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:opacity-90 transition-opacity"
             >
-              View My Work
+              View my work
             </a>
             <a
               href="#contact"
-              className="inline-block px-8 py-3 rounded-full border border-border text-foreground font-medium text-sm tracking-wide hover:bg-accent transition-colors"
+              className="inline-block px-8 py-3 rounded-full bg-secondary text-secondary-foreground font-medium text-sm tracking-wide hover:opacity-90 transition-opacity"
             >
-              Get in Touch
+              Get in touch
             </a>
           </motion.div>
         </motion.div>
