@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { Mail, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-16 md:py-20" aria-label="Contact information">
+    <section id="contact" className="py-16 md:py-20 relative" aria-label="Contact information">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,32 +15,44 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
             Get in touch
           </h2>
-          <div className="h-[2px] w-16 bg-primary mb-6" aria-hidden="true" />
-          <p className="text-muted-foreground leading-relaxed mb-6">
+          <div className="flex gap-1 mb-6" aria-hidden="true">
+            <div className="h-[3px] w-8 bg-primary rounded-full" />
+            <div className="h-[3px] w-3 bg-secondary rounded-full" />
+            <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-8">
             If you would like to contact me, you can:
           </p>
-          <div className="space-y-3">
-            <a
+          <div className="flex flex-col sm:flex-row gap-4">
+            <motion.a
               href="mailto:smifaye@duck.com"
-              className="group flex items-center gap-3 text-foreground font-medium hover:text-primary transition-colors"
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
+              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all flex-1"
             >
-              <span className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                <span className="text-primary text-sm" aria-hidden="true">@</span>
+              <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                <Mail className="w-4 h-4 text-primary" aria-hidden="true" />
               </span>
-              Email me
-            </a>
-            <a
+              <div>
+                <p className="font-semibold text-foreground text-sm">Email me</p>
+                <p className="text-xs text-muted-foreground">smifaye@duck.com</p>
+              </div>
+            </motion.a>
+            <motion.a
               href="https://www.linkedin.com/in/adam-smith-content-design/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-3 text-foreground font-medium hover:text-primary transition-colors"
+              whileHover={{ y: -3, transition: { duration: 0.2 } }}
+              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-secondary/30 hover:shadow-md hover:shadow-secondary/5 transition-all flex-1"
             >
-              <span className="w-9 h-9 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
-                <span className="text-secondary text-sm font-bold" aria-hidden="true">in</span>
+              <span className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/20 transition-colors">
+                <Linkedin className="w-4 h-4 text-secondary" aria-hidden="true" />
               </span>
-              Message me on LinkedIn
+              <div>
+                <p className="font-semibold text-foreground text-sm">LinkedIn</p>
+                <p className="text-xs text-muted-foreground">Message me there</p>
+              </div>
               <span className="sr-only"> (opens in new tab)</span>
-            </a>
+            </motion.a>
           </div>
         </motion.div>
       </div>
