@@ -38,10 +38,10 @@ const BlogPost = () => {
             >
               <Link
                 to="/blog"
-                className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors mb-8"
+                className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                Back to blog
+                <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to blog</span>
               </Link>
 
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
@@ -68,10 +68,10 @@ const BlogPost = () => {
               <div className="border-t border-border pt-8 mt-12">
                 <Link
                   to="/blog"
-                  className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                  Back to blog
+                  <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to blog</span>
                 </Link>
               </div>
             </motion.div>
