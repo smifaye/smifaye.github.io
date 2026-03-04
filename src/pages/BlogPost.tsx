@@ -14,7 +14,7 @@ const BlogPost = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <main className="text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Post not found</h1>
-          <Link to="/blog" className="text-primary hover:underline">
+          <Link to="/blog" className="text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">
             Back to blog
           </Link>
         </main>
@@ -53,7 +53,7 @@ const BlogPost = () => {
                   href={post.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-10"
+                  className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors mb-10"
                 >
                   Read original post
                   <ExternalLink className="w-3 h-3" aria-hidden="true" />
@@ -68,7 +68,7 @@ const BlogPost = () => {
               <div className="border-t border-border pt-8 mt-12">
                 <Link
                   to="/blog"
-                  className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                  className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
                   Back to blog
