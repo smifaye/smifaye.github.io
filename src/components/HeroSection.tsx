@@ -32,7 +32,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-xs uppercase tracking-[0.2em] text-secondary mb-5 font-semibold"
           >
-            Content designer
+            Senior content designer
           </motion.p>
           <h1 className="text-5xl md:text-7xl leading-[1.05] mb-10 text-foreground font-bold tracking-tight">
             Hello, I'm{" "}
