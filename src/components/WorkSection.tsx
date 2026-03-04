@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
+import { workFile, parseFrontmatter } from "@/lib/markdown";
+
+const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
@@ -16,7 +19,7 @@ const WorkSection = () => {
           className="mb-10"
         >
           <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
-            Selected work
+            {frontmatter.heading}
           </h2>
           <div className="flex gap-1 mt-5" aria-hidden="true">
             <div className="h-[3px] w-8 bg-primary rounded-full" />

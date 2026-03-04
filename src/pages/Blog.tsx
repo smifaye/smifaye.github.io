@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { blogPosts } from "@/data/blogPosts";
+import { blogFile, parseFrontmatter } from "@/lib/markdown";
+
+const { frontmatter, content } = parseFrontmatter(blogFile);
 
 const Blog = () => {
   return (
@@ -28,10 +31,10 @@ const Blog = () => {
               </Link>
 
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Blog
+                {frontmatter.heading}
               </h1>
               <p className="text-muted-foreground leading-relaxed mb-10">
-                Here's a selection of my blogs over the years.
+                {frontmatter.intro}
               </p>
 
               <ul className="space-y-6 list-none">
