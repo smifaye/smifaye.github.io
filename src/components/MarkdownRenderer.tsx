@@ -81,7 +81,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       i++; continue;
     }
 
-    // Paragraph — handle inline markdown (links, bold, italic)
+    // Paragraph - handle inline markdown (links, bold, italic)
     const rendered = block
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
       .replace(/\*([^*]+)\*/g, "<em>$1</em>")

@@ -9,7 +9,7 @@ externalUrl: https://wearecitizensadvice.org.uk/how-were-improving-the-accessibi
 
 *This blog was co-authored by Sonia Turcotte and Adam Smith from the customer journey team at Citizens Advice.*
 
-At Citizens Advice, we give people the knowledge and confidence they need to find their way forward — whoever they are, and whatever their problem. With millions of visits to our website every year — over 34.5 million in 2019–20 — and people relying on remote advice now more than ever, we're working to make sure our website is clear and easy to use for everyone.
+At Citizens Advice, we give people the knowledge and confidence they need to find their way forward - whoever they are, and whatever their problem. With millions of visits to our website every year - over 34.5 million in 2019–20 - and people relying on remote advice now more than ever, we're working to make sure our website is clear and easy to use for everyone.
 
 New accessibility legislation for public sector bodies came into effect on 23 September 2020. The regulations state public sector bodies must make their website or mobile app more accessible. You can [read more about the regulations on GOV.UK](https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps).
 

@@ -10,24 +10,24 @@ Citizens Advice is currently migrating from one CMS to another. As part of this 
 
 ## What is a content model?
 
-A content model is a way to structure content within a CMS. It breaks down content into their component parts — for example, a table or design component. It gives you structure and organisation to your content.
+A content model is a way to structure content within a CMS. It breaks down content into their component parts - for example, a table or design component. It gives you structure and organisation to your content.
 
 ## What makes up a content model?
 
-Content models have 2 important parts — content types and content fields.
+Content models have 2 important parts - content types and content fields.
 
 ### Content types
 
 Content types are the components you'll see on the website. These could be things like a table of data, a banner or an image.
 
-Content types can also be chunks of data — this is where content models become powerful for content designers.
+Content types can also be chunks of data - this is where content models become powerful for content designers.
 
 ### Content fields
 
 Content types are made up of content fields. For a simple example like a table of data, the content fields might be:
 
 - table name
-- audience — who is this going to be displayed to?
+- audience - who is this going to be displayed to?
 - body
 - version information
 
@@ -35,10 +35,10 @@ Content types are made up of content fields. For a simple example like a table o
 
 It's often useful to think of a real life example when talking about abstract concepts like content models. An example I use when explaining our content model is how to make a cup of coffee.
 
-- To make a cup of coffee, you need a coffee cup — this represents our content model.
-- You can make all sorts of coffee like a flat white or latte — this represents our content types.
-- You then need some essential ingredients like water, coffee beans and milk — this represents our content fields.
-- You can buy ready made coffee like nespresso pods — this represents our reusable content chunks.
+- To make a cup of coffee, you need a coffee cup - this represents our content model.
+- You can make all sorts of coffee like a flat white or latte - this represents our content types.
+- You then need some essential ingredients like water, coffee beans and milk - this represents our content fields.
+- You can buy ready made coffee like nespresso pods - this represents our reusable content chunks.
 
 ## Why use a content model?
 
