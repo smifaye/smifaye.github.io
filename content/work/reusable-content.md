@@ -3,10 +3,10 @@ slug: reusable-content
 title: Reusable content
 client: Citizens Advice
 tags: Content strategy, CMS
-summary: Led a project to validate and implement reusable content principles — reducing duplication, saving time, and creating consistency.
+summary: Led a project to validate and implement reusable content principles - reducing duplication, saving time, and creating consistency.
 ---
 
-I'm working on a project to confirm some assumptions we have about our new CMS, Contentful — its killer feature is reusable content. Using the content model I designed we can reuse content across many different parts of the website and even beyond.
+I'm working on a project to confirm some assumptions we have about our new CMS, Contentful - its killer feature is reusable content. Using the content model I designed we can reuse content across many different parts of the website and even beyond.
 
 ## What is reusable content?
 
@@ -42,7 +42,7 @@ There are a few risks with reusable content. It might mean:
 Reusable content needs to be:
 
 - easy to find
-- easy to share with others — for example, during 2i or fact check
+- easy to share with others - for example, during 2i or fact check
 - generic enough to be reused, but contains all the details that meet a user need
 
 ### Easy to find

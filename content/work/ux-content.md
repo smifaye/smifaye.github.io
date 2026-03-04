@@ -26,7 +26,7 @@ The button is clear and tells them it will open in a new tab. The right-hand sid
 
 ![Screenshot of a button displaying the words 'Open preview'](/images/preview-button.png)
 
-Once they're previewing content they're able to switch views. Citizens Advice has many audiences that view content — for example, members of the public in England, members of the public in Wales, advisers in England, advisers using the public site, and advisers using the adviser-only site.
+Once they're previewing content they're able to switch views. Citizens Advice has many audiences that view content - for example, members of the public in England, members of the public in Wales, advisers in England, advisers using the public site, and advisers using the adviser-only site.
 
 ![Screenshot of a dropdown menu displaying the words 'View: England'](/images/preview-view.png)
 
