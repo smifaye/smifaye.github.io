@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
 import { siteFile, parseFrontmatter } from "@/lib/markdown";
 
 const { frontmatter } = parseFrontmatter(siteFile);
@@ -9,6 +11,9 @@ const links = navLabels.map((label, i) => ({ label, href: navHrefs[i] || "#" }))
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
     <nav
@@ -19,7 +24,7 @@ const Navbar = () => {
         <a href="/" className="font-bold text-xl text-foreground">
           {frontmatter.navName}
         </a>
-        <ul className="hidden md:flex gap-8">
+        <ul className="hidden md:flex gap-8 items-center">
           {links.map((link) => (
             <li key={link.label}>
               <a
@@ -30,6 +35,15 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li>
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-md text-foreground/80 hover:text-primary transition-colors"
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+          </li>
         </ul>
         <button
           onClick={() => setOpen(!open)}
@@ -68,6 +82,16 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <button
+                  onClick={toggleTheme}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors py-3 min-h-[44px] flex items-center gap-2"
+                  aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+                >
+                  {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                  {theme === "dark" ? "Light mode" : "Dark mode"}
+                </button>
+              </li>
             </ul>
           </motion.div>
         )}
