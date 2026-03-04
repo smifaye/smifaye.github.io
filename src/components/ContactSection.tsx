@@ -28,19 +28,19 @@ const ContactSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="mailto:smifaye@duck.com"
+              href={`mailto:${frontmatter.email}`}
               className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all flex-1"
             >
               <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
                 <Mail className="w-4 h-4 text-primary" aria-hidden="true" />
               </span>
               <div>
-                <p className="font-semibold text-foreground text-sm">Email me</p>
-                <p className="text-xs text-muted-foreground">smifaye@duck.com</p>
+                <p className="font-semibold text-foreground text-sm">{frontmatter.emailLabel}</p>
+                <p className="text-xs text-muted-foreground">{frontmatter.email}</p>
               </div>
             </a>
             <a
-              href="https://www.linkedin.com/in/adam-smith-content-design/"
+              href={frontmatter.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all flex-1"
@@ -49,8 +49,8 @@ const ContactSection = () => {
                 <Linkedin className="w-4 h-4 text-primary" aria-hidden="true" />
               </span>
               <div>
-                <p className="font-semibold text-foreground text-sm">LinkedIn</p>
-                <p className="text-xs text-muted-foreground">Message me there</p>
+                <p className="font-semibold text-foreground text-sm">{frontmatter.linkedinLabel}</p>
+                <p className="text-xs text-muted-foreground">{frontmatter.linkedinDescription}</p>
               </div>
               <span className="sr-only"> (opens in new tab)</span>
             </a>
