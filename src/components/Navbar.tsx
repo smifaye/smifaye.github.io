@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { siteFile, parseFrontmatter } from "@/lib/markdown";
+
+const { frontmatter } = parseFrontmatter(siteFile);
+const navLabels = (frontmatter.navLinks || "").split(",").map(s => s.trim());
+const navHrefs = (frontmatter.navHrefs || "").split(",").map(s => s.trim());
+const links = navLabels.map((label, i) => ({ label, href: navHrefs[i] || "#" }));
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
-  const links = [
-    { label: "Work", href: "/#work" },
-    { label: "Blog", href: "/#blog" },
-    { label: "Contact", href: "/#contact" },
-  ];
 
   return (
     <nav
@@ -17,7 +17,7 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between h-16">
         <a href="/" className="font-bold text-xl text-foreground">
-          Adam Smith
+          {frontmatter.navName}
         </a>
         <ul className="hidden md:flex gap-8">
           {links.map((link) => (

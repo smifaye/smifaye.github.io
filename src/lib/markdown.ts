@@ -12,6 +12,9 @@ import accessibilityBlog from '../../content/blog/accessibility-statement-citize
 // Page sections
 import aboutRaw from '../../content/about.md?raw';
 import contactRaw from '../../content/contact.md?raw';
+import siteRaw from '../../content/site.md?raw';
+import workRaw from '../../content/work.md?raw';
+import blogRaw from '../../content/blog.md?raw';
 
 export const caseStudyFiles = [
   cmsMigration,
@@ -27,6 +30,9 @@ export const blogPostFiles = [
 
 export const aboutFile = aboutRaw;
 export const contactFile = contactRaw;
+export const siteFile = siteRaw;
+export const workFile = workRaw;
+export const blogFile = blogRaw;
 
 interface Frontmatter {
   [key: string]: string;

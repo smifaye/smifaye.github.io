@@ -3,6 +3,9 @@ import HeroSection from "@/components/HeroSection";
 import WorkSection from "@/components/WorkSection";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
+import { siteFile, parseFrontmatter } from "@/lib/markdown";
+
+const { frontmatter } = parseFrontmatter(siteFile);
 
 const Index = () => {
   return (
@@ -19,7 +22,7 @@ const Index = () => {
       </main>
       <footer className="py-10 text-center text-xs text-muted-foreground tracking-wide border-t border-border" role="contentinfo">
         <div className="container">
-          © 2026 Adam Smith
+          {frontmatter.footerText}
         </div>
       </footer>
     </div>

@@ -5,12 +5,13 @@ import { aboutFile, parseFrontmatter } from "@/lib/markdown";
 const { frontmatter, content } = parseFrontmatter(aboutFile);
 const paragraphs = content.split('\n\n').filter(Boolean);
 
-const skills = [
-  { label: "UX writing", desc: "Microcopy and interface content", accent: "bg-primary", icon: PenLine },
-  { label: "Content strategy", desc: "Models and systems", accent: "bg-secondary", icon: Compass },
-  { label: "Data and analytics", desc: "Insights-driven decisions", accent: "bg-secondary", icon: BarChart3 },
-  { label: "Accessibility", desc: "Plain English and inclusive design", accent: "bg-primary", icon: Accessibility },
-];
+const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
+const skills = [1, 2, 3, 4].map((n, i) => ({
+  label: frontmatter[`skill${n}Label`] || "",
+  desc: frontmatter[`skill${n}Desc`] || "",
+  accent: i % 2 === 0 ? "bg-primary" : "bg-secondary",
+  icon: skillIcons[i],
+}));
 
 const HeroSection = () => {
   return (
@@ -96,7 +97,7 @@ const HeroSection = () => {
               href="#work"
               className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
 
-              View my work
+              {frontmatter.ctaPrimary}
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -105,7 +106,7 @@ const HeroSection = () => {
               href="#contact"
               className="inline-block px-8 py-3.5 rounded-full border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
 
-              Get in touch
+              {frontmatter.ctaSecondary}
             </a>
           </motion.div>
         </motion.div>
