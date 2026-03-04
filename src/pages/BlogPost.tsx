@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import { blogPosts } from "@/data/blogPosts";
+import MarkdownRenderer from "@/components/MarkdownRenderer";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -20,77 +21,6 @@ const BlogPost = () => {
       </div>
     );
   }
-
-  const renderContent = (content: string) => {
-    return content.split("\n\n").map((block, i) => {
-      if (block.startsWith("## ")) {
-        return (
-          <h2 key={i} className="text-2xl font-bold text-foreground mb-4 mt-10">
-            {block.replace("## ", "")}
-          </h2>
-        );
-      }
-
-      // Handle image with optional caption: ![alt](src)\n*caption*
-      const imgWithCaption = block.match(/^!\[([^\]]*)\]\(([^)]+)\)(?:\n\*([^*]+)\*)?$/);
-      if (imgWithCaption) {
-        return (
-          <figure key={i} className="mb-8">
-            <img
-              src={imgWithCaption[2]}
-              alt={imgWithCaption[1]}
-              className="rounded-xl border border-border w-full"
-              loading="lazy"
-            />
-            {imgWithCaption[3] && (
-              <figcaption className="text-sm text-muted-foreground mt-2 italic">
-                {imgWithCaption[3]}
-              </figcaption>
-            )}
-          </figure>
-        );
-      }
-
-      // Handle standalone caption (italic line after image)
-      if (block.startsWith("*") && block.endsWith("*") && !block.includes("\n")) {
-        return (
-          <figcaption key={i} className="text-sm text-muted-foreground mb-8 italic">
-            {block.slice(1, -1)}
-          </figcaption>
-        );
-      }
-
-      // Handle unordered lists
-      if (block.startsWith("- ")) {
-        const items = block.split("\n").filter((line) => line.startsWith("- "));
-        return (
-          <ul key={i} className="list-disc pl-6 mb-6 space-y-2">
-            {items.map((item, j) => (
-              <li key={j} className="text-muted-foreground leading-relaxed">
-                {item.replace(/^- /, "")}
-              </li>
-            ))}
-          </ul>
-        );
-      }
-
-      // Handle italic blocks and links
-      const rendered = block
-        .replace(/\*([^*]+)\*/g, "<em>$1</em>")
-        .replace(
-          /\[([^\]]+)\]\(([^)]+)\)/g,
-          '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">$1<span class="sr-only"> (opens in new tab)</span></a>'
-        );
-
-      return (
-        <p
-          key={i}
-          className="text-muted-foreground leading-relaxed mb-4"
-          dangerouslySetInnerHTML={{ __html: rendered }}
-        />
-      );
-    });
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -132,7 +62,7 @@ const BlogPost = () => {
               )}
 
               <div className="border-t border-border pt-10">
-                {renderContent(post.content)}
+                <MarkdownRenderer content={post.content} />
               </div>
 
               <div className="border-t border-border pt-8 mt-12">
