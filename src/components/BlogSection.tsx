@@ -40,7 +40,7 @@ const BlogSection = () => {
               <Link
                 to={`/blog/${post.slug}`}
                 aria-label={post.title}
-                className="group block bg-background rounded-xl p-6 md:p-8 border border-border/40 hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all"
+                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all"
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0">
