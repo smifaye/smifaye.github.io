@@ -59,16 +59,16 @@ const WorkSection = () => {
                       {project.summary}
                     </p>
                   </div>
-                  <div className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 ml-5 md:ml-0" aria-label="Tags">
+                  <ul className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 ml-5 md:ml-0 list-none" aria-label="Tags" role="list">
                     {project.tags.map((tag) => (
-                      <span
+                      <li
                         key={tag}
                         className="text-xs px-3 py-1 rounded-full bg-accent/60 text-accent-foreground font-medium group-hover:bg-accent transition-colors"
                       >
                         {tag}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </Link>
             </motion.li>

@@ -87,7 +87,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       .replace(/\*([^*]+)\*/g, "<em>$1</em>")
       .replace(
         /\[([^\]]+)\]\(([^)]+)\)/g,
-        '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">$1<span class="sr-only"> (opens in new tab)</span></a>'
+        '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:text-primary/80">$1<span class="sr-only"> (opens in new tab)</span></a>'
       );
 
     elements.push(
