@@ -45,21 +45,30 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden text-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-        >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            {open ? (
-              <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
-            ) : (
-              <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-            )}
-          </svg>
-        </button>
+        <div className="md:hidden flex items-center gap-1">
+          <button
+            onClick={toggleTheme}
+            className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-foreground/80 hover:text-primary transition-colors"
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              {open ? (
+                <path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" />
+              ) : (
+                <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
       <AnimatePresence>
         {open && (
@@ -82,16 +91,6 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li>
-                <button
-                  onClick={toggleTheme}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors py-3 min-h-[44px] flex items-center gap-2"
-                  aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-                >
-                  {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-                  {theme === "dark" ? "Light mode" : "Dark mode"}
-                </button>
-              </li>
             </ul>
           </motion.div>
         )}
