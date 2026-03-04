@@ -10,7 +10,7 @@ const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
   accent: i % 2 === 0 ? "bg-primary" : "bg-secondary",
-  icon: skillIcons[i],
+  icon: skillIcons[i]
 }));
 
 const HeroSection = () => {
@@ -59,9 +59,9 @@ const HeroSection = () => {
                 <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                {paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
+                {paragraphs.map((p, i) =>
+                <p key={i}>{p}</p>
+                )}
               </div>
             </motion.div>
             <motion.div
@@ -95,7 +95,7 @@ const HeroSection = () => {
 
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
+              className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all text-foreground">
 
               {frontmatter.ctaPrimary}
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -112,8 +112,8 @@ const HeroSection = () => {
         </motion.div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10" aria-hidden="true" />
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
