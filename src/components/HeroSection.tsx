@@ -58,7 +58,7 @@ const HeroSection = () => {
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a content designer based with over 7 years of experience 
+                I'm a senior content designer based with over 7 years of experience
                 in the public and charity sectors.
                 </p>
                 <p>
