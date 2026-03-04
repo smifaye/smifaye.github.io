@@ -38,10 +38,10 @@ const CaseStudyPage = () => {
             >
               <Link
                 to="/#work"
-                className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors mb-8"
+                className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                Back to all projects
+                <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to all projects</span>
               </Link>
 
               <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
@@ -66,10 +66,10 @@ const CaseStudyPage = () => {
               <div className="border-t border-border pt-8 mt-12">
                 <Link
                   to="/#work"
-                  className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                  Back to all projects
+                  <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to all projects</span>
                 </Link>
               </div>
             </motion.div>
