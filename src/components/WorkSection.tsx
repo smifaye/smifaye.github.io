@@ -66,7 +66,7 @@ const WorkSection = () => {
                     {project.tags.map((tag) => (
                       <li
                         key={tag}
-                        className="text-xs px-3 py-1 rounded-full bg-accent/60 text-accent-foreground font-medium group-hover:bg-accent transition-colors"
+                        className="text-xs px-3 py-1 rounded-full bg-accent text-accent-foreground font-medium transition-colors"
                       >
                         {tag}
                       </li>
