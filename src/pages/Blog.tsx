@@ -24,7 +24,7 @@ const Blog = () => {
                 className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to home</span>
+                <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to home</span>
               </Link>
 
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">

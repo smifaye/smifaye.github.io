@@ -14,7 +14,7 @@ const CaseStudyPage = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <main className="text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Project not found</h1>
-          <Link to="/" className="text-primary underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">
+          <Link to="/" className="text-primary underline underline-offset-2 hover:bg-primary/10 transition-colors">
             Back to home
           </Link>
         </main>
@@ -41,7 +41,7 @@ const CaseStudyPage = () => {
                 className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to all projects</span>
+                <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to all projects</span>
               </Link>
 
               <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
@@ -69,7 +69,7 @@ const CaseStudyPage = () => {
                   className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                  <span className="underline underline-offset-2 hover:bg-primary/10 rounded-sm transition-colors">Back to all projects</span>
+                  <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to all projects</span>
                 </Link>
               </div>
             </motion.div>
