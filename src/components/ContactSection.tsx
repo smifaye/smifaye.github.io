@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin } from "lucide-react";
+import { contactFile, parseFrontmatter } from "@/lib/markdown";
+
+const { frontmatter, content } = parseFrontmatter(contactFile);
 
 const ContactSection = () => {
   return (
@@ -13,7 +16,7 @@ const ContactSection = () => {
           className="max-w-xl"
         >
           <h2 className="text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
-            Get in touch
+            {frontmatter.heading}
           </h2>
           <div className="flex gap-1 mb-6" aria-hidden="true">
             <div className="h-[3px] w-8 bg-primary rounded-full" />
@@ -21,7 +24,7 @@ const ContactSection = () => {
             <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
           </div>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            If you would like to contact me, you can:
+            {content}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

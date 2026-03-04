@@ -9,6 +9,10 @@ import dataVisualisation from '../../content/work/data-visualisation.md?raw';
 // Blog posts
 import accessibilityBlog from '../../content/blog/accessibility-statement-citizens-advice.md?raw';
 
+// Page sections
+import aboutRaw from '../../content/about.md?raw';
+import contactRaw from '../../content/contact.md?raw';
+
 export const caseStudyFiles = [
   cmsMigration,
   futureProofing,
@@ -20,6 +24,9 @@ export const caseStudyFiles = [
 export const blogPostFiles = [
   accessibilityBlog,
 ];
+
+export const aboutFile = aboutRaw;
+export const contactFile = contactRaw;
 
 interface Frontmatter {
   [key: string]: string;
