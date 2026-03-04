@@ -18,7 +18,7 @@
     --popover: 0 0% 89%;
     --popover-foreground: 0 0% 9%;
 
-    --primary: 20 90% 48%;
+    --primary: 20 90% 38%;
     --primary-foreground: 33 100% 96%;
 
     --secondary: 0 0% 32%;
@@ -35,11 +35,11 @@
 
     --border: 0 0% 83%;
     --input: 0 0% 83%;
-    --ring: 20 90% 48%;
+    --ring: 20 90% 38%;
 
     --radius: 0.75rem;
 
-    --burnt-orange: 22 85% 38%;
+    --burnt-orange: 20 90% 38%;
     --warm-cream: 40 33% 97%;
     --warm-sand: 38 25% 85%;
 
@@ -79,7 +79,7 @@
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 18%;
     --popover-foreground: 0 0% 95%;
-    --primary: 20 90% 48%;
+    --primary: 20 90% 38%;
     --primary-foreground: 0 0% 9%;
     --secondary: 0 0% 55%;
     --secondary-foreground: 0 0% 95%;
