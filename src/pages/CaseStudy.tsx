@@ -52,7 +52,7 @@ const CaseStudyPage = () => {
                 {study.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1 rounded-full bg-accent text-accent-foreground"
+                    className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium"
                   >
                     {tag}
                   </span>
