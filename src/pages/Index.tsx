@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WorkSection from "@/components/WorkSection";
+import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <main id="main-content">
         <HeroSection />
         <WorkSection />
+        <BlogSection />
         <ContactSection />
       </main>
       <footer className="py-10 text-center text-xs text-muted-foreground tracking-wide border-t border-border" role="contentinfo">
