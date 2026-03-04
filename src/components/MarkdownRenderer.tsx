@@ -33,10 +33,15 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     }
 
     // Image with optional caption on next line
-    const imgMatch = block.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    const imgMatch = block.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
     if (imgMatch) {
+      // Caption could be on the same block (single newline) or next block
+      const restOfBlock = block.slice(imgMatch[0].length).trim();
+      const inlineCaptionMatch = restOfBlock.match(/^\*([^*]+)\*$/);
       const nextBlock = blocks[i + 1]?.trim();
-      const captionMatch = nextBlock?.match(/^\*([^*]+)\*$/);
+      const nextCaptionMatch = !inlineCaptionMatch ? nextBlock?.match(/^\*([^*]+)\*$/) : null;
+      const caption = inlineCaptionMatch?.[1] || nextCaptionMatch?.[1];
+
       elements.push(
         <figure key={i} className="mb-8">
           <img
@@ -45,14 +50,14 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
             className="rounded-xl border border-border w-full"
             loading="lazy"
           />
-          {captionMatch && (
+          {caption && (
             <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">
-              {captionMatch[1]}
+              {caption}
             </figcaption>
           )}
         </figure>
       );
-      if (captionMatch) i++; // skip caption block
+      if (nextCaptionMatch) i++; // skip caption block
       i++; continue;
     }
 
