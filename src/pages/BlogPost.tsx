@@ -37,7 +37,7 @@ const BlogPost = () => {
               transition={{ duration: 0.5 }}
             >
               <Link
-                to="/blog"
+                to="/#blog"
                 className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
@@ -67,7 +67,7 @@ const BlogPost = () => {
 
               <div className="border-t border-border pt-8 mt-12">
                 <Link
-                  to="/blog"
+                  to="/#blog"
                   className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
