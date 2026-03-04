@@ -5,7 +5,9 @@ interface MarkdownRendererProps {
 }
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
-  const blocks = content.split("\n\n");
+  // Normalize line endings to \n
+  const normalized = content.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  const blocks = normalized.split("\n\n");
   const elements: React.ReactNode[] = [];
   let i = 0;
 
