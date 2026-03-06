@@ -1,12 +1,11 @@
-// Markdown content files - imported as raw strings
-// Case studies
+// Case studies - import them here
 import cmsMigration from '../../content/work/cms-migration.md?raw';
 import futureProofing from '../../content/work/future-proofing-content.md?raw';
 import reusableContent from '../../content/work/reusable-content.md?raw';
 import uxContent from '../../content/work/ux-content.md?raw';
 import dataVisualisation from '../../content/work/data-visualisation.md?raw';
 
-// Blog posts
+// Blog posts - import them here
 import accessibilityBlog from '../../content/blog/accessibility-statement-citizens-advice.md?raw';
 
 // Page sections
@@ -16,6 +15,7 @@ import siteRaw from '../../content/site.md?raw';
 import workRaw from '../../content/work.md?raw';
 import blogRaw from '../../content/blog.md?raw';
 
+// Control the order of pages below
 export const caseStudyFiles = [
   cmsMigration,
   futureProofing,
@@ -24,6 +24,7 @@ export const caseStudyFiles = [
   dataVisualisation,
 ];
 
+// Control the order of blogs below
 export const blogPostFiles = [
   accessibilityBlog,
 ];
