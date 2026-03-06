@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sun, Moon } from "lucide-react";
 import { siteFile, parseFrontmatter } from "@/lib/markdown";
 
 const { frontmatter } = parseFrontmatter(siteFile);
@@ -11,9 +9,6 @@ const links = navLabels.map((label, i) => ({ label, href: navHrefs[i] || "#" }))
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
     <nav
@@ -35,24 +30,8 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li>
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-md text-foreground/80 hover:text-primary transition-colors"
-              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-            >
-              {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-          </li>
         </ul>
-        <div className="md:hidden flex items-center gap-1">
-          <button
-            onClick={toggleTheme}
-            className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-foreground/80 hover:text-primary transition-colors"
-            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-          >
-            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-          </button>
+        <div className="md:hidden">
           <button
             onClick={() => setOpen(!open)}
             className="text-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
