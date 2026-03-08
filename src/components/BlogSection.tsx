@@ -8,7 +8,7 @@ const { frontmatter } = parseFrontmatter(blogFile);
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-10 md:py-14 bg-plum/[0.06] relative overflow-hidden" aria-label="Blog posts">
+    <section id="blog" className="py-10 md:py-14 relative overflow-hidden" aria-label="Blog posts">
       <div className="container relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
