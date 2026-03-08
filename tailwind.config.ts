@@ -15,7 +15,7 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: [
-  				'DM Sans',
+  				'Roboto',
   				'ui-sans-serif',
   				'system-ui',
   				'-apple-system',
@@ -26,11 +26,14 @@ export default {
   				'Noto Sans',
   				'sans-serif'
   			],
-  			display: [
-  				'Space Grotesk',
-  				'ui-sans-serif',
-  				'system-ui',
-  				'sans-serif'
+  			serif: [
+  				'Libre Caslon Text',
+  				'ui-serif',
+  				'Georgia',
+  				'Cambria',
+  				'Times New Roman',
+  				'Times',
+  				'serif'
   			],
   			mono: [
   				'Roboto Mono',
@@ -46,6 +49,8 @@ export default {
   		},
   		colors: {
   			'burnt-orange': 'hsl(var(--burnt-orange))',
+  			'dark-green': 'hsl(var(--dark-green))',
+  			forest: 'hsl(var(--forest))',
   			'warm-cream': 'hsl(var(--warm-cream))',
   			'warm-sand': 'hsl(var(--warm-sand))',
   			border: 'hsl(var(--border))',

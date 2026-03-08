@@ -20,7 +20,7 @@ const Index = () => {
         <BlogSection />
         <ContactSection />
       </main>
-      <footer className="py-6 text-center text-[10px] text-muted-foreground tracking-[0.3em] uppercase font-mono border-t border-border" role="contentinfo">
+      <footer className="py-10 text-center text-xs text-muted-foreground tracking-wide border-t border-border" role="contentinfo">
         <div className="container">
           {frontmatter.footerText}
         </div>

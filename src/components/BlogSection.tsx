@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import { blogFile, parseFrontmatter } from "@/lib/markdown";
 
@@ -7,52 +8,58 @@ const { frontmatter } = parseFrontmatter(blogFile);
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-24 md:py-32 relative overflow-hidden" aria-label="Blog posts">
+    <section id="blog" className="py-10 md:py-14 relative overflow-hidden" aria-label="Blog posts">
       <div className="container relative">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-10"
         >
-          <p className="text-xs font-mono uppercase tracking-[0.3em] text-muted-foreground mb-4">Writing</p>
-          <h2 className="text-5xl md:text-7xl text-foreground tracking-[-0.03em] font-display">
+          <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
             {frontmatter.heading}
           </h2>
+          <div className="flex gap-1 mt-5" aria-hidden="true">
+            <div className="h-[3px] w-8 bg-primary rounded-full" />
+            <div className="h-[3px] w-3 bg-secondary rounded-full" />
+            <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
+          </div>
         </motion.div>
 
-        <div className="space-y-0">
+        <ul className="space-y-4 list-none">
           {blogPosts.map((post, i) => (
-            <motion.div
+            <motion.li
               key={post.slug}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              className="list-none"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
+              transition={{ duration: 0.4, delay: i * 0.08 }}
             >
               <Link
                 to={`/blog/${post.slug}`}
                 aria-label={post.title}
-                className="group block py-10 border-t border-border last:border-b transition-all"
+                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all"
               >
-                <div className="grid md:grid-cols-12 gap-4 items-baseline">
-                  <span className="md:col-span-1 text-xs font-mono text-muted-foreground">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div className="md:col-span-8">
-                    <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:translate-x-3 transition-transform font-display tracking-tight">
+                <div className="flex items-center justify-between gap-4">
+                  <div className="min-w-0">
+                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
                       {post.title}
+                      <ArrowUpRight
+                        className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all flex-shrink-0"
+                        aria-hidden="true"
+                      />
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed mt-3 text-sm max-w-xl">
+                    <p className="text-muted-foreground leading-relaxed mt-1 text-sm">
                       {post.intro}
                     </p>
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </motion.li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

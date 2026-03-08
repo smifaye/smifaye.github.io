@@ -13,8 +13,8 @@ const BlogPost = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <main className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4 font-display">Post not found</h1>
-          <Link to="/blog" className="text-primary font-bold uppercase tracking-wider text-xs font-mono hover:underline">
+          <h1 className="text-2xl font-bold text-foreground mb-4">Post not found</h1>
+          <Link to="/blog" className="text-primary underline underline-offset-2 hover:bg-primary/10 transition-colors">
             Back to blog
           </Link>
         </main>
@@ -24,59 +24,54 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <a href="#blog-post-content" className="skip-link">Skip to content</a>
+      <a href="#blog-post-content" className="skip-link">
+        Skip to content
+      </a>
       <Navbar />
       <main id="blog-post-content">
-        {/* Full-width header band */}
-        <div className="bg-foreground pt-28 pb-16">
-          <div className="container max-w-3xl">
+        <article className="pt-24 pb-20">
+          <div className="container max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.5 }}
             >
               <Link
                 to="/#blog"
-                className="inline-flex items-center gap-2 text-xs text-background/70 font-mono uppercase tracking-[0.15em] mb-8 hover:text-background transition-colors no-underline"
+                className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
               >
-                <ArrowLeft className="w-3 h-3" aria-hidden="true" />
-                Back to blog
+                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to blog</span>
               </Link>
-              <h1 className="text-4xl md:text-6xl font-bold text-background font-display tracking-[-0.03em] leading-[0.95]">
+
+              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
                 {post.title}
               </h1>
+
               {post.externalUrl && (
                 <a
                   href={post.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-xs text-background/70 font-mono uppercase tracking-[0.15em] mt-6 hover:text-background transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 transition-colors mb-10"
                 >
                   Read original post
                   <ExternalLink className="w-3 h-3" aria-hidden="true" />
                   <span className="sr-only"> (opens in new tab)</span>
                 </a>
               )}
-            </motion.div>
-          </div>
-        </div>
 
-        <article className="pb-20">
-          <div className="container max-w-3xl pt-12">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
-            >
-              <MarkdownRenderer content={post.content} />
+              <div className="border-t border-border pt-10">
+                <MarkdownRenderer content={post.content} />
+              </div>
 
-              <div className="border-t border-border pt-8 mt-16">
+              <div className="border-t border-border pt-8 mt-12">
                 <Link
                   to="/#blog"
-                  className="inline-flex items-center gap-2 text-xs text-primary font-mono uppercase tracking-[0.15em] hover:underline no-underline"
+                  className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
                 >
-                  <ArrowLeft className="w-3 h-3" aria-hidden="true" />
-                  Back to blog
+                  <ArrowLeft className="w-4 h-4" aria-hidden="true" />
+                  <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to blog</span>
                 </Link>
               </div>
             </motion.div>
