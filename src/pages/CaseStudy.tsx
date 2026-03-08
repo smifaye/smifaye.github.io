@@ -48,16 +48,16 @@ const CaseStudyPage = () => {
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
                 {study.title}
               </h1>
-              <div className="flex gap-2 flex-wrap mb-10" aria-label="Project tags">
+              <ul className="flex gap-2 flex-wrap mb-10 list-none" aria-label="Project tags" role="list">
                 {study.tags.map((tag) => (
-                  <span
+                  <li
                     key={tag}
                     className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium"
                   >
                     {tag}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
               <div className="border-t border-border pt-10">
                 <MarkdownRenderer content={study.content} />
