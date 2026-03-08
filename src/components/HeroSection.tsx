@@ -9,7 +9,7 @@ const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
-  accent: i % 2 === 0 ? "bg-primary" : "bg-secondary",
+  accent: ["bg-primary", "bg-teal", "bg-plum", "bg-amber"][i],
   icon: skillIcons[i],
 }));
 
