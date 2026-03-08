@@ -16,12 +16,6 @@ const skills = [1, 2, 3, 4].map((n, i) => ({
 const HeroSection = () => {
   return (
     <section id="about" className="relative min-h-[75vh] flex items-center overflow-hidden" aria-label="Introduction">
-      {/* Subtle grain texture */}
-      <div className="absolute inset-0 z-0 opacity-[0.03]" aria-hidden="true"
-      style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
-
-      {/* Soft warm gradient */}
-      <div className="absolute top-0 right-0 w-[60%] h-[70%] bg-gradient-to-bl from-primary/[0.07] via-teal/[0.04] to-transparent rounded-bl-full" aria-hidden="true" />
 
       <div className="container relative z-10 py-20 md:py-24">
         <motion.div
