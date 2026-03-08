@@ -55,8 +55,8 @@ const HeroSection = () => {
               </h2>
               <div className="flex gap-1 mb-6" aria-hidden="true">
                 <div className="h-[3px] w-8 bg-primary rounded-full" />
-                <div className="h-[3px] w-3 bg-secondary rounded-full" />
-                <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
+                <div className="h-[3px] w-3 bg-teal rounded-full" />
+                <div className="h-[3px] w-3 bg-plum/50 rounded-full" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (
