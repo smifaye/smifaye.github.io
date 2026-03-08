@@ -41,7 +41,7 @@ const WorkSection = () => {
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block bg-background p-6 md:p-8 border-2 border-teal/15 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all"
+                className="group block bg-background rounded-lg p-6 md:p-8 border-2 border-teal/15 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all"
                 aria-label={`${project.title} — ${project.client}`}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
