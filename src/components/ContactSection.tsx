@@ -18,10 +18,11 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
             {frontmatter.heading}
           </h2>
-          <div className="flex gap-1 mb-6" aria-hidden="true">
-            <div className="h-[3px] w-8 bg-primary rounded-full" />
-            <div className="h-[3px] w-3 bg-teal rounded-full" />
-            <div className="h-[3px] w-3 bg-plum/50 rounded-full" />
+          <div className="flex gap-1.5 mb-6" aria-hidden="true">
+            <div className="h-1 w-10 bg-amber rounded-full" />
+            <div className="h-1 w-5 bg-primary rounded-full" />
+            <div className="h-1 w-3 bg-teal rounded-full" />
+            <div className="h-1 w-2 bg-plum rounded-full" />
           </div>
           <p className="text-muted-foreground leading-relaxed mb-8">
             {content}
@@ -29,9 +30,9 @@ const ContactSection = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={`mailto:${frontmatter.email}`}
-              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-amber/40 hover:shadow-md hover:shadow-amber/10 transition-all flex-1"
+              className="group flex items-center gap-4 bg-card rounded-xl p-5 border-2 border-amber/20 hover:border-amber/50 hover:shadow-lg hover:shadow-amber/15 transition-all flex-1"
             >
-              <span className="w-10 h-10 rounded-full bg-amber/15 flex items-center justify-center flex-shrink-0 group-hover:bg-amber/25 transition-colors">
+              <span className="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center flex-shrink-0 group-hover:bg-amber/30 transition-colors">
                 <Mail className="w-4 h-4 text-amber" aria-hidden="true" />
               </span>
               <div>
@@ -43,9 +44,9 @@ const ContactSection = () => {
               href={frontmatter.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-border/60 hover:border-teal/40 hover:shadow-md hover:shadow-teal/10 transition-all flex-1"
+              className="group flex items-center gap-4 bg-card rounded-xl p-5 border-2 border-teal/20 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all flex-1"
             >
-              <span className="w-10 h-10 rounded-full bg-teal/15 flex items-center justify-center flex-shrink-0 group-hover:bg-teal/25 transition-colors">
+              <span className="w-10 h-10 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-teal/30 transition-colors">
                 <Linkedin className="w-4 h-4 text-teal" aria-hidden="true" />
               </span>
               <div>

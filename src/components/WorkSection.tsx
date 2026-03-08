@@ -8,7 +8,7 @@ const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
-    <section id="work" className="py-10 md:py-14 bg-teal/[0.04] relative overflow-hidden" aria-label="Selected work">
+    <section id="work" className="py-10 md:py-14 bg-teal/[0.08] relative overflow-hidden" aria-label="Selected work">
 
       <div className="container relative">
         <motion.div
@@ -21,10 +21,11 @@ const WorkSection = () => {
           <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
             {frontmatter.heading}
           </h2>
-          <div className="flex gap-1 mt-5" aria-hidden="true">
-            <div className="h-[3px] w-8 bg-primary rounded-full" />
-            <div className="h-[3px] w-3 bg-teal rounded-full" />
-            <div className="h-[3px] w-3 bg-plum/50 rounded-full" />
+          <div className="flex gap-1.5 mt-5" aria-hidden="true">
+            <div className="h-1 w-10 bg-teal rounded-full" />
+            <div className="h-1 w-5 bg-primary rounded-full" />
+            <div className="h-1 w-3 bg-plum rounded-full" />
+            <div className="h-1 w-2 bg-amber rounded-full" />
           </div>
         </motion.div>
 
@@ -40,7 +41,7 @@ const WorkSection = () => {
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-teal/40 hover:shadow-md hover:shadow-teal/10 transition-all"
+                className="group block bg-background rounded-xl p-6 md:p-8 border-2 border-teal/15 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all"
                 aria-label={`${project.title} — ${project.client}`}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
@@ -51,7 +52,7 @@ const WorkSection = () => {
                         {project.client}
                       </p>
                     </div>
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2 ml-5">
+                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-teal transition-colors flex items-center gap-2 ml-5">
                       {project.title}
                       <ArrowUpRight
                         className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"

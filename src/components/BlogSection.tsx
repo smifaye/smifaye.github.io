@@ -8,7 +8,7 @@ const { frontmatter } = parseFrontmatter(blogFile);
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-10 md:py-14 bg-plum/[0.03] relative overflow-hidden" aria-label="Blog posts">
+    <section id="blog" className="py-10 md:py-14 bg-plum/[0.06] relative overflow-hidden" aria-label="Blog posts">
       <div className="container relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,10 +20,11 @@ const BlogSection = () => {
           <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
             {frontmatter.heading}
           </h2>
-          <div className="flex gap-1 mt-5" aria-hidden="true">
-            <div className="h-[3px] w-8 bg-primary rounded-full" />
-            <div className="h-[3px] w-3 bg-teal rounded-full" />
-            <div className="h-[3px] w-3 bg-plum/50 rounded-full" />
+          <div className="flex gap-1.5 mt-5" aria-hidden="true">
+            <div className="h-1 w-10 bg-plum rounded-full" />
+            <div className="h-1 w-5 bg-teal rounded-full" />
+            <div className="h-1 w-3 bg-primary rounded-full" />
+            <div className="h-1 w-2 bg-amber rounded-full" />
           </div>
         </motion.div>
 
@@ -40,11 +41,11 @@ const BlogSection = () => {
               <Link
                 to={`/blog/${post.slug}`}
                 aria-label={post.title}
-                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-plum/40 hover:shadow-md hover:shadow-plum/10 transition-all"
+                className="group block bg-background rounded-xl p-6 md:p-8 border-2 border-plum/15 hover:border-plum/50 hover:shadow-lg hover:shadow-plum/15 transition-all"
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0">
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
+                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-plum transition-colors flex items-center gap-2">
                       {post.title}
                       <ArrowUpRight
                         className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all flex-shrink-0"
