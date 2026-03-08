@@ -9,34 +9,31 @@ const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
-  accent: i % 2 === 0 ? "bg-primary" : "bg-secondary",
   icon: skillIcons[i],
 }));
 
 const HeroSection = () => {
   return (
-    <section id="about" className="relative min-h-[75vh] flex items-center overflow-hidden" aria-label="Introduction">
-      {/* Subtle grain texture */}
-      <div className="absolute inset-0 z-0 opacity-[0.03]" aria-hidden="true"
-      style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
+    <section id="about" className="relative min-h-[80vh] flex items-center overflow-hidden" aria-label="Introduction">
+      {/* Bold geometric accent */}
+      <div className="absolute top-0 right-0 w-[40%] h-full bg-primary/5" aria-hidden="true" />
+      <div className="absolute bottom-0 right-[38%] w-[4px] h-[40%] bg-primary" aria-hidden="true" />
 
-      {/* Soft warm gradient */}
-      <div className="absolute top-0 right-0 w-[60%] h-[70%] bg-gradient-to-bl from-primary/[0.04] via-transparent to-transparent rounded-bl-full" aria-hidden="true" />
-
-      <div className="container relative z-10 py-20 md:py-24">
+      <div className="container relative z-10 py-24 md:py-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: "easeOut" }}>
+          transition={{ duration: 0.7, ease: "easeOut" }}>
 
           <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-xs uppercase tracking-[0.2em] text-secondary mb-5 font-semibold">
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            className="text-xs uppercase tracking-[0.3em] text-primary font-bold mb-6 font-display">
             {frontmatter.role}
           </motion.p>
-          <h1 className="text-5xl md:text-7xl leading-[1.05] mb-10 text-foreground font-bold tracking-tight">
+
+          <h1 className="text-6xl md:text-8xl lg:text-9xl leading-[0.95] mb-12 text-foreground font-bold tracking-tighter font-display">
             Hello, I'm{" "}
             <span className="text-primary">{frontmatter.name?.split(' ')[0]}</span>
             <br />
@@ -44,20 +41,16 @@ const HeroSection = () => {
           </h1>
 
           {/* About section */}
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-10">
+          <div className="grid md:grid-cols-2 gap-16 md:gap-20 items-start mb-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}>
+              transition={{ duration: 0.5, delay: 0.3 }}>
 
-              <h2 className="text-3xl md:text-4xl mb-5 text-foreground tracking-tight">
+              <h2 className="text-2xl md:text-3xl mb-6 text-foreground tracking-tight font-display">
                 {frontmatter.aboutHeading}
               </h2>
-              <div className="flex gap-1 mb-6" aria-hidden="true">
-                <div className="h-[3px] w-8 bg-primary rounded-full" />
-                <div className="h-[3px] w-3 bg-secondary rounded-full" />
-                <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
-              </div>
+              <div className="w-12 h-[3px] bg-primary mb-6" aria-hidden="true" />
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
@@ -67,19 +60,18 @@ const HeroSection = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.45 }}
-              className="grid grid-cols-2 gap-3"
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="grid grid-cols-2 gap-0"
               role="list"
               aria-label="Skills">
 
-              {skills.map((skill) =>
+              {skills.map((skill, i) =>
               <div
                 key={skill.label}
                 role="listitem"
-                className="bg-card rounded-xl p-5 border border-border/60 relative overflow-hidden group cursor-default">
-
-                  <skill.icon className="w-5 h-5 text-muted-foreground mb-2" aria-hidden="true" />
-                  <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
+                className={`p-6 border border-foreground/10 relative group cursor-default ${i < 2 ? 'border-b-0' : ''} ${i % 2 === 0 ? 'border-r-0' : ''}`}>
+                  <skill.icon className="w-5 h-5 text-primary mb-3" aria-hidden="true" />
+                  <h3 className="text-sm font-bold text-foreground mb-1 font-display uppercase tracking-wide">{skill.label}</h3>
                   <p className="text-xs text-muted-foreground leading-snug">{skill.desc}</p>
                 </div>
               )}
@@ -90,28 +82,25 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
             className="flex gap-4">
 
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
-
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background font-display font-bold text-sm uppercase tracking-wider hover:bg-primary transition-colors">
               {frontmatter.ctaPrimary}
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
             <a
               href="#contact"
-              className="inline-block px-8 py-3.5 rounded-full border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
-
+              className="inline-block px-8 py-4 border-2 border-foreground text-foreground font-display font-bold text-sm uppercase tracking-wider hover:bg-foreground hover:text-background transition-colors">
               {frontmatter.ctaSecondary}
             </a>
           </motion.div>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10" aria-hidden="true" />
     </section>
   );
 };
