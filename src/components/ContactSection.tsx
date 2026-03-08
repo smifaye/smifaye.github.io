@@ -30,7 +30,7 @@ const ContactSection = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={`mailto:${frontmatter.email}`}
-              className="group flex items-center gap-4 bg-card rounded-xl p-5 border-2 border-amber/20 hover:border-amber/50 hover:shadow-lg hover:shadow-amber/15 transition-all flex-1"
+              className="group flex items-center gap-4 bg-card p-5 border-2 border-amber/20 hover:border-amber/50 hover:shadow-lg hover:shadow-amber/15 transition-all flex-1"
             >
               <span className="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center flex-shrink-0 group-hover:bg-amber/30 transition-colors">
                 <Mail className="w-4 h-4 text-amber" aria-hidden="true" />
