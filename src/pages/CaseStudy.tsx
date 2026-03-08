@@ -14,7 +14,7 @@ const CaseStudyPage = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <main className="text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4 font-display">Project not found</h1>
-          <Link to="/" className="text-primary font-bold uppercase tracking-wider text-sm font-display hover:underline">
+          <Link to="/" className="text-primary font-bold uppercase tracking-wider text-xs font-mono hover:underline">
             Back to home
           </Link>
         </main>
@@ -24,13 +24,12 @@ const CaseStudyPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <a href="#case-study-content" className="skip-link">
-        Skip to content
-      </a>
+      <a href="#case-study-content" className="skip-link">Skip to content</a>
       <Navbar />
       <main id="case-study-content">
-        <article className="pt-24 pb-20">
-          <div className="container max-w-2xl">
+        {/* Full-width header band */}
+        <div className="bg-primary pt-28 pb-16">
+          <div className="container max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -38,38 +37,42 @@ const CaseStudyPage = () => {
             >
               <Link
                 to="/#work"
-                className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display transition-colors mb-10 no-underline hover:underline"
+                className="inline-flex items-center gap-2 text-xs text-primary-foreground/70 font-mono uppercase tracking-[0.15em] mb-8 hover:text-primary-foreground transition-colors no-underline"
               >
-                <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                Back to all projects
+                <ArrowLeft className="w-3 h-3" aria-hidden="true" />
+                Back to projects
               </Link>
-
-              <p className="text-xs text-muted-foreground uppercase tracking-[0.2em] font-bold font-display mb-3">{study.client}</p>
-              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-display tracking-tighter">
+              <p className="text-xs text-primary-foreground/60 uppercase tracking-[0.2em] font-mono mb-3">{study.client}</p>
+              <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground font-display tracking-[-0.03em] leading-[0.95]">
                 {study.title}
               </h1>
-              <div className="flex gap-2 flex-wrap mb-10" aria-label="Project tags">
+              <div className="flex gap-2 flex-wrap mt-6" aria-label="Project tags">
                 {study.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs px-3 py-1 border-2 border-foreground/20 text-foreground font-bold uppercase tracking-wider font-display"
-                  >
+                  <span key={tag} className="text-[10px] px-2 py-1 border border-primary-foreground/30 text-primary-foreground/70 uppercase tracking-[0.1em] font-mono">
                     {tag}
                   </span>
                 ))}
               </div>
+            </motion.div>
+          </div>
+        </div>
 
-              <div className="border-t-2 border-foreground pt-10">
-                <MarkdownRenderer content={study.content} />
-              </div>
+        <article className="pb-20">
+          <div className="container max-w-3xl pt-12">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+            >
+              <MarkdownRenderer content={study.content} />
 
-              <div className="border-t-2 border-foreground pt-8 mt-12">
+              <div className="border-t border-border pt-8 mt-16">
                 <Link
                   to="/#work"
-                  className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display transition-colors no-underline hover:underline"
+                  className="inline-flex items-center gap-2 text-xs text-primary font-mono uppercase tracking-[0.15em] hover:underline no-underline"
                 >
-                  <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                  Back to all projects
+                  <ArrowLeft className="w-3 h-3" aria-hidden="true" />
+                  Back to projects
                 </Link>
               </div>
             </motion.div>

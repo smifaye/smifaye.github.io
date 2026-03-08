@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 import { workFile, parseFrontmatter } from "@/lib/markdown";
 
@@ -8,67 +7,67 @@ const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
-    <section id="work" className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden" aria-label="Selected work">
+    <section id="work" className="py-24 md:py-32 bg-primary text-primary-foreground relative overflow-hidden" aria-label="Selected work">
+      {/* Large decorative number */}
+      <div className="absolute -right-8 top-8 text-[25vw] font-display font-bold text-primary-foreground/[0.08] leading-none pointer-events-none select-none" aria-hidden="true">
+        W
+      </div>
+
       <div className="container relative">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-12"
+          transition={{ duration: 0.6 }}
+          className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-background tracking-tighter font-display">
+          <p className="text-xs font-mono uppercase tracking-[0.3em] text-primary-foreground/50 mb-4">Selected projects</p>
+          <h2 className="text-5xl md:text-7xl text-primary-foreground tracking-[-0.03em] font-display">
             {frontmatter.heading}
           </h2>
-          <div className="w-12 h-[3px] bg-primary mt-6" aria-hidden="true" />
         </motion.div>
 
-        <ul className="space-y-0 list-none border-t border-background/20">
+        <div className="space-y-0">
           {caseStudies.map((project, i) => (
-            <motion.li
+            <motion.div
               key={project.slug}
-              className="list-none"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.06 }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block py-8 border-b border-background/20 transition-colors hover:pl-4"
+                className="group block py-10 border-t border-primary-foreground/20 last:border-b transition-all"
                 aria-label={`${project.title} — ${project.client}`}
               >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
-                  <div className="flex-1 min-w-0">
-                    <p className="text-xs uppercase tracking-[0.2em] text-background/50 font-bold font-display mb-2">
+                <div className="grid md:grid-cols-12 gap-4 items-baseline">
+                  <span className="md:col-span-1 text-xs font-mono text-primary-foreground/40">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="md:col-span-7">
+                    <p className="text-xs uppercase tracking-[0.2em] text-primary-foreground/50 font-display mb-2">
                       {project.client}
                     </p>
-                    <h3 className="text-xl md:text-2xl font-bold text-background group-hover:text-primary transition-colors flex items-center gap-3 font-display tracking-tight">
+                    <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground group-hover:translate-x-3 transition-transform font-display tracking-tight">
                       {project.title}
-                      <ArrowUpRight
-                        className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity"
-                        aria-hidden="true"
-                      />
                     </h3>
-                    <p className="text-background/60 leading-relaxed mt-2 max-w-lg text-sm">
-                      {project.summary}
-                    </p>
                   </div>
-                  <ul className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 list-none" aria-label="Tags" role="list">
+                  <div className="md:col-span-4 flex gap-2 flex-wrap md:justify-end">
                     {project.tags.map((tag) => (
-                      <li
+                      <span
                         key={tag}
-                        className="text-xs px-3 py-1 border border-background/30 text-background/70 font-medium uppercase tracking-wider font-display"
+                        className="text-[10px] px-2 py-1 border border-primary-foreground/30 text-primary-foreground/60 uppercase tracking-[0.1em] font-mono"
                       >
                         {tag}
-                      </li>
+                      </span>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               </Link>
-            </motion.li>
+            </motion.div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

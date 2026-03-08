@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import { blogFile, parseFrontmatter } from "@/lib/markdown";
 
@@ -8,54 +7,52 @@ const { frontmatter } = parseFrontmatter(blogFile);
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-16 md:py-24 relative overflow-hidden" aria-label="Blog posts">
+    <section id="blog" className="py-24 md:py-32 relative overflow-hidden" aria-label="Blog posts">
       <div className="container relative">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-12"
+          transition={{ duration: 0.6 }}
+          className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-foreground tracking-tighter font-display">
+          <p className="text-xs font-mono uppercase tracking-[0.3em] text-muted-foreground mb-4">Writing</p>
+          <h2 className="text-5xl md:text-7xl text-foreground tracking-[-0.03em] font-display">
             {frontmatter.heading}
           </h2>
-          <div className="w-12 h-[3px] bg-primary mt-6" aria-hidden="true" />
         </motion.div>
 
-        <ul className="space-y-0 list-none border-t border-foreground/10">
+        <div className="space-y-0">
           {blogPosts.map((post, i) => (
-            <motion.li
+            <motion.div
               key={post.slug}
-              className="list-none"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: i * 0.06 }}
+              transition={{ duration: 0.4, delay: i * 0.05 }}
             >
               <Link
                 to={`/blog/${post.slug}`}
                 aria-label={post.title}
-                className="group block py-8 border-b border-foreground/10 transition-all hover:pl-4"
+                className="group block py-10 border-t border-border last:border-b transition-all"
               >
-                <div className="flex items-center justify-between gap-4">
-                  <div className="min-w-0">
-                    <h3 className="text-xl md:text-2xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-3 font-display tracking-tight">
+                <div className="grid md:grid-cols-12 gap-4 items-baseline">
+                  <span className="md:col-span-1 text-xs font-mono text-muted-foreground">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="md:col-span-8">
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:translate-x-3 transition-transform font-display tracking-tight">
                       {post.title}
-                      <ArrowUpRight
-                        className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0"
-                        aria-hidden="true"
-                      />
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed mt-2 text-sm">
+                    <p className="text-muted-foreground leading-relaxed mt-3 text-sm max-w-xl">
                       {post.intro}
                     </p>
                   </div>
                 </div>
               </Link>
-            </motion.li>
+            </motion.div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
