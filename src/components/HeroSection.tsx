@@ -90,7 +90,7 @@ const HeroSection = () => {
 
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
+              className="group inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
 
               {frontmatter.ctaPrimary}
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
