@@ -52,7 +52,7 @@ const CaseStudyPage = () => {
                 {study.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="text-xs px-3 py-1 bg-primary/10 text-primary font-medium"
+                    className="text-xs px-3 py-1 rounded-md bg-primary/10 text-primary font-medium"
                   >
                     {tag}
                   </li>

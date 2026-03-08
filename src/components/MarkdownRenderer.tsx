@@ -49,7 +49,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
           <img
             src={imgMatch[2]}
             alt={imgMatch[1]}
-            className="border border-border w-full"
+            className="rounded-lg border border-border w-full"
             loading="lazy"
           />
           {caption && (

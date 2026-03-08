@@ -22,10 +22,10 @@ const WorkSection = () => {
             {frontmatter.heading}
           </h2>
           <div className="flex gap-1.5 mt-5" aria-hidden="true">
-            <div className="h-1 w-10 bg-teal" />
-            <div className="h-1 w-5 bg-primary" />
-            <div className="h-1 w-3 bg-plum" />
-            <div className="h-1 w-2 bg-amber" />
+            <div className="h-1 w-10 bg-teal rounded-full" />
+            <div className="h-1 w-5 bg-primary rounded-full" />
+            <div className="h-1 w-3 bg-plum rounded-full" />
+            <div className="h-1 w-2 bg-amber rounded-full" />
           </div>
         </motion.div>
 
@@ -41,13 +41,13 @@ const WorkSection = () => {
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block bg-background p-6 md:p-8 border-2 border-teal/15 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all"
+                className="group block bg-background rounded-lg p-6 md:p-8 border-2 border-teal/15 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all"
                 aria-label={`${project.title} — ${project.client}`}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-2 h-2 bg-teal/60 group-hover:bg-teal transition-colors" aria-hidden="true" />
+                      <div className="w-2 h-2 rounded-full bg-teal/60 group-hover:bg-teal transition-colors" aria-hidden="true" />
                       <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
                         {project.client}
                       </p>
@@ -74,7 +74,7 @@ const WorkSection = () => {
                       return (
                         <li
                           key={tag}
-                          className={`text-xs px-3 py-1 font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
+                          className={`text-xs px-3 py-1 rounded-md font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
                         >
                           {tag}
                         </li>

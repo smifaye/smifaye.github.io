@@ -21,10 +21,10 @@ const BlogSection = () => {
             {frontmatter.heading}
           </h2>
           <div className="flex gap-1.5 mt-5" aria-hidden="true">
-            <div className="h-1 w-10 bg-plum" />
-            <div className="h-1 w-5 bg-teal" />
-            <div className="h-1 w-3 bg-primary" />
-            <div className="h-1 w-2 bg-amber" />
+            <div className="h-1 w-10 bg-plum rounded-full" />
+            <div className="h-1 w-5 bg-teal rounded-full" />
+            <div className="h-1 w-3 bg-primary rounded-full" />
+            <div className="h-1 w-2 bg-amber rounded-full" />
           </div>
         </motion.div>
 
@@ -41,7 +41,7 @@ const BlogSection = () => {
               <Link
                 to={`/blog/${post.slug}`}
                 aria-label={post.title}
-                className="group block bg-background p-6 md:p-8 border-2 border-plum/15 hover:border-plum/50 hover:shadow-lg hover:shadow-plum/15 transition-all"
+                className="group block bg-background rounded-lg p-6 md:p-8 border-2 border-plum/15 hover:border-plum/50 hover:shadow-lg hover:shadow-plum/15 transition-all"
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0">
