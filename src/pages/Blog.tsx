@@ -42,7 +42,7 @@ const Blog = () => {
                   <li key={post.slug} className="list-none">
                     <Link
                       to={`/blog/${post.slug}`}
-                      className="block bg-card rounded-2xl p-6 md:p-8 border border-border hover:border-primary/30 transition-colors group"
+                      className="block bg-card p-6 md:p-8 border border-border hover:border-primary/30 transition-colors group"
                     >
                       <h2 className="text-lg md:text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                         {post.title}
