@@ -63,14 +63,22 @@ const WorkSection = () => {
                     </p>
                   </div>
                   <ul className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 ml-5 md:ml-0 list-none" aria-label="Tags" role="list">
-                    {project.tags.map((tag) => (
-                      <li
-                        key={tag}
-                        className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium transition-colors"
-                      >
-                        {tag}
-                      </li>
-                    ))}
+                    {project.tags.map((tag, tagIndex) => {
+                      const tagColors = [
+                        "bg-primary/10 text-primary",
+                        "bg-teal/10 text-teal",
+                        "bg-plum/10 text-plum",
+                        "bg-amber/15 text-amber",
+                      ];
+                      return (
+                        <li
+                          key={tag}
+                          className={`text-xs px-3 py-1 rounded-full font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
+                        >
+                          {tag}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </Link>
