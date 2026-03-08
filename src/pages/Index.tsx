@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import WorkSection from "@/components/WorkSection";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
+import SectionDivider from "@/components/SectionDivider";
 import { siteFile, parseFrontmatter } from "@/lib/markdown";
 
 const { frontmatter } = parseFrontmatter(siteFile);
@@ -16,8 +17,11 @@ const Index = () => {
       <Navbar />
       <main id="main-content">
         <HeroSection />
+        <SectionDivider />
         <WorkSection />
+        <SectionDivider />
         <BlogSection />
+        <SectionDivider />
         <ContactSection />
       </main>
       <footer className="py-10 text-center text-xs text-muted-foreground tracking-wide border-t border-border" role="contentinfo">
