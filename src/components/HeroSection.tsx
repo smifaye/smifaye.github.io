@@ -48,10 +48,10 @@ const HeroSection = () => {
                 {frontmatter.aboutHeading}
               </h2>
               <div className="flex gap-1.5 mb-6" aria-hidden="true">
-                <div className="h-1 w-10 bg-primary" />
-                <div className="h-1 w-5 bg-teal" />
-                <div className="h-1 w-3 bg-plum" />
-                <div className="h-1 w-2 bg-amber" />
+                <div className="h-1 w-10 bg-primary rounded-full" />
+                <div className="h-1 w-5 bg-teal rounded-full" />
+                <div className="h-1 w-3 bg-plum rounded-full" />
+                <div className="h-1 w-2 bg-amber rounded-full" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (
