@@ -46,7 +46,7 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="group flex items-center gap-4 bg-card p-5 border-2 border-teal/20 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all flex-1"
             >
-              <span className="w-10 h-10 rounded-full bg-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-teal/30 transition-colors">
+              <span className="w-10 h-10 bg-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-teal/30 transition-colors">
                 <Linkedin className="w-4 h-4 text-teal" aria-hidden="true" />
               </span>
               <div>

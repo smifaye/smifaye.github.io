@@ -74,7 +74,7 @@ const WorkSection = () => {
                       return (
                         <li
                           key={tag}
-                          className={`text-xs px-3 py-1 rounded-full font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
+                          className={`text-xs px-3 py-1 font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
                         >
                           {tag}
                         </li>

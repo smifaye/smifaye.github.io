@@ -99,7 +99,7 @@ const HeroSection = () => {
             </a>
             <a
               href="#contact"
-              className="inline-block px-8 py-3.5 rounded-full border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
+              className="inline-block px-8 py-3.5 border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
 
               {frontmatter.ctaSecondary}
             </a>
