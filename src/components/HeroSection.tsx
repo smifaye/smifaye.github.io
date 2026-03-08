@@ -48,10 +48,10 @@ const HeroSection = () => {
                 {frontmatter.aboutHeading}
               </h2>
               <div className="flex gap-1.5 mb-6" aria-hidden="true">
-                <div className="h-1 w-10 bg-primary rounded-full" />
-                <div className="h-1 w-5 bg-teal rounded-full" />
-                <div className="h-1 w-3 bg-plum rounded-full" />
-                <div className="h-1 w-2 bg-amber rounded-full" />
+                <div className="h-1 w-10 bg-primary" />
+                <div className="h-1 w-5 bg-teal" />
+                <div className="h-1 w-3 bg-plum" />
+                <div className="h-1 w-2 bg-amber" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (
@@ -71,7 +71,7 @@ const HeroSection = () => {
               <div
                 key={skill.label}
                 role="listitem"
-                className={`bg-card rounded-xl p-5 border border-border/60 relative overflow-hidden group cursor-default border-t-2 ${skill.accent.replace('bg-', 'border-t-')}`}>
+                className={`bg-card p-5 border border-border/60 relative overflow-hidden group cursor-default border-t-2 ${skill.accent.replace('bg-', 'border-t-')}`}>
 
                   <skill.icon className={`w-5 h-5 mb-2 ${["text-primary", "text-teal", "text-plum", "text-amber"][skills.indexOf(skill)] || "text-muted-foreground"}`} aria-hidden="true" />
                   <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
@@ -90,7 +90,7 @@ const HeroSection = () => {
 
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
+              className="group inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
 
               {frontmatter.ctaPrimary}
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -99,7 +99,7 @@ const HeroSection = () => {
             </a>
             <a
               href="#contact"
-              className="inline-block px-8 py-3.5 rounded-full border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
+              className="inline-block px-8 py-3.5 border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
 
               {frontmatter.ctaSecondary}
             </a>
