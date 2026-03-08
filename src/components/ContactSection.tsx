@@ -19,10 +19,10 @@ const ContactSection = () => {
             {frontmatter.heading}
           </h2>
           <div className="flex gap-1.5 mb-6" aria-hidden="true">
-            <div className="h-1 w-10 bg-amber rounded-full" />
-            <div className="h-1 w-5 bg-primary rounded-full" />
-            <div className="h-1 w-3 bg-teal rounded-full" />
-            <div className="h-1 w-2 bg-plum rounded-full" />
+            <div className="h-1 w-10 bg-amber" />
+            <div className="h-1 w-5 bg-primary" />
+            <div className="h-1 w-3 bg-teal" />
+            <div className="h-1 w-2 bg-plum" />
           </div>
           <p className="text-muted-foreground leading-relaxed mb-8">
             {content}
