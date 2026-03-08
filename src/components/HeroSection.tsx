@@ -9,7 +9,7 @@ const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
-  accent: i % 2 === 0 ? "bg-primary" : "bg-secondary",
+  accent: ["bg-primary", "bg-teal", "bg-plum", "bg-amber"][i],
   icon: skillIcons[i],
 }));
 
@@ -55,8 +55,8 @@ const HeroSection = () => {
               </h2>
               <div className="flex gap-1 mb-6" aria-hidden="true">
                 <div className="h-[3px] w-8 bg-primary rounded-full" />
-                <div className="h-[3px] w-3 bg-secondary rounded-full" />
-                <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
+                <div className="h-[3px] w-3 bg-teal rounded-full" />
+                <div className="h-[3px] w-3 bg-plum/50 rounded-full" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (
@@ -76,7 +76,7 @@ const HeroSection = () => {
               <div
                 key={skill.label}
                 role="listitem"
-                className="bg-card rounded-xl p-5 border border-border/60 relative overflow-hidden group cursor-default">
+                className={`bg-card rounded-xl p-5 border border-border/60 relative overflow-hidden group cursor-default border-t-2 ${skill.accent.replace('bg-', 'border-t-')}`}>
 
                   <skill.icon className="w-5 h-5 text-muted-foreground mb-2" aria-hidden="true" />
                   <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
