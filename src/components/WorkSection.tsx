@@ -8,65 +8,57 @@ const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
-    <section id="work" className="py-10 md:py-14 bg-card/40 relative overflow-hidden" aria-label="Selected work">
-
+    <section id="work" className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden" aria-label="Selected work">
       <div className="container relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-10"
+          transition={{ duration: 0.5 }}
+          className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-5xl text-background tracking-tighter font-display">
             {frontmatter.heading}
           </h2>
-          <div className="flex gap-1 mt-5" aria-hidden="true">
-            <div className="h-[3px] w-8 bg-primary rounded-full" />
-            <div className="h-[3px] w-3 bg-secondary rounded-full" />
-            <div className="h-[3px] w-3 bg-primary/30 rounded-full" />
-          </div>
+          <div className="w-12 h-[3px] bg-primary mt-6" aria-hidden="true" />
         </motion.div>
 
-        <ul className="space-y-4 list-none">
+        <ul className="space-y-0 list-none border-t border-background/20">
           {caseStudies.map((project, i) => (
             <motion.li
               key={project.slug}
               className="list-none"
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
+              transition={{ duration: 0.3, delay: i * 0.06 }}
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all"
+                className="group block py-8 border-b border-background/20 transition-colors hover:pl-4"
                 aria-label={`${project.title} — ${project.client}`}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-2 h-2 rounded-full bg-primary/60 group-hover:bg-primary transition-colors" aria-hidden="true" />
-                      <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
-                        {project.client}
-                      </p>
-                    </div>
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2 ml-5">
+                    <p className="text-xs uppercase tracking-[0.2em] text-background/50 font-bold font-display mb-2">
+                      {project.client}
+                    </p>
+                    <h3 className="text-xl md:text-2xl font-bold text-background group-hover:text-primary transition-colors flex items-center gap-3 font-display tracking-tight">
                       {project.title}
                       <ArrowUpRight
-                        className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
+                        className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity"
                         aria-hidden="true"
                       />
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed mt-1 max-w-lg text-sm ml-5">
+                    <p className="text-background/60 leading-relaxed mt-2 max-w-lg text-sm">
                       {project.summary}
                     </p>
                   </div>
-                  <ul className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 ml-5 md:ml-0 list-none" aria-label="Tags" role="list">
+                  <ul className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 list-none" aria-label="Tags" role="list">
                     {project.tags.map((tag) => (
                       <li
                         key={tag}
-                        className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium transition-colors"
+                        className="text-xs px-3 py-1 border border-background/30 text-background/70 font-medium uppercase tracking-wider font-display"
                       >
                         {tag}
                       </li>
