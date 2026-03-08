@@ -47,12 +47,15 @@ export default {
   				'monospace'
   			]
   		},
-  		colors: {
-  			'burnt-orange': 'hsl(var(--burnt-orange))',
-  			'dark-green': 'hsl(var(--dark-green))',
-  			forest: 'hsl(var(--forest))',
-  			'warm-cream': 'hsl(var(--warm-cream))',
-  			'warm-sand': 'hsl(var(--warm-sand))',
+		colors: {
+			'burnt-orange': 'hsl(var(--burnt-orange))',
+			'dark-green': 'hsl(var(--dark-green))',
+			forest: 'hsl(var(--forest))',
+			'warm-cream': 'hsl(var(--warm-cream))',
+			'warm-sand': 'hsl(var(--warm-sand))',
+			teal: 'hsl(var(--teal))',
+			plum: 'hsl(var(--plum))',
+			amber: 'hsl(var(--amber))',
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
