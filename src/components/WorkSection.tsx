@@ -47,7 +47,7 @@ const WorkSection = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-2 h-2 bg-teal/60 group-hover:bg-teal transition-colors" aria-hidden="true" />
+                      <div className="w-2 h-2 rounded-full bg-teal/60 group-hover:bg-teal transition-colors" aria-hidden="true" />
                       <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
                         {project.client}
                       </p>
