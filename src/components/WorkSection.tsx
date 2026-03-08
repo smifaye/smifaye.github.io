@@ -8,7 +8,7 @@ const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
-    <section id="work" className="py-10 md:py-14 bg-card/40 relative overflow-hidden" aria-label="Selected work">
+    <section id="work" className="py-10 md:py-14 bg-teal/[0.04] relative overflow-hidden" aria-label="Selected work">
 
       <div className="container relative">
         <motion.div
@@ -40,13 +40,13 @@ const WorkSection = () => {
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-primary/30 hover:shadow-md hover:shadow-primary/5 transition-all"
+                className="group block bg-background rounded-xl p-6 md:p-8 border border-border hover:border-teal/40 hover:shadow-md hover:shadow-teal/10 transition-all"
                 aria-label={`${project.title} — ${project.client}`}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-2 h-2 rounded-full bg-primary/60 group-hover:bg-primary transition-colors" aria-hidden="true" />
+                      <div className="w-2 h-2 rounded-full bg-teal/60 group-hover:bg-teal transition-colors" aria-hidden="true" />
                       <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
                         {project.client}
                       </p>
@@ -63,14 +63,22 @@ const WorkSection = () => {
                     </p>
                   </div>
                   <ul className="flex gap-2 flex-wrap md:justify-end flex-shrink-0 ml-5 md:ml-0 list-none" aria-label="Tags" role="list">
-                    {project.tags.map((tag) => (
-                      <li
-                        key={tag}
-                        className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium transition-colors"
-                      >
-                        {tag}
-                      </li>
-                    ))}
+                    {project.tags.map((tag, tagIndex) => {
+                      const tagColors = [
+                        "bg-primary/10 text-primary",
+                        "bg-teal/10 text-teal",
+                        "bg-plum/10 text-plum",
+                        "bg-amber/15 text-amber",
+                      ];
+                      return (
+                        <li
+                          key={tag}
+                          className={`text-xs px-3 py-1 rounded-full font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
+                        >
+                          {tag}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </Link>
