@@ -53,10 +53,11 @@ const HeroSection = () => {
               <h2 className="text-3xl md:text-4xl mb-5 text-foreground tracking-tight">
                 {frontmatter.aboutHeading}
               </h2>
-              <div className="flex gap-1 mb-6" aria-hidden="true">
-                <div className="h-[3px] w-8 bg-primary rounded-full" />
-                <div className="h-[3px] w-3 bg-teal rounded-full" />
-                <div className="h-[3px] w-3 bg-plum/50 rounded-full" />
+              <div className="flex gap-1.5 mb-6" aria-hidden="true">
+                <div className="h-1 w-10 bg-primary rounded-full" />
+                <div className="h-1 w-5 bg-teal rounded-full" />
+                <div className="h-1 w-3 bg-plum rounded-full" />
+                <div className="h-1 w-2 bg-amber rounded-full" />
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (

@@ -44,7 +44,7 @@ const BlogSection = () => {
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0">
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
+                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-plum transition-colors flex items-center gap-2">
                       {post.title}
                       <ArrowUpRight
                         className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all flex-shrink-0"

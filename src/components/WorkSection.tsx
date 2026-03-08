@@ -51,7 +51,7 @@ const WorkSection = () => {
                         {project.client}
                       </p>
                     </div>
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-primary transition-colors flex items-center gap-2 ml-5">
+                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-teal transition-colors flex items-center gap-2 ml-5">
                       {project.title}
                       <ArrowUpRight
                         className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
