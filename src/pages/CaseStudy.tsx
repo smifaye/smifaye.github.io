@@ -13,8 +13,8 @@ const CaseStudyPage = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <main className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Project not found</h1>
-          <Link to="/" className="text-primary underline underline-offset-2 hover:bg-primary/10 transition-colors">
+          <h1 className="text-2xl font-bold text-foreground mb-4 font-display">Project not found</h1>
+          <Link to="/" className="text-primary font-bold uppercase tracking-wider text-sm font-display hover:underline">
             Back to home
           </Link>
         </main>
@@ -34,42 +34,42 @@ const CaseStudyPage = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.4 }}
             >
               <Link
                 to="/#work"
-                className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
+                className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display transition-colors mb-10 no-underline hover:underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to all projects</span>
+                Back to all projects
               </Link>
 
-              <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              <p className="text-xs text-muted-foreground uppercase tracking-[0.2em] font-bold font-display mb-3">{study.client}</p>
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-display tracking-tighter">
                 {study.title}
               </h1>
               <div className="flex gap-2 flex-wrap mb-10" aria-label="Project tags">
                 {study.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium"
+                    className="text-xs px-3 py-1 border-2 border-foreground/20 text-foreground font-bold uppercase tracking-wider font-display"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="border-t border-border pt-10">
+              <div className="border-t-2 border-foreground pt-10">
                 <MarkdownRenderer content={study.content} />
               </div>
 
-              <div className="border-t border-border pt-8 mt-12">
+              <div className="border-t-2 border-foreground pt-8 mt-12">
                 <Link
                   to="/#work"
-                  className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
+                  className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display transition-colors no-underline hover:underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                  <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to all projects</span>
+                  Back to all projects
                 </Link>
               </div>
             </motion.div>

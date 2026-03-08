@@ -13,8 +13,8 @@ const BlogPost = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <main className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Post not found</h1>
-          <Link to="/blog" className="text-primary underline underline-offset-2 hover:bg-primary/10 transition-colors">
+          <h1 className="text-2xl font-bold text-foreground mb-4 font-display">Post not found</h1>
+          <Link to="/blog" className="text-primary font-bold uppercase tracking-wider text-sm font-display hover:underline">
             Back to blog
           </Link>
         </main>
@@ -34,17 +34,17 @@ const BlogPost = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.4 }}
             >
               <Link
                 to="/#blog"
-                className="inline-flex items-center gap-2 text-sm text-primary transition-colors mb-8 no-underline"
+                className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display transition-colors mb-10 no-underline hover:underline"
               >
                 <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to blog</span>
+                Back to blog
               </Link>
 
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-display tracking-tighter">
                 {post.title}
               </h1>
 
@@ -53,7 +53,7 @@ const BlogPost = () => {
                   href={post.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-primary underline underline-offset-2 hover:bg-primary/10 transition-colors mb-10"
+                  className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display hover:underline mb-10"
                 >
                   Read original post
                   <ExternalLink className="w-3 h-3" aria-hidden="true" />
@@ -61,17 +61,17 @@ const BlogPost = () => {
                 </a>
               )}
 
-              <div className="border-t border-border pt-10">
+              <div className="border-t-2 border-foreground pt-10">
                 <MarkdownRenderer content={post.content} />
               </div>
 
-              <div className="border-t border-border pt-8 mt-12">
+              <div className="border-t-2 border-foreground pt-8 mt-12">
                 <Link
                   to="/#blog"
-                  className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
+                  className="inline-flex items-center gap-2 text-sm text-primary font-bold uppercase tracking-wider font-display transition-colors no-underline hover:underline"
                 >
                   <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-                  <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to blog</span>
+                  Back to blog
                 </Link>
               </div>
             </motion.div>
