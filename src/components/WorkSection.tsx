@@ -8,7 +8,7 @@ const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
-    <section id="work" className="py-10 md:py-14 bg-card/40 relative overflow-hidden" aria-label="Selected work">
+    <section id="work" className="py-10 md:py-14 bg-teal/[0.04] relative overflow-hidden" aria-label="Selected work">
 
       <div className="container relative">
         <motion.div
