@@ -88,8 +88,16 @@
 
   h1, h2, h3, h4 {
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+  }
+
+  h1 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   /* Scroll margin for fixed navbar — WCAG 2.4.13 Focus Not Obscured */
