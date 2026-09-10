@@ -10,41 +10,41 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
+    --foreground: 240 6% 6%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 6%;
 
-    --popover: 0 0% 89%;
-    --popover-foreground: 0 0% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 6% 6%;
 
-    --primary: 20 26% 34%;
-    --primary-foreground: 30 40% 97%;
+    --primary: 240 6% 6%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 20 12% 32%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 240 4% 30%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 25 15% 62%;
-    --muted-foreground: 20 10% 25%;
+    --muted: 240 5% 60%;
+    --muted-foreground: 240 4% 30%;
 
-    --accent: 265 45% 94%;
-    --accent-foreground: 265 45% 32%;
+    --accent: 152 60% 96%;
+    --accent-foreground: 152 70% 18%;
 
-    --destructive: 0 72% 50%;
-    --destructive-foreground: 0 85% 97%;
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 25 15% 84%;
-    --input: 25 15% 84%;
-    --ring: 20 26% 34%;
+    --border: 240 6% 88%;
+    --input: 240 6% 88%;
+    --ring: 152 70% 24%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --burnt-orange: 20 26% 34%;
-    --warm-cream: 30 35% 97%;
-    --warm-sand: 28 25% 88%;
-    --teal: 145 42% 26%;
-    --plum: 265 42% 42%;
-    --amber: 42 95% 28%;
+    --burnt-orange: 152 70% 24%;
+    --warm-cream: 0 0% 98%;
+    --warm-sand: 240 6% 92%;
+    --teal: 152 70% 24%;
+    --plum: 258 62% 46%;
+    --amber: 42 100% 32%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 9%;
@@ -88,8 +88,16 @@
 
   h1, h2, h3, h4 {
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+  }
+
+  h1 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   /* Scroll margin for fixed navbar — WCAG 2.4.13 Focus Not Obscured */

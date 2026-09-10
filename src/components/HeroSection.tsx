@@ -30,11 +30,11 @@ const HeroSection = () => {
             className="text-xs uppercase tracking-[0.2em] text-secondary mb-5 font-semibold">
             {frontmatter.role}
           </motion.p>
-          <h1 className="text-5xl md:text-7xl leading-[1.05] mb-10 text-foreground font-bold tracking-tight">
+          <h1 className="text-5xl md:text-8xl leading-[0.95] mb-10 text-foreground font-extrabold tracking-[-0.04em]">
             Hello, I'm{" "}
-            <span className="text-primary">{frontmatter.name?.split(' ')[0]}</span>
+            <span className="text-teal">{frontmatter.name?.split(' ')[0]}</span>
             <br />
-            <span className="text-primary">{frontmatter.name?.split(' ').slice(1).join(' ')}</span>
+            <span className="text-teal">{frontmatter.name?.split(' ').slice(1).join(' ')}</span>
           </h1>
 
           {/* About section */}
