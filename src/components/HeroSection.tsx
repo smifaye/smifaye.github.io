@@ -66,7 +66,7 @@ const HeroSection = () => {
               <div
                 key={skill.label}
                 role="listitem"
-                className={`bg-card rounded-lg p-5 border border-border/60 relative overflow-hidden group cursor-default border-t-2 ${skill.accent.replace('bg-', 'border-t-')}`}>
+                className={`bg-card rounded-lg p-5 border-2 border-border relative overflow-hidden group cursor-default border-t-4 ${skill.accent.replace('bg-', 'border-t-')} transition-all hover:shadow-lg hover:-translate-y-0.5`}>
 
                   <skill.icon className={`w-5 h-5 mb-2 ${["text-primary", "text-teal", "text-plum", "text-amber"][skills.indexOf(skill)] || "text-muted-foreground"}`} aria-hidden="true" />
                   <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
