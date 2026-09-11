@@ -47,7 +47,7 @@ const HeroSection = () => {
               <h2 className="text-3xl md:text-4xl mb-5 text-foreground tracking-tight">
                 {frontmatter.aboutHeading}
               </h2>
-              <div className="mb-6" aria-hidden="true" />
+              
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 {paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
