@@ -15,7 +15,7 @@ const skillStyles = [
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
-  topClass: skillStyles[i].topClass,
+  borderClass: skillStyles[i].borderClass,
   iconClass: skillStyles[i].iconClass,
   icon: skillIcons[i],
 }));
