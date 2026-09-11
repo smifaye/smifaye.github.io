@@ -7,10 +7,10 @@ const paragraphs = content.split('\n\n').filter(Boolean);
 
 const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
 const skillStyles = [
-  { topClass: "border-t-primary", iconClass: "text-primary" },
-  { topClass: "border-t-teal", iconClass: "text-teal" },
-  { topClass: "border-t-plum", iconClass: "text-plum" },
-  { topClass: "border-t-amber", iconClass: "text-amber" },
+  { borderClass: "border-primary", iconClass: "text-primary" },
+  { borderClass: "border-teal", iconClass: "text-teal" },
+  { borderClass: "border-plum", iconClass: "text-plum" },
+  { borderClass: "border-amber", iconClass: "text-amber" },
 ];
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
