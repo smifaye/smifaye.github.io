@@ -7,15 +7,15 @@ const paragraphs = content.split('\n\n').filter(Boolean);
 
 const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
 const skillStyles = [
-  { topClass: "border-t-primary", iconClass: "text-primary" },
-  { topClass: "border-t-teal", iconClass: "text-teal" },
-  { topClass: "border-t-plum", iconClass: "text-plum" },
-  { topClass: "border-t-amber", iconClass: "text-amber" },
+  { borderClass: "border-primary", iconClass: "text-primary" },
+  { borderClass: "border-teal", iconClass: "text-teal" },
+  { borderClass: "border-plum", iconClass: "text-plum" },
+  { borderClass: "border-amber", iconClass: "text-amber" },
 ];
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
-  topClass: skillStyles[i].topClass,
+  borderClass: skillStyles[i].borderClass,
   iconClass: skillStyles[i].iconClass,
   icon: skillIcons[i],
 }));
@@ -73,7 +73,7 @@ const HeroSection = () => {
               <div
                 key={skill.label}
                 role="listitem"
-                className={`bg-card rounded-lg p-5 border-2 border-foreground/20 relative overflow-hidden group cursor-default border-t-4 ${skill.topClass} transition-all hover:shadow-lg hover:-translate-y-0.5`}>
+                className={`bg-card rounded-lg p-5 border-2 ${skill.borderClass} relative overflow-hidden group cursor-default transition-all hover:shadow-lg hover:-translate-y-0.5`}>
 
                   <skill.icon className={`w-5 h-5 mb-2 ${skill.iconClass}`} aria-hidden="true" />
                   <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
