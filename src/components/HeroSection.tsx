@@ -73,7 +73,7 @@ const HeroSection = () => {
               <div
                 key={skill.label}
                 role="listitem"
-                className={`bg-card rounded-lg p-5 border-2 ${skill.topClass.replace('border-t-', 'border-')} relative overflow-hidden group cursor-default transition-all hover:shadow-lg hover:-translate-y-0.5`}>
+                className={`bg-card rounded-lg p-5 border-2 ${skill.borderClass} relative overflow-hidden group cursor-default transition-all hover:shadow-lg hover:-translate-y-0.5`}>
 
                   <skill.icon className={`w-5 h-5 mb-2 ${skill.iconClass}`} aria-hidden="true" />
                   <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
