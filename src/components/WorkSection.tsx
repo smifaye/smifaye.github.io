@@ -8,7 +8,7 @@ const { frontmatter } = parseFrontmatter(workFile);
 
 const WorkSection = () => {
   return (
-    <section id="work" className="py-10 md:py-14 relative overflow-hidden" aria-label="Selected work">
+    <section id="work" className="py-20 md:py-28 relative overflow-hidden bg-primary text-primary-foreground" aria-label="Selected work">
 
       <div className="container relative">
         <motion.div
@@ -16,14 +16,14 @@ const WorkSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-10"
+          className="mb-12 md:grid md:grid-cols-12"
         >
-          <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-6xl text-primary-foreground md:col-span-6 md:col-start-2">
             {frontmatter.heading}
           </h2>
         </motion.div>
 
-        <ul className="space-y-4 list-none">
+        <ul className="space-y-3 list-none md:ml-[8.333%]">
           {caseStudies.map((project, i) => (
             <motion.li
               key={project.slug}
@@ -35,25 +35,25 @@ const WorkSection = () => {
             >
               <Link
                 to={`/work/${project.slug}`}
-                className="group block bg-background rounded-lg p-6 md:p-8 border-2 border-teal/15 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all"
+                className="group block rounded-xl p-6 md:p-8 border border-primary-foreground/25 hover:bg-primary-foreground hover:text-primary transition-colors"
                 aria-label={`${project.title} — ${project.client}`}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-8">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-2 h-2 rounded-full bg-teal/60 group-hover:bg-teal transition-colors" aria-hidden="true" />
-                      <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">
+                      <span className="text-xs font-bold text-secondary group-hover:text-secondary" aria-hidden="true">0{i + 1}</span>
+                      <p className="text-xs uppercase tracking-widest text-primary-foreground/70 group-hover:text-primary/70 font-semibold">
                         {project.client}
                       </p>
                     </div>
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-teal transition-colors flex items-center gap-2 ml-5">
+                    <h3 className="text-xl md:text-2xl font-bold text-primary-foreground group-hover:text-primary transition-colors flex items-center gap-2 ml-8">
                       {project.title}
                       <ArrowUpRight
                         className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all"
                         aria-hidden="true"
                       />
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed mt-1 max-w-lg text-sm ml-5">
+                    <p className="text-primary-foreground/70 group-hover:text-primary/70 leading-relaxed mt-2 max-w-lg text-sm ml-8">
                       {project.summary}
                     </p>
                   </div>
@@ -68,7 +68,7 @@ const WorkSection = () => {
                       return (
                         <li
                           key={tag}
-                          className={`text-xs px-3 py-1 rounded-md font-medium transition-colors ${tagColors[tagIndex % tagColors.length]}`}
+                          className={`text-xs px-3 py-1 rounded-full font-medium transition-colors ${tagColors[tagIndex % tagColors.length]} group-hover:bg-primary/10`}
                         >
                           {tag}
                         </li>

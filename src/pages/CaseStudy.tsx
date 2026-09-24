@@ -29,8 +29,8 @@ const CaseStudyPage = () => {
       </a>
       <Navbar />
       <main id="case-study-content">
-        <article className="pt-24 pb-20">
-          <div className="container max-w-2xl">
+        <article className="pt-36 pb-24">
+          <div className="container max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -44,26 +44,26 @@ const CaseStudyPage = () => {
                 <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to all projects</span>
               </Link>
 
-              <p className="text-sm text-muted-foreground mb-2">{study.client}</p>
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              <p className="text-xs uppercase tracking-widest font-bold text-secondary mb-4">{study.client}</p>
+              <h1 className="text-5xl md:text-8xl font-bold text-foreground mb-6 max-w-4xl">
                 {study.title}
               </h1>
               <ul className="flex gap-2 flex-wrap mb-10 list-none" aria-label="Project tags" role="list">
                 {study.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="text-xs px-3 py-1 rounded-md bg-primary/10 text-primary font-medium"
+                    className="text-xs px-3 py-1 rounded-full bg-accent text-accent-foreground font-medium"
                   >
                     {tag}
                   </li>
                 ))}
               </ul>
 
-              <div className="border-t border-border pt-10">
+              <div className="border-t border-border pt-10 max-w-2xl md:ml-[16.666%]">
                 <MarkdownRenderer content={study.content} />
               </div>
 
-              <div className="border-t border-border pt-8 mt-12">
+              <div className="border-t border-border pt-8 mt-12 max-w-2xl md:ml-[16.666%]">
                 <Link
                   to="/#work"
                   className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"

@@ -12,19 +12,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-xl"
       aria-label="Main navigation"
     >
-      <div className="container flex items-center justify-between h-16">
-        <a href="/" className="font-bold text-xl text-foreground">
+      <div className="container flex items-center justify-between h-20">
+        <a href="/" className="font-serif font-bold text-xl text-foreground hover:text-secondary transition-colors">
           {frontmatter.navName}
         </a>
-        <ul className="hidden md:flex gap-8 items-center">
+        <ul className="hidden md:flex gap-10 items-center">
           {links.map((link) => (
             <li key={link.label}>
               <a
                 href={link.href}
-                className="text-sm text-foreground/80 font-medium hover:text-primary transition-colors tracking-wide"
+                className="text-sm text-foreground font-medium hover:text-secondary transition-colors"
               >
                 {link.label}
               </a>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={() => setOpen(!open)}
-            className="text-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
+            className="text-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full border border-border hover:border-secondary hover:text-secondary transition-colors"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             aria-controls="mobile-menu"
@@ -64,7 +64,7 @@ const Navbar = () => {
                   <a
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors py-3 min-h-[44px] flex items-center"
+                    className="text-lg font-serif font-bold text-foreground hover:text-secondary transition-colors py-3 min-h-[44px] flex items-center"
                   >
                     {link.label}
                   </a>

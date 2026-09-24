@@ -29,8 +29,8 @@ const BlogPost = () => {
       </a>
       <Navbar />
       <main id="blog-post-content">
-        <article className="pt-24 pb-20">
-          <div className="container max-w-2xl">
+        <article className="pt-36 pb-24">
+          <div className="container max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const BlogPost = () => {
                 <span className="underline underline-offset-2 hover:bg-primary/10 transition-colors">Back to blog</span>
               </Link>
 
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              <h1 className="text-5xl md:text-8xl font-bold text-foreground mb-8 max-w-4xl">
                 {post.title}
               </h1>
 
@@ -61,11 +61,11 @@ const BlogPost = () => {
                 </a>
               )}
 
-              <div className="border-t border-border pt-10">
+              <div className="border-t border-border pt-10 max-w-2xl md:ml-[16.666%]">
                 <MarkdownRenderer content={post.content} />
               </div>
 
-              <div className="border-t border-border pt-8 mt-12">
+              <div className="border-t border-border pt-8 mt-12 max-w-2xl md:ml-[16.666%]">
                 <Link
                   to="/#blog"
                   className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
