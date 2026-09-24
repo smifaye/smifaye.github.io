@@ -15,7 +15,7 @@ export default {
   	extend: {
   		fontFamily: {
   			sans: [
-  				'Plus Jakarta Sans',
+				'DM Sans',
   				'ui-sans-serif',
   				'system-ui',
   				'-apple-system',
@@ -27,7 +27,7 @@ export default {
   				'sans-serif'
   			],
   			serif: [
-  				'Libre Caslon Text',
+				'Space Grotesk',
   				'ui-serif',
   				'Georgia',
   				'Cambria',
@@ -36,7 +36,7 @@ export default {
   				'serif'
   			],
   			mono: [
-  				'Roboto Mono',
+				'DM Sans',
   				'ui-monospace',
   				'SFMono-Regular',
   				'Menlo',

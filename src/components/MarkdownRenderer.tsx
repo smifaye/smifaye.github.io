@@ -18,7 +18,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     // Headings
     if (block.startsWith("### ")) {
       elements.push(
-        <h3 key={i} className="text-xl font-bold text-foreground mb-3 mt-8">
+        <h3 key={i} className="text-2xl font-bold text-foreground mb-3 mt-10">
           {block.replace("### ", "")}
         </h3>
       );
@@ -27,7 +27,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
 
     if (block.startsWith("## ")) {
       elements.push(
-        <h2 key={i} className="text-2xl md:text-3xl font-bold text-foreground mb-4 mt-10">
+        <h2 key={i} className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-12">
           {block.replace("## ", "")}
         </h2>
       );
@@ -49,7 +49,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
           <img
             src={imgMatch[2]}
             alt={imgMatch[1]}
-            className="rounded-lg border border-border w-full"
+            className="rounded-xl border border-border w-full"
             loading="lazy"
           />
           {caption && (

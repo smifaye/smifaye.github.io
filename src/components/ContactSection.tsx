@@ -6,42 +6,42 @@ const { frontmatter, content } = parseFrontmatter(contactFile);
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-10 md:py-14 relative" aria-label="Contact information">
+    <section id="contact" className="py-20 md:py-28 relative bg-accent" aria-label="Contact information">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-xl"
+          className="max-w-4xl md:ml-[8.333%]"
         >
-          <h2 className="text-3xl md:text-4xl text-foreground mb-3 tracking-tight">
+          <h2 className="text-5xl md:text-7xl text-foreground mb-5">
             {frontmatter.heading}
           </h2>
-          <p className="text-muted-foreground leading-relaxed mb-8">
+          <p className="text-foreground/75 leading-relaxed mb-10 text-lg">
             {content}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="grid sm:grid-cols-2 gap-3">
             <a
               href={`mailto:${frontmatter.email}`}
-              className="group flex items-center gap-4 bg-card rounded-lg p-5 border-2 border-amber/20 hover:border-amber/50 hover:shadow-lg hover:shadow-amber/15 transition-all flex-1"
+              className="group flex items-center gap-4 bg-primary text-primary-foreground rounded-xl p-5 border border-primary hover:bg-secondary hover:border-secondary transition-colors"
             >
-              <span className="w-10 h-10 rounded-md bg-amber/20 flex items-center justify-center flex-shrink-0 group-hover:bg-amber/30 transition-colors">
-                <Mail className="w-4 h-4 text-amber" aria-hidden="true" />
+              <span className="w-10 h-10 rounded-full border border-primary-foreground/40 flex items-center justify-center flex-shrink-0">
+                <Mail className="w-4 h-4" aria-hidden="true" />
               </span>
               <div>
-                <p className="font-semibold text-foreground text-sm">{frontmatter.emailLabel}</p>
-                <p className="text-xs text-muted-foreground">{frontmatter.email}</p>
+                <p className="font-semibold text-sm">{frontmatter.emailLabel}</p>
+                <p className="text-xs opacity-75 break-all">{frontmatter.email}</p>
               </div>
             </a>
             <a
               href={frontmatter.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 bg-card rounded-lg p-5 border-2 border-teal/20 hover:border-teal/50 hover:shadow-lg hover:shadow-teal/15 transition-all flex-1"
+              className="group flex items-center gap-4 bg-card rounded-xl p-5 border border-primary hover:bg-background transition-colors"
             >
-              <span className="w-10 h-10 rounded-md bg-teal/20 flex items-center justify-center flex-shrink-0 group-hover:bg-teal/30 transition-colors">
-                <Linkedin className="w-4 h-4 text-teal" aria-hidden="true" />
+              <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center flex-shrink-0">
+                <Linkedin className="w-4 h-4" aria-hidden="true" />
               </span>
               <div>
                 <p className="font-semibold text-foreground text-sm">{frontmatter.linkedinLabel}</p>

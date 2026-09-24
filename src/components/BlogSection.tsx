@@ -8,21 +8,21 @@ const { frontmatter } = parseFrontmatter(blogFile);
 
 const BlogSection = () => {
   return (
-    <section id="blog" className="py-10 md:py-14 relative overflow-hidden" aria-label="Blog posts">
+    <section id="blog" className="py-20 md:py-28 relative overflow-hidden" aria-label="Blog posts">
       <div className="container relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-10"
+          className="mb-12 md:grid md:grid-cols-12"
         >
-          <h2 className="text-3xl md:text-4xl text-foreground tracking-tight">
+          <h2 className="text-4xl md:text-6xl text-foreground md:col-span-6 md:col-start-6">
             {frontmatter.heading}
           </h2>
         </motion.div>
 
-        <ul className="space-y-4 list-none">
+        <ul className="space-y-3 list-none md:w-2/3 md:ml-auto">
           {blogPosts.map((post, i) => (
             <motion.li
               key={post.slug}
@@ -35,11 +35,11 @@ const BlogSection = () => {
               <Link
                 to={`/blog/${post.slug}`}
                 aria-label={post.title}
-                className="group block bg-background rounded-lg p-6 md:p-8 border-2 border-plum/15 hover:border-plum/50 hover:shadow-lg hover:shadow-plum/15 transition-all"
+                className="group block bg-card rounded-xl p-6 md:p-8 border border-border hover:border-secondary hover:bg-secondary/5 transition-colors"
               >
                 <div className="flex items-center justify-between gap-4">
                   <div className="min-w-0">
-                    <h3 className="text-lg md:text-xl font-bold text-foreground group-hover:text-plum transition-colors flex items-center gap-2">
+                    <h3 className="text-xl md:text-2xl font-bold text-foreground group-hover:text-secondary transition-colors flex items-center gap-2">
                       {post.title}
                       <ArrowUpRight
                         className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all flex-shrink-0"

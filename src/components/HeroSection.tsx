@@ -7,24 +7,24 @@ const paragraphs = content.split('\n\n').filter(Boolean);
 
 const skillIcons = [PenLine, Compass, BarChart3, Accessibility];
 const skillStyles = [
-  { borderClass: "border-primary", iconClass: "text-primary" },
-  { borderClass: "border-teal", iconClass: "text-teal" },
-  { borderClass: "border-plum", iconClass: "text-plum" },
-  { borderClass: "border-amber", iconClass: "text-amber" },
+  { cardClass: "bg-primary text-primary-foreground", iconClass: "text-primary-foreground" },
+  { cardClass: "bg-accent text-accent-foreground", iconClass: "text-accent-foreground" },
+  { cardClass: "bg-secondary text-secondary-foreground", iconClass: "text-secondary-foreground" },
+  { cardClass: "bg-card text-card-foreground border border-primary", iconClass: "text-primary" },
 ];
 const skills = [1, 2, 3, 4].map((n, i) => ({
   label: frontmatter[`skill${n}Label`] || "",
   desc: frontmatter[`skill${n}Desc`] || "",
-  borderClass: skillStyles[i].borderClass,
+  cardClass: skillStyles[i].cardClass,
   iconClass: skillStyles[i].iconClass,
   icon: skillIcons[i],
 }));
 
 const HeroSection = () => {
   return (
-    <section id="about" className="relative min-h-[75vh] flex items-center overflow-hidden" aria-label="Introduction">
+    <section id="about" className="relative overflow-hidden" aria-label="Introduction">
 
-      <div className="container relative z-10 py-20 md:py-24">
+      <div className="container relative z-10 pt-36 pb-20 md:pt-44 md:pb-28">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,24 +34,24 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-xs uppercase tracking-[0.2em] text-secondary mb-5 font-semibold">
+            className="text-xs uppercase tracking-[0.18em] text-secondary mb-6 font-bold">
             {frontmatter.role}
           </motion.p>
-          <h1 className="text-5xl md:text-8xl leading-[0.95] mb-10 text-foreground font-extrabold tracking-[-0.04em]">
-            Hello, I'm{" "}
-            <span className="text-teal">{frontmatter.name?.split(' ')[0]}</span>
+          <h1 className="text-6xl sm:text-7xl md:text-9xl leading-[0.88] mb-16 md:mb-24 text-foreground font-bold">
+            Hello, I'm
             <br />
-            <span className="text-teal">{frontmatter.name?.split(' ').slice(1).join(' ')}</span>
+            <span className="text-secondary">{frontmatter.name}</span>
           </h1>
 
           {/* About section */}
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-10">
+          <div className="grid md:grid-cols-12 gap-12 md:gap-8 items-start mb-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}>
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="md:col-span-5 md:col-start-2">
 
-              <h2 className="text-3xl md:text-4xl mb-5 text-foreground tracking-tight">
+              <h2 className="text-3xl md:text-5xl mb-6 text-foreground">
                 {frontmatter.aboutHeading}
               </h2>
               
@@ -65,7 +65,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.45 }}
-              className="grid grid-cols-2 gap-3"
+              className="grid grid-cols-2 gap-3 md:col-span-5 md:col-start-8"
               role="list"
               aria-label="Skills">
 
@@ -73,11 +73,11 @@ const HeroSection = () => {
               <div
                 key={skill.label}
                 role="listitem"
-                className={`bg-card rounded-lg p-5 border-2 ${skill.borderClass} relative overflow-hidden group cursor-default transition-all hover:shadow-lg hover:-translate-y-0.5`}>
+                className={`${skill.cardClass} rounded-xl p-5 min-h-36 relative overflow-hidden group cursor-default transition-transform hover:-translate-y-1`}>
 
                   <skill.icon className={`w-5 h-5 mb-2 ${skill.iconClass}`} aria-hidden="true" />
-                  <h3 className="text-sm font-bold text-foreground mb-1">{skill.label}</h3>
-                  <p className="text-xs text-muted-foreground leading-snug">{skill.desc}</p>
+                  <h3 className="text-sm font-bold mb-1">{skill.label}</h3>
+                  <p className="text-xs leading-snug opacity-80">{skill.desc}</p>
                 </div>
               )}
             </motion.div>
@@ -88,11 +88,11 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex gap-4">
+            className="flex flex-wrap gap-3 md:ml-[8.333%]">
 
             <a
               href="#work"
-              className="group inline-flex items-center gap-2 px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-medium text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all">
+              className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-medium text-sm hover:bg-secondary transition-colors">
 
               {frontmatter.ctaPrimary}
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -101,14 +101,13 @@ const HeroSection = () => {
             </a>
             <a
               href="#contact"
-              className="inline-block px-8 py-3.5 rounded-md border-2 border-foreground/15 text-foreground font-medium text-sm tracking-wide hover:border-primary/40 hover:text-primary transition-all">
+              className="inline-flex items-center px-7 py-3.5 rounded-full border border-primary text-foreground font-medium text-sm hover:bg-accent transition-colors">
 
               {frontmatter.ctaSecondary}
             </a>
           </motion.div>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10" aria-hidden="true" />
     </section>
   );
 };

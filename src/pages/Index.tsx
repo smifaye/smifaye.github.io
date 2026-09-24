@@ -20,8 +20,8 @@ const Index = () => {
         <BlogSection />
         <ContactSection />
       </main>
-      <footer className="py-10 text-center text-xs text-muted-foreground tracking-wide border-t border-border" role="contentinfo">
-        <div className="container">
+      <footer className="py-8 text-xs text-muted-foreground border-t border-border" role="contentinfo">
+        <div className="container md:pl-[10%]">
           {frontmatter.footerText}
         </div>
       </footer>
