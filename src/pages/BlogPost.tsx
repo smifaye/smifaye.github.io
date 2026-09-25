@@ -65,7 +65,7 @@ const BlogPost = () => {
                 <MarkdownRenderer content={post.content} />
               </div>
 
-              <div className="border-t border-border pt-8 mt-12 max-w-2xl md:ml-[16.666%]">
+              <div className="mt-16 max-w-2xl md:ml-[16.666%]">
                 <Link
                   to="/#blog"
                   className="inline-flex items-center gap-2 text-sm text-primary transition-colors no-underline"
