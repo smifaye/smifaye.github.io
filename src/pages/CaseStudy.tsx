@@ -59,7 +59,7 @@ const CaseStudyPage = () => {
                 ))}
               </ul>
 
-              <div className="border-t border-border pt-10 max-w-2xl md:ml-[16.666%]">
+              <div className="max-w-2xl md:ml-[16.666%]">
                 <MarkdownRenderer content={study.content} />
               </div>
 
