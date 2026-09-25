@@ -17,12 +17,12 @@ const BlogSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-12 md:grid md:grid-cols-12"
         >
-          <h2 className="text-4xl md:text-6xl text-foreground md:col-span-6 md:col-start-6">
+          <h2 className="text-4xl md:text-6xl text-foreground md:col-span-6 md:col-start-2">
             {frontmatter.heading}
           </h2>
         </motion.div>
 
-        <ul className="space-y-3 list-none md:w-2/3 md:ml-auto">
+        <ul className="space-y-3 list-none md:ml-[8.333%]">
           {blogPosts.map((post, i) => (
             <motion.li
               key={post.slug}
