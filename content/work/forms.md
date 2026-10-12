@@ -42,7 +42,7 @@ Both supported our mission 'closing the gap in access and experience for margina
 
 We couldn’t move to a single full name field, because the legacy systems that receive the data need a first name and a last name. So we changed what we could. The fields now accept special characters, and the error messages for names are less strict. 
 
-![Screenshot of the name page](/images/name.png)
+![Screenshot of the name page](/images/name-fields.png)
 
 ### Confirmation emails
 
