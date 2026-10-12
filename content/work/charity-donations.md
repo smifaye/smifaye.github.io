@@ -2,7 +2,7 @@
 slug: charity-donations
 title: Helping people understand we’re a charity
 client: Citizens Advice
-tags: ux design, content design
+tags: UX writing, Product design
 summary: I worked on a series of changes to help more people donate online.
 ---
 I worked on a series of changes to help more people donate online.
@@ -16,9 +16,9 @@ I worked in a multidisciplinary team with UX designers, a product manager, user 
 
 We tested the placement of the donation button with users in research sessions. Then we compared a button with link text in the ‘Popular content’ sidebar.
 
-![Screenshot of the donation button](images/donation-button.png)
+![Screenshot of the donation button](/images/donation-button.png)
 
-![Screenshot of make a donation link in sidebar](images/popular-content.png)
+![Screenshot of make a donation link in sidebar](/images/popular-content.png)
 
 Over the same 12 months, the button got more than twice as many clicks as the link text: 1,851 compared with 896.
 ## Improving the donation message
@@ -27,9 +27,9 @@ In user testing, people found more positive imagery more engaging. The image of 
 
 We also shortened the copy, removed the heavy bold and cut a sentence that added length without adding a reason to give. We added “As a charity” to the opening line of the second paragraph, so the message answers the problem directly.
 
-![Donation message with a close-up photo of a distressed child and a longer message with key phrases in bold](images/donations-before.png)
+![Donation message with a close-up photo of a distressed child and a longer message with key phrases in bold](/images/donations-before.png)
 
-![Donation message with a photo of a smiling parent carrying a child on a beach and a shorter message](images/donations-after.png)
+![Donation message with a photo of a smiling parent carrying a child on a beach and a shorter message](/images/donations-after.png)
 
 ## The result
 
