@@ -38,6 +38,7 @@ From this we made 2 hypotheses:
 1. A single full name field would be more inclusive across nationalities and cultures. 
 2. Name fields should accept the characters and symbols that people use to express who they are.
 
+
 Both supported our mission 'closing the gap in access and experience for marginalised people'.
 
 We couldn’t move to a single full name field, because the legacy systems that receive the data need a first name and a last name. So we changed what we could. The fields now accept special characters, and the error messages for names are less strict. 
