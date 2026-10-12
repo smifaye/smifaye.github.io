@@ -3,7 +3,7 @@ slug: charity-donations
 title: Helping people understand we’re a charity
 client: Citizens Advice
 tags: UX writing, Product design
-summary: I worked on a series of changes to help more people donate online.
+summary: Worked on a series of changes to help more people donate online.
 ---
 
 I worked on a series of changes to help more people donate online.
