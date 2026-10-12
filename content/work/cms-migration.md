@@ -6,7 +6,7 @@ tags: Collaboration, CMS
 summary: Worked in a multi-disciplinary team migrating from one CMS to another - collaborating closely with developers, researchers and other content designers.
 ---
 
-I worked on a team migrating our content from one CMS to another. The team included developers, product owners, product designers, delivery managers, researchers and data analysts.
+I worked on a team migrating our content from one CMS to another. The team included software engineers, product owners, UX designers, delivery managers, user researchers and data analysts.
 
 ## The problem
 
