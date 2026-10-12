@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/work/forms.md",
+                "file": "content/work/design-system.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "forms"
+              "title": "design-system"
             }
           }
         ]
@@ -185,10 +185,11 @@
   },
   "active": "bcf401c9cde80805",
   "lastOpenFiles": [
+    "content/work/forms.md",
+    "content/work/design-system.md",
     "public/images/name-fields.png",
     "content/work/cms-migration.md",
     "content/work/data-visualisation.md",
-    "content/work/forms.md",
     "content/work/future-proofing-content.md",
     "content/work/reusable-content.md",
     "content/work/ux-content.md",
