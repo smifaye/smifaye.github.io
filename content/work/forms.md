@@ -2,7 +2,7 @@
 slug: forms
 title: Making forms work for everyone
 client: Citizens Advice
-tags: UX writing, Product design
+tags: UX writing, Form design, Inclusive content
 summary: Redesigning and migrating our forms to a new system.
 ---
 
