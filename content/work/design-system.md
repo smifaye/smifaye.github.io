@@ -18,28 +18,28 @@ I worked on all of the new components and created the guidance on how to use the
 
 ## What I did
 
-**I named components by what the content is** 
+### I named components by what the content is 
 
 We renamed “revealables” to “targeted content”. The old name described how the component looks on a web page, not what the content is. Naming it by what it is means the component works across platforms - and it’s easier for a content designer to know when to use it.
 
-**I wrote guidance that explains why** 
+### I wrote guidance that explains why 
 
 For each component, the guidance covers when to use it, when not to and the reason. Two examples:
 
 1. Callouts. Check you need one before you add it, because fewer callouts have more impact. Each new callout also needs a new heading level and more heading levels make a page harder to understand.
 2. Targeted content. It’s interactive, because people have to click to read it, so it has a bigger effect on accessibility. For that reason, you can’t put targeted content inside targeted content.
 
-**I wrote the accessibility guidance for content**
+### I wrote the accessibility guidance for content
 
 It covers captions and transcripts for video, alt text for images (brief, descriptive and never starting with “image of”), leaving decorative images blank and structured headings.
 
-**I set out how to write error messages**
+### I set out how to write error messages
 
 The guidance says to describe what has happened and tell people how to fix it. It lists vague messages to avoid, like “An error occurred”, “Select an option” and “Fill in the field”. 
 
 It gives specific ones to use instead, like “Enter your first name” and “Select if you are British, Irish or a citizen of a different country”.
 
-**We tested with content designers**
+### We tested with content designers
 
 Once the components were built into the CMS, we tested the functionality with the content designers who would use them. 
 
