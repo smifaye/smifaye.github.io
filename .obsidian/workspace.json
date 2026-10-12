@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/work/forms.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "forms"
+              "title": "README"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -185,14 +187,21 @@
   },
   "active": "bcf401c9cde80805",
   "lastOpenFiles": [
-    "content/work/design-system.md",
-    "content/work/cms-migration.md",
+    "content/work.md",
+    "content/site.md",
+    "content/contact.md",
+    "content/blog.md",
+    "content/about.md",
     "content/work/ux-content.md",
     "content/work/reusable-content.md",
+    "work/future-proofing-content.md",
     "content/work/future-proofing-content.md",
     "content/work/forms.md",
+    "content/work/design-system.md",
     "content/work/data-visualisation.md",
+    "content/work/cms-migration.md",
     "content/work/charity-donations.md",
+    "work",
     "public/images/name-fields.png",
     "public/images/error.png",
     "public/images/name.png",
@@ -201,11 +210,6 @@
     "content/work/address-details.png",
     "content/work/charity-donations.md.sb-8fbfb590-ndNVVE",
     "content/work/charity-donations.md.sb-8fbfb590-jDetTy",
-    "content/about.md",
-    "content/blog.md",
-    "content/contact.md",
-    "content/site.md",
-    "content/work.md",
     "public/images/donations-before.png",
     "public/images/donations-after.png",
     "images/donation-button.md",

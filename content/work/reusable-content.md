@@ -6,7 +6,7 @@ tags: Content strategy, CMS
 summary: Set the principles for reusable content in our new CMS, and the team adopted them.
 ---
 
-Reusable content is a key strength of our new CMS, Contentful. I led a project to test our assumptions about it, using the content model I designed. It means we can reuse content across many parts of the website and beyond.
+Reusable content is a strength of our new CMS, Contentful. I led a project to test our assumptions about it, using the content model I designed. It means we can reuse content across many parts of the website and beyond.
 
 ## The problem
 
@@ -14,7 +14,7 @@ Reusable content can become frustrating and confusing if there aren't clear prin
 
 ## My role
 
-I led the project and wrote the principles. The team adopted all of them.
+I led the project and wrote the principles. I ran workshops with other content designers.
 
 ## What is reusable content?
 
@@ -46,14 +46,14 @@ It also has risks. It might mean:
 Reusable content needs to be:
 
 - easy to find
-- easy to share with others, for example during 2i or fact check
+- easy to share with others - for example, during 2i or fact check
 - generic enough to be reused, but with all the details that meet a user need
 
 ### Easy to find
 
 Our content is in Contentful, so we use its built-in features, like 'tags' and 'views'.
 
-Tags group content by broad theme or topic. For example, you could add the Universal Credit standard amount for people who are single and under 25, and tag it 'Benefit rates'.
+Tags group content by broad theme or topic. For example, you could add the Universal Credit standard amount for people who are single and under 25 and tag it 'Benefit rates'.
 
 Views save a search filter. For example, you could create a view that shows all the 'Monetary amount' entries with the tag 'Benefit rates'.
 
@@ -77,4 +77,4 @@ We would store variables in a list. For example, a variable called 'Benefit' cou
 
 ## The result
 
-The team adopted all of the principles, and reusable content is now in use. You can read about the content model behind it in [Future-proofing our content](/work/future-proofing-content).
+The team adopted all of the principles and reusable content is now in use. You can read about the content model behind it in [future-proofing our content](/work/future-proofing-content).

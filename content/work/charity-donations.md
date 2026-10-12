@@ -6,25 +6,25 @@ tags: UX writing, Product design
 summary: Tested and improved our donation content, and online donations rose by about 40% over 12 months.
 ---
 
-I worked on a series of changes to help more people donate online.
-
 ## The problem
 
-Many people think Citizens Advice is part of the government. We’re a charity, and we need donations to keep helping people. If people don’t know that, they don’t think to give.
+Many people think Citizens Advice is part of the government. We’re a charity and we need donations to keep helping people. If people don’t know that, they don’t think to give.
 
 ## My role
 
-I worked in a multidisciplinary team with UX designers, a product manager, user researchers, software engineers and subject matter experts from the donations team. I worked mostly with a UX designer and the donations team to design the content for our donations page, including the button and link text.
+I worked in a multi-disciplinary team with UX designers, a product manager, user researchers, software engineers and subject matter experts from the donations team. I mostly worked with a UX designer and the donations team to redesign the content for our donations page. We also ran an experiment to proactively ask for donations.
 
 ## Testing the donation button
 
 We tested the placement of the donation button with users in research sessions. Then we compared a button with link text in the ‘Popular content’ sidebar.
 
 ![Screenshot of the donation button](/images/donation-button.png)
+*Donation button at the top of the home page*
 
 ![Screenshot of make a donation link in sidebar](/images/popular-content.png)
+*Make a donation button in the sidebar*
 
-Over the same 12 months, the button got more than twice as many clicks as the link text: 1,851 compared with 896.
+Over the same 12 months, the button got more than twice as many clicks as the link text.
 
 ## Improving the donation message
 
@@ -33,13 +33,14 @@ In user testing, people found more positive imagery more engaging. The image of 
 We also shortened the copy, removed the heavy bold and cut a sentence that added length without adding a reason to give. We added “As a charity” to the opening line of the second paragraph, so the message answers the problem directly.
 
 ![Donation message with a close-up photo of a distressed child and a longer message with key phrases in bold](/images/donations-before.png)
+*The donation message before the redesign*
 
 ![Donation message with a photo of a smiling parent carrying a child on a beach and a shorter message](/images/donations-after.png)
-
+*The donation message after the redesign*
 
 ## The result
 
-Online donations rose by about 40% over 12 months, compared with the previous 12 months. The button probably drove much of that, but we can’t attribute all of it to the button. People still clicked the link text, and we changed the message at the same time.
+Online donations rose by about 40% over 12 months, compared with the previous 12 months. The button probably drove much of that improved traffic.
 
 ## What happened next
 

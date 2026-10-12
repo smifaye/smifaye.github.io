@@ -3,18 +3,18 @@ slug: data-visualisation
 title: Data visualisation
 client: Citizens Advice
 tags: Data and analytics, Reporting
-summary: Designed Looker Studio reports that make search, analytics and page rating data easy for content designers and stakeholders to use.
+summary: Designed Data Studio reports that make search, analytics and page rating data easy for content designers and stakeholders to use.
 ---
 
-I designed Google Looker Studio reports to make our web data easier for content designers and other stakeholders to understand and use. Here are a few examples from the last few years.
+I designed Google Data Studio reports to make our web data easier for content designers and other stakeholders to understand and use. Here are a few examples from the last few years.
 
 ## The problem
 
-Google Analytics is our web analytics tool, and it can be difficult to understand. Content designers and other stakeholders needed an easier way to see how our content performs and what our users search for.
+Google Analytics is our web analytics tool and it can be difficult to understand. Content designers and other stakeholders needed an easier way to see how our content performs and what our users search for.
 
 ## My role
 
-I designed and built the reports. They're used by other content designers and by stakeholders who are interested in how our content is doing.
+I designed and built the reports. They're used by other content designers and by stakeholders who are interested in how our content is performing.
 
 ## Search
 

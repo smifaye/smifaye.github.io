@@ -14,24 +14,25 @@ Both forms were on an old system we were retiring. We needed to move them to a n
 
 ## My role
 
-I worked in a multidisciplinary team with software engineers, user researchers, product designers and subject matter experts. I worked with the product designers on the question fields, help text and flow across both forms. I worked with the user researchers to turn their findings into the content, including how we ask for someone’s name.
+I worked in a multi-disciplinary team with software engineers, user researchers, UX designers and subject matter experts. I worked with the UX designers on the question fields, help text and flow across both forms. I worked with the user researchers to turn their findings into the content, including how we ask for someone’s name.
 
 ## What we did
 
-We followed the design system’s principles for forms. Each page asks one thing. Labels sit above fields, and we only add hint text when it’s needed. Error messages are specific rather than generic, and each form ends with a “check your answers” page.
+We followed the design system’s principles for forms. Each page asks one thing. Labels sit above fields and we only add hint text when it’s needed. Error messages are specific rather than generic and each form ends with a “check your answers” page.
 
 ![Screenshot of specific error message](/images/error.png)
+*A screenshot of helpful and specific error messages*
 
-Hint text is where the content does the most work. On the phone number question, the label says “Phone number (optional)”. The hint says: “If not in the UK, include the country code. For example, +34 for Spain.” It doesn’t assume everyone has a UK number, and it gives an example so no one has to guess the format.
+Hint text is where the content does the most work. On the phone number question, the label says “Phone number”. The hint says: “If not in the UK, include the country code. For example, +34 for Spain.” It doesn’t assume everyone has a UK number, and it gives an example so no one has to guess the format.
 
 ### Getting names right
 
 Names turned out to be the most important part of the project. Our research showed users:
 
-- found separate first and last name fields easy to use and mostly preferred them, probably because that’s what they’re used to seeing
+- found separate first and last name fields easy to use and mostly preferred them - probably because that’s what they’re used to seeing
 - were frustrated when they couldn’t use special characters, or weren’t sure a form would accept them
 - felt online and offline forms are set up for western names
-- were frustrated when a service adapted, misspelled or reordered their name, and many had experienced this
+- were frustrated when a service adapted, misspelled or reordered their name - many had experienced this
 
 From this we made 2 hypotheses: 
 
@@ -40,9 +41,10 @@ From this we made 2 hypotheses:
 
 Both supported our mission 'closing the gap in access and experience for marginalised people'.
 
-We couldn’t move to a single full name field, because the legacy systems that receive the data need a first name and a last name. So we changed what we could. The fields now accept special characters, and the error messages for names are less strict. 
+We couldn’t move to a single full name field, because the legacy systems that receive the data need a first name and a last name. So we changed what we could. The fields now accept special characters and the error messages for names are less strict. 
 
 ![Screenshot of the name page](/images/name-fields.png)
+*One thing per page - names*
 
 ### Confirmation emails
 

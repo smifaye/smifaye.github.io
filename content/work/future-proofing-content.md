@@ -14,9 +14,9 @@ Our content was tied to the website. Moving to a new CMS was a chance to structu
 
 ## My role
 
-I designed the content model, working with other content designers, front-end and back-end developers, product managers, user researchers and data analysts.
+I designed the content model, working with other content designers, software engineers, product managers, user researchers and data analysts.
 
-The most important thing to get right was making the model make sense to other content designers, because they use it in their jobs. I included them early in each part of the project, so they could give feedback and get hands-on experience with the model.
+The most important thing to get right was making the model make sense to other content designers, because they use it every day. I included them early in each part of the project, so they could give feedback and get hands-on experience with the model.
 
 ## What is a content model?
 
@@ -41,7 +41,7 @@ An example I use to explain our content model is making a cup of coffee.
 
 - You need a coffee cup. This is our content model.
 - You can make all sorts of coffee, like a flat white or a latte. These are our content types.
-- You need essential ingredients, like water, coffee beans and milk. These are our content fields.
+- You need ingredients, like water, coffee beans and milk. These are our content fields.
 - You can buy ready-made coffee, like Nespresso pods. These are our reusable content chunks.
 
 ## Why use a content model?

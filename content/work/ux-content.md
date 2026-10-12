@@ -6,7 +6,7 @@ tags: UX writing, Product design
 summary: Wrote the UX content for new CMS features and built a Chrome extension that gets content designers from the live site to the CMS in a few clicks.
 ---
 
-We built a lot of new features for our new CMS. I wrote the UX content for them, working with product designers and software engineers. I also built a Chrome extension myself.
+We built a lot of new features for our new CMS. I wrote the UX content for them, working with UX designers and software engineers. I also built a Chrome extension.
 
 ## The problem
 
@@ -15,12 +15,6 @@ Content designers use the CMS every day to write and publish our advice. The CMS
 ## My role
 
 I wrote the content type names, labels, button text, pop-ups and version information for the new features. I worked with UX designers and software engineers and we tested the content with content designers. I wrote the code and the content for the Chrome extension.
-
-## Naming content types
-
-Content designers meet the content model through the CMS, so the names are the interface. A well designed content model shouldn't need much explanation or training.
-
-I made sure each content type name said what it does. For example, we changed 'revealables' to 'targeted content'. 'Revealables' described how the component appears on a web page, not what the content is. Describing what the content is means the names work on any platform, not just the website.
 
 ## CMS apps
 
@@ -62,7 +56,7 @@ If they continue, the version information updates automatically. It shows who di
 
 ### Chrome extension
 
-While we migrate from one CMS to another, content designers have to use 2 CMSs. I designed and built a Google Chrome extension to help them work in both. I wrote the code and the content. It lets content designers get from the live site to the CMS in a few clicks.
+While we migrate from one CMS to another, content designers had to use 2 CMSs. I designed and built a Google Chrome extension to help them work in both. I wrote the code and the content. It lets content designers get from the live site to the CMS in just a couple of clicks.
 
 ![Screenshot of a Chrome extension displaying different options to a user](/images/chrome-extension.png)
 
