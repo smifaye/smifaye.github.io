@@ -22,7 +22,7 @@ We tested the placement of the donation button with users in research sessions. 
 *Donation button at the top of the home page*
 
 ![Screenshot of make a donation link in sidebar](/images/popular-content.png)
-*Make a donation button in the sidebar*
+*Donation link in the sidebar*
 
 Over the same 12 months, the button got more than twice as many clicks as the link text.
 
