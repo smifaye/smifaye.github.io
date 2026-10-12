@@ -2,7 +2,7 @@
 slug: design-system
 title: Writing the rules for a new design system
 client: Citizens Advice
-tags:
+tags: Design systems, Content design, Accessibility
 summary: Worked with UX designers and software engineers to build a new design system.
 ---
 
