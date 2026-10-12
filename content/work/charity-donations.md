@@ -40,20 +40,6 @@ We also shortened the copy, removed the heavy bold and cut a sentence that added
 
 Online donations rose by about 40% over 12 months, compared with the previous 12 months. The button probably drove much of that, but we can’t attribute all of it to the button. People still clicked the link text, and we changed the message at the same time.
 
-## More work: a callout box
-
-We also added a callout box to some pages. I wrote 3 versions of the message, each with a different focus and 2 options for the link text.
-
-|Version|Focus|Message|
-|---|---|---|
-|Current|Charity and reliance on support|As a charity, we rely on your support to help millions of people solve their problems each year. Please donate if you can to help us continue our work.|
-|Version 1|Free advice|Your donation helps us provide free advice to the millions of people who need us. Donate to support our work.|
-|Version 2|Solving problems|We help millions of people solve their problems each year. Donate to support our work.|
-
-For the link text, we compared “Donate to support our work” with “Donate today”.
-
-We went with version 1 and “Donate to support our work”. Version 1 leads with the impact of a donation, rather than with what we need.
-
 ## What happened next
 
 The button result made us reconsider the purpose of the ‘Popular content’ sidebar. It’s now shaping a redesign of the home page, which is still in progress.
