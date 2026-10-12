@@ -3,7 +3,7 @@ slug: charity-donations
 title: Helping people understand we’re a charity
 client: Citizens Advice
 tags:
-summary: Designed a new content model that enables delivering content across many platforms at once.
+summary: I worked on a series of changes to help more people donate online.
 ---
 I worked on a series of changes to help more people donate online.
 ## The problem
