@@ -6,74 +6,65 @@ tags: Content strategy, Content modelling
 summary: Designed a new content model that enables delivering content across many platforms at once.
 ---
 
-Citizens Advice is currently migrating from one CMS to another. As part of this work, I designed a new content model that enables Citizens Advice to deliver content across many platforms at once.
+Citizens Advice moved from one CMS to another. As part of that work, I designed a new content model that enables us to deliver content across many platforms at once. It's now live in our new CMS, Contentful.
+
+## The problem
+
+Our content was tied to the website. Moving to a new CMS was a chance to structure it so we could use it anywhere.
+
+## My role
+
+I designed the content model, working with other content designers, front-end and back-end developers, product managers, user researchers and data analysts.
+
+The most important thing to get right was making the model make sense to other content designers, because they use it in their jobs. I included them early in each part of the project, so they could give feedback and get hands-on experience with the model.
 
 ## What is a content model?
 
-A content model is a way to structure content within a CMS. It breaks down content into their component parts - for example, a table or design component. It gives you structure and organisation to your content.
+A content model is a way to structure content in a CMS. It breaks content into its component parts, like a table or a design component, and gives your content structure and organisation.
 
-## What makes up a content model?
+### What it's made of
 
-Content models have 2 important parts - content types and content fields.
+Content models have 2 important parts: content types and content fields.
 
-### Content types
+**Content types** are the components you see on the website, like a table of data, a banner or an image. They can also be chunks of data, which is where content models become powerful for content designers.
 
-Content types are the components you'll see on the website. These could be things like a table of data, a banner or an image.
-
-Content types can also be chunks of data - this is where content models become powerful for content designers.
-
-### Content fields
-
-Content types are made up of content fields. For a simple example like a table of data, the content fields might be:
+**Content fields** make up a content type. For a table of data, the fields might be:
 
 - table name
-- audience - who is this going to be displayed to?
+- audience: who is this going to be displayed to?
 - body
 - version information
 
-## A real life example
+### A real life example
 
-It's often useful to think of a real life example when talking about abstract concepts like content models. An example I use when explaining our content model is how to make a cup of coffee.
+An example I use to explain our content model is making a cup of coffee.
 
-- To make a cup of coffee, you need a coffee cup - this represents our content model.
-- You can make all sorts of coffee like a flat white or latte - this represents our content types.
-- You then need some essential ingredients like water, coffee beans and milk - this represents our content fields.
-- You can buy ready made coffee like nespresso pods - this represents our reusable content chunks.
+- You need a coffee cup. This is our content model.
+- You can make all sorts of coffee, like a flat white or a latte. These are our content types.
+- You need essential ingredients, like water, coffee beans and milk. These are our content fields.
+- You can buy ready-made coffee, like Nespresso pods. These are our reusable content chunks.
 
 ## Why use a content model?
 
 A content model:
 
-- helps to create consistency across the sites
-- helps to remove duplication of content
+- creates consistency across our sites
+- removes duplication of content
 - makes editing content easier and quicker
-- makes sense for the single content store
+- makes sense for a single content store
 
-## What does the Citizens Advice content model look like?
+## What does our content model look like?
 
 I created a spreadsheet to list all the content types and content fields.
 
 ![Spreadsheet showing the Citizens Advice content model](/images/content-model-spreadsheet.png)
 *The spreadsheet where we keep a record of our content model*
 
-This content model is used in our new CMS, Contentful.
+The content model is used in our new CMS, Contentful.
 
 ![Screenshot of Contentful, the CMS where content designers interact with the content model](/images/contentful-content-model.png)
 *The content model in our new CMS, Contentful*
 
-## What did I do?
+## The result
 
-To complete this work, I worked with:
-
-- other content designers on the team
-- front-end developers
-- back-end developers
-- product managers
-- user researchers
-- data analysts
-
-The most important part I needed to get right was making sure the content model made sense for other content designers in the team. They're the ones who'll be using the model in their jobs. I made sure we included them during the early stages of each part of the project to give feedback and get hands-on experience with the model.
-
-## Future-proofing our content
-
-This new model unlocks a lot of new things for content designers at Citizens Advice. We're no longer tied to the website as our only way of displaying content to users. In the future, we'll be able to reuse content across different platforms.
+The content model is live in Contentful. We're no longer tied to the website as our only way of showing content to users, and we can reuse content across different platforms. The principles for doing that are in [Reusable content](/work/reusable-content).

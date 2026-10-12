@@ -6,67 +6,75 @@ tags: Content strategy, CMS
 summary: Led a project to validate and implement reusable content principles - reducing duplication, saving time, and creating consistency.
 ---
 
-I'm working on a project to confirm some assumptions we have about our new CMS, Contentful - its killer feature is reusable content. Using the content model I designed we can reuse content across many different parts of the website and even beyond.
+Reusable content is a key strength of our new CMS, Contentful. I led a project to test our assumptions about it, using the content model I designed. It means we can reuse content across many parts of the website and beyond.
+
+## The problem
+
+Reusable content can become frustrating and confusing if there aren't clear principles in place. We needed to check our assumptions and set principles for content designers to follow.
+
+## My role
+
+I led the project and wrote the principles. The team adopted all of them.
 
 ## What is reusable content?
 
-Reusable content is the concept of using the same or similar pieces of content in more than one place.
+Reusable content is the same or similar content used in more than one place.
 
-It allows us to design 'common' pieces of content once, in one place. We can then embed the 'common' content in lots of different places.
+We design 'common' content once, in one place, and embed it in lots of others. When we need to update it, we change it in one place and the change applies everywhere we use it.
 
-When we need to update content, we can change it in one place and that change will apply wherever we use that content.
+## Benefits
 
-## Benefits of reusable content
-
-The benefits are clear. Reusable content:
+Reusable content:
 
 - makes it easier to keep content up to date and accurate
 - saves time when working in the CMS
-- removes duplication or near-matches
-- avoids copying and pasting where mistakes often happen
+- removes duplication and near-matches
+- avoids copying and pasting, where mistakes often happen
 - creates consistency
 
-## Risks of reusable content
+## Risks
 
-Reusable content can become frustrating and confusing if there aren't clear principles in place.
+It also has risks. It might mean:
 
-There are a few risks with reusable content. It might mean:
-
-- we spend more time trying to find reusable content
-- it's harder to 2i or fact check content
+- we spend more time looking for reusable content
+- it's harder to 2i (a second person checking the content) or fact check content
 - we design content that's too generic
-- people edit reusable content to suit their purposes
+- people edit reusable content to suit their own purposes
 
-## Reusable content principles
+## The principles
 
 Reusable content needs to be:
 
 - easy to find
-- easy to share with others - for example, during 2i or fact check
-- generic enough to be reused, but contains all the details that meet a user need
+- easy to share with others, for example during 2i or fact check
+- generic enough to be reused, but with all the details that meet a user need
 
 ### Easy to find
 
-We store our content in Contentful. We can make the most of Contentful's inbuilt features like 'tags' or 'views'.
+Our content is in Contentful, so we use its built-in features, like 'tags' and 'views'.
 
-Tags are a way of grouping content together by broad themes or topics. For example, you could add the Universal Credit standard amount for people who are single and under 25 and tag this as 'Benefit rates'.
+Tags group content by broad theme or topic. For example, you could add the Universal Credit standard amount for people who are single and under 25, and tag it 'Benefit rates'.
 
-Views are a way of saving a search filter within Contentful. For example, you could create a view that displays all the 'Monetary amount' content entries with the tag 'Benefit rates'.
+Views save a search filter. For example, you could create a view that shows all the 'Monetary amount' entries with the tag 'Benefit rates'.
 
 ### Easy to share with others
 
-If we're editing content that's reused, we need to understand each context so we can check it. We share our content with the 2i group, expert advice and Citizens Advice Scotland.
+If we edit reused content, we need to understand each place it's used so we can check it. We share our content with the 2i group, expert advice and Citizens Advice Scotland.
 
-We could export reused content to a Google Doc and show how it's used in each context.
+To help, we could export reused content to a Google Doc and show how it's used in each place.
 
 ### Generic but meets a user need
 
-This is an area where it will feel a little uncomfortable at first because of the way we currently design content.
+This will feel a little uncomfortable at first, because of the way we currently design content.
 
-To make content reusable, it needs to be generic enough to use in different places. But, it still needs to meet a user need, otherwise it's not adding any value.
+To be reusable, content needs to be generic enough to use in different places. But it still needs to meet a user need, otherwise it adds no value.
 
-### Variables
+## What's next: variables
 
-A way to do this in the future might be to introduce the concept of variables. Variables allow you to set values for text. So instead of adding regular text, you insert a variable.
+One way to do this in the future is to use variables. A variable lets you set values for text, so instead of typing regular text, you insert a variable.
 
-We would store variables in a variable list. For example, you could have a variable called 'Benefit' with a list of values like 'Universal Credit' or 'Housing Benefit'. Variables mean you can still make the content specific but insert different variables for each context.
+We would store variables in a list. For example, a variable called 'Benefit' could have values like 'Universal Credit' and 'Housing Benefit'. Variables mean the content can still be specific, with a different variable for each place it's used.
+
+## The result
+
+The team adopted all of the principles, and reusable content is now in use. You can read about the content model behind it in [Future-proofing our content](/work/future-proofing-content).
