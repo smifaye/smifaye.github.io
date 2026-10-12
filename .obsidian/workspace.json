@@ -183,18 +183,24 @@
       "bases:Create new base": false
     }
   },
-  "active": "bcf401c9cde80805",
+  "active": "c00733306ecdd35c",
   "lastOpenFiles": [
+    "content/work/charity-donations.md.sb-8fbfb590-jDetTy",
+    "content/work/cms-migration.md",
+    "content/work/charity-donations.md",
+    "content/about.md",
+    "content/blog.md",
+    "content/contact.md",
+    "content/site.md",
+    "content/work.md",
     "public/images/donations-before.png",
     "public/images/donations-after.png",
     "images/donation-button.md",
-    "content/work/charity-donations.md",
     "images",
     "content/work/ux-content.md",
     "content/work/future-proofing-content.md",
     "public/images/popular-content.png",
     "public/images/donation-button.png",
-    "content/work/reusable-content.md",
-    "content/about.md"
+    "content/work/reusable-content.md"
   ]
 }
