@@ -4,14 +4,14 @@ name: Adam Smith
 aboutHeading: 8+ years designing content people can act on
 ctaPrimary: View my work
 ctaSecondary: Get in touch
-skill1Label: UX content
-skill1Desc: Microcopy, forms and error messages
+skill1Label: Content design
+skill1Desc: UX content, forms and error messages
 skill2Label: Content strategy
 skill2Desc: Content models and reusable content
 skill3Label: Data and analytics
-skill3Desc: A/B tests and data that inform decisions
+skill3Desc: Research and data that informs decisions
 skill4Label: Accessibility
-skill4Desc: Plain English, inclusive forms and accessible components
+skill4Desc: Plain English, inclusive products and accessible components
 ---
 
 I'm a senior content designer with over 8 years of experience in the public and charity sectors.
