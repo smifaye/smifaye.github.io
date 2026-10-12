@@ -21,13 +21,13 @@ import blogRaw from '../../content/blog.md?raw';
 // Control the order of pages below
 export const caseStudyFiles = [
   charityDonations,
-  designSystem,
   forms,
-  cmsMigration,
-  futureProofing,
-  reusableContent,
   uxContent,
+  designSystem,
   dataVisualisation,
+  cmsMigration,
+  reusableContent,
+  futureProofing,
 ];
 
 // Control the order of blogs below
