@@ -88,6 +88,21 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       i++; continue;
     }
 
+    // Ordered list
+    if (/^\d+\.\s+/.test(block)) {
+      const items = block.split("\n").filter((line) => /^\d+\.\s+/.test(line.trim()));
+      elements.push(
+        <ol key={i} className="list-decimal pl-6 mb-6 space-y-2">
+          {items.map((item, j) => (
+            <li key={j} className="text-muted-foreground leading-relaxed">
+              {item.trim().replace(/^\d+\.\s+/, "")}
+            </li>
+          ))}
+        </ol>
+      );
+      i++; continue;
+    }
+
     // Paragraph - handle inline markdown (links, bold, italic)
     const rendered = block
       .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
