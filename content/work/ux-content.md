@@ -14,7 +14,7 @@ Content designers use the CMS every day to write and publish our advice. The CMS
 
 ## My role
 
-I wrote the content type names, labels, button text, pop-ups and version information for the new features. I worked with product designers and software engineers, and we tested the content with content designers. I wrote the code and the content for the Chrome extension.
+I wrote the content type names, labels, button text, pop-ups and version information for the new features. I worked with UX designers and software engineers and we tested the content with content designers. I wrote the code and the content for the Chrome extension.
 
 ## Naming content types
 
@@ -68,4 +68,4 @@ While we migrate from one CMS to another, content designers have to use 2 CMSs. 
 
 ## The result
 
-Content designers gave positive feedback on these features, and they speed up content authoring.
+Content designers gave positive feedback on these features and how they speed up content authoring.
