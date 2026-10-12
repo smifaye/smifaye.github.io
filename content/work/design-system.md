@@ -3,7 +3,7 @@ slug: design-system
 title: Writing the rules for a new design system
 client: Citizens Advice
 tags: Design systems, Content design, Accessibility
-summary: Worked with UX designers and software engineers to build a new design system.
+summary: Wrote the guidance for the components in our new design system, covering accessibility, naming and error messages.
 ---
 
 We built a new CMS with a set of new components for content designers to use. I wrote the guidance that helps content designers across the organisation use them well and accessibly.

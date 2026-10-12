@@ -3,7 +3,7 @@ slug: data-visualisation
 title: Data visualisation
 client: Citizens Advice
 tags: Data and analytics, Reporting
-summary: Created Google Looker Studio reports for search analytics, page views and web stats.
+summary: Designed Looker Studio reports that make search, analytics and page rating data easy for content designers and stakeholders to use.
 ---
 
 I designed Google Looker Studio reports to make our web data easier for content designers and other stakeholders to understand and use. Here are a few examples from the last few years.

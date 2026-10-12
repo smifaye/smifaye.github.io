@@ -3,7 +3,7 @@ slug: ux-content
 title: UX content
 client: Citizens Advice
 tags: UX writing, Product design
-summary: Designed UX content for CMS features including preview tools, publishing workflows, and content type naming.
+summary: Wrote the UX content for new CMS features and built a Chrome extension that gets content designers from the live site to the CMS in a few clicks.
 ---
 
 We built a lot of new features for our new CMS. I wrote the UX content for them, working with product designers and software engineers. I also built a Chrome extension myself.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/work/future-proofing-content.md",
+                "file": "content/work/ux-content.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "future-proofing-content"
+              "title": "ux-content"
             }
           }
         ]
@@ -186,19 +186,19 @@
   "active": "bcf401c9cde80805",
   "lastOpenFiles": [
     "content/work/reusable-content.md",
-    "content/work/cms-migration.md",
-    "content/work/data-visualisation.md",
-    "content/work/design-system.md",
-    "content/work/ux-content.md",
-    "content/work/forms.md",
-    "public/images/name-fields.png",
     "content/work/future-proofing-content.md",
+    "content/work/forms.md",
+    "content/work/design-system.md",
+    "content/work/data-visualisation.md",
+    "content/work/cms-migration.md",
+    "content/work/charity-donations.md",
+    "content/work/ux-content.md",
+    "public/images/name-fields.png",
     "public/images/error.png",
     "public/images/name.png",
     "public/images/address-details.png",
     "content/work/name.png",
     "content/work/address-details.png",
-    "content/work/charity-donations.md",
     "content/work/charity-donations.md.sb-8fbfb590-ndNVVE",
     "content/work/charity-donations.md.sb-8fbfb590-jDetTy",
     "content/about.md",

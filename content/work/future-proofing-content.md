@@ -3,7 +3,7 @@ slug: future-proofing-content
 title: Future-proofing our content
 client: Citizens Advice
 tags: Content strategy, Content modelling
-summary: Designed a new content model that enables delivering content across many platforms at once.
+summary: Designed the content model that lets us structure content once and use it across platforms.
 ---
 
 Citizens Advice moved from one CMS to another. As part of that work, I designed a new content model that enables us to deliver content across many platforms at once. It's now live in our new CMS, Contentful.

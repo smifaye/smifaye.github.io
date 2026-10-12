@@ -3,7 +3,7 @@ slug: cms-migration
 title: CMS migration
 client: Citizens Advice
 tags: Collaboration, CMS
-summary: Worked in a multi-disciplinary team migrating from one CMS to another - collaborating closely with developers, researchers and other content designers.
+summary: "Moved our content to a new CMS: designed the content model, argued for content designers’ needs and helped set up a migration team."
 ---
 
 I worked on a team migrating our content from one CMS to another. The team included software engineers, product owners, UX designers, delivery managers, user researchers and data analysts.

@@ -3,7 +3,7 @@ slug: forms
 title: Making forms work for everyone
 client: Citizens Advice
 tags: UX writing, Form design, Inclusive content
-summary: Worked in a multi-disciplinary team to redesign and migrate our forms to a new system.
+summary: Redesigned our volunteering and complaints forms, including how they ask for names, and completion rates rose by over 30%.
 ---
 
 We moved our volunteering and complaints forms to a new system and redesigned them. Across both, completion rates rose by over 30% over 6 months, compared with the previous 6 months.
