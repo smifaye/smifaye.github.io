@@ -1,4 +1,5 @@
 // Case studies - import them here
+import charityDonations from '../../content/work/charity-donations.md?raw';
 import cmsMigration from '../../content/work/cms-migration.md?raw';
 import futureProofing from '../../content/work/future-proofing-content.md?raw';
 import reusableContent from '../../content/work/reusable-content.md?raw';
@@ -17,6 +18,7 @@ import blogRaw from '../../content/blog.md?raw';
 
 // Control the order of pages below
 export const caseStudyFiles = [
+  charityDonations,
   cmsMigration,
   futureProofing,
   reusableContent,
