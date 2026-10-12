@@ -183,12 +183,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "c00733306ecdd35c",
+  "active": "bcf401c9cde80805",
   "lastOpenFiles": [
+    "content/work/future-proofing-content.md",
+    "content/work/charity-donations.md",
     "content/work/charity-donations.md.sb-8fbfb590-ndNVVE",
     "content/work/charity-donations.md.sb-8fbfb590-jDetTy",
     "content/work/cms-migration.md",
-    "content/work/charity-donations.md",
     "content/about.md",
     "content/blog.md",
     "content/contact.md",
@@ -199,7 +200,6 @@
     "images/donation-button.md",
     "images",
     "content/work/ux-content.md",
-    "content/work/future-proofing-content.md",
     "public/images/popular-content.png",
     "public/images/donation-button.png",
     "content/work/reusable-content.md"
