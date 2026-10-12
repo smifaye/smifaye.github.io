@@ -185,8 +185,10 @@
   },
   "active": "bcf401c9cde80805",
   "lastOpenFiles": [
-    "content/work/future-proofing-content.md",
+    "content/work/reusable-content.md",
+    "content/work/ux-content.md",
     "content/work/charity-donations.md",
+    "content/work/future-proofing-content.md",
     "content/work/charity-donations.md.sb-8fbfb590-ndNVVE",
     "content/work/charity-donations.md.sb-8fbfb590-jDetTy",
     "content/work/cms-migration.md",
@@ -199,9 +201,7 @@
     "public/images/donations-after.png",
     "images/donation-button.md",
     "images",
-    "content/work/ux-content.md",
     "public/images/popular-content.png",
-    "public/images/donation-button.png",
-    "content/work/reusable-content.md"
+    "public/images/donation-button.png"
   ]
 }
