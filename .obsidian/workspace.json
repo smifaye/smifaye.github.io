@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/work/ux-content.md",
+                "file": "content/work/cms-migration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ux-content"
+              "title": "cms-migration"
             }
           }
         ]
@@ -185,14 +185,14 @@
   },
   "active": "bcf401c9cde80805",
   "lastOpenFiles": [
+    "content/work/ux-content.md",
+    "content/work/cms-migration.md",
     "content/work/design-system.md",
     "content/work/forms.md",
     "public/images/name-fields.png",
-    "content/work/cms-migration.md",
     "content/work/data-visualisation.md",
     "content/work/future-proofing-content.md",
     "content/work/reusable-content.md",
-    "content/work/ux-content.md",
     "public/images/error.png",
     "public/images/name.png",
     "public/images/address-details.png",

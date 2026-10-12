@@ -6,36 +6,38 @@ tags: Collaboration, CMS
 summary: Worked in a multi-disciplinary team migrating from one CMS to another - collaborating closely with developers, researchers and other content designers.
 ---
 
-I worked on a team that was responsible for migrating from one CMS to another. I worked in a multi-disciplinary team that included all sorts of different disciplines. This included developers, product owners, product designers, delivery managers, researchers and data analysts.
+I worked on a team migrating our content from one CMS to another. The team included developers, product owners, product designers, delivery managers, researchers and data analysts.
 
-## Collaboration
+## The problem
 
-The nature of the project required all disciplines to work with each other. When I designed the new content model I didn't work on this in isolation. It required lots of close work with back-end developers, user researchers and other content designers.
+Content designers are one of our biggest user groups and the new CMS was bare bones out of the box. We had to build many of the features ourselves. We also had to move a lot of content, much of it untouched for years, which is hard.
 
-Collaboration is a part of my job I enjoy. Working together with another member of the team to tackle a challenge means we can share the success and pain.
+## My role
 
-## Migration challenges
+I designed the new content model, worked out how content designers were finding the new CMS and argued for what they needed. I suggested a different approach to migrating content and helped set up the team that carries it out.
 
-One of our biggest user groups is content designers. Being a content designer, I know how they work and what things they might struggle with.
+## What I did
 
-I've made sure to keep close communication with other content designers to understand how they're finding the new CMS.
+### Designing the content model
 
-### Growing pains
+I designed the new content model with software engineers, user researchers and other content designers. I didn't work on it in isolation. You can read more about it in [Future-proofing our content](/work/future-proofing-content).
 
-The new CMS we're using is pretty bare bones out of the box. Our team needs to build lots of features to provide a good user experience.
+### Putting content designers first
 
-I gathered feedback from content designers about their experiences with the new CMS - it wasn't great. The main issue was lots of the features weren't built yet - for example, preview. I used this feedback to argue for prioritising content designer experience over other pieces of work.
+I'm a content designer, so I know how content designers work and what they might struggle with. I kept in close contact with them to understand how they were finding the new CMS.
 
-### Content migration
+Their feedback wasn't good. The main issue was that many features weren't built yet. Preview is one example. I used this feedback to argue for prioritising content designer experience over other work, and the order of work changed. I wrote the UX content for many of these features. You can see it in [UX content](/work/ux-content).
 
-Migrating content from one CMS to another is hard, especially if a lot of that content hasn't been touched in many years.
+### Changing how we migrated content
 
-When we first migrated content to the new CMS we relied on the code to do the work. We found the code wasn't able to catch all the different issues we would find. This meant the developers were having to edit the code each time we found a new problem - it wasn't sustainable.
+When we first migrated content, we relied on code to do the work. The code couldn't catch all the different issues we found. Each time we found a new problem, a developer had to edit the code. That wasn't sustainable.
 
-I suggested a shift in approach to something more manual and content design led. This would mean we would be able to fix things much quicker and with less expense.
+I suggested a more manual approach, led by content design. It meant we could fix problems quickly and at lower cost.
 
-### Migration team
+### Setting up the migration team
 
-A result of this was the formation of a new sub-team called the migration team. We recruited 4 assistant content designers and a mid-weight content designer to lead the migration of content.
+I helped set up a new sub-team called the migration team. We recruited 4 assistant content designers and a mid-weight content designer to lead the migration of content.
 
-The team is migrating content at a faster speed. The creation of this team allowed our developer to work on more features.
+## The result
+
+The migration team is migrating content faster. Content designers fix problems directly, instead of waiting for a developer to change the code. That freed up our developer to build more features. Content designer experience now has a higher priority in the order of work.
