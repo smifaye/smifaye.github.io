@@ -14,6 +14,6 @@ skill4Label: Accessibility
 skill4Desc: Plain English, inclusive forms and accessible components
 ---
 
-I'm a senior content designer with over 8 years of experience.
+I'm a senior content designer with over 8 years of experience in the public and charity sectors.
 
 I create user-centred content that puts user needs first. I'm passionate about accessibility, plain English and content that helps people do what they need to.
