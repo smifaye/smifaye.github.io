@@ -6,27 +6,35 @@ tags: Data and analytics, Reporting
 summary: Created Google Looker Studio reports for search analytics, page views and web stats.
 ---
 
-I'm interested in data and use it to inform content decisions. Here are a few examples of Google Looker Studio reports I've created over the last few years.
+I designed Google Looker Studio reports to make our web data easier for content designers and other stakeholders to understand and use. Here are a few examples from the last few years.
+
+## The problem
+
+Google Analytics is our web analytics tool, and it can be difficult to understand. Content designers and other stakeholders needed an easier way to see how our content performs and what our users search for.
+
+## My role
+
+I designed and built the reports. They're used by other content designers and by stakeholders who are interested in how our content is doing.
 
 ## Search
 
-It's important to understand how users end up on our website. One of the main ways I do this is by using search data. It also tells you what language your users are using.
+It's important to understand how users end up on our website. Search data is one of the main ways I do this. It also shows the language our users use.
 
 ### Internal search
 
-This report shows what search terms people are using on internal search. You can filter by:
+This report shows what search terms people use on internal search. You can filter by:
 
 - search term
 - search destination page
 - date range
 
-This data is important in understanding user behaviour, user language and page performance.
+This data helps us understand user behaviour, user language and page performance.
 
 ![Screenshot of a report showing internal search terms and associated stats](/images/internal-search.png)
 
 ### Google search
 
-This report shows what search terms people are using on Google. You can filter by:
+This report shows what search terms people use on Google. You can filter by:
 
 - query
 - landing page
@@ -34,9 +42,9 @@ This report shows what search terms people are using on Google. You can filter b
 
 ![Screenshot of a report showing Google search terms and associated stats](/images/google-search.png)
 
-## Google analytics
+## Google Analytics
 
-We use Google analytics as our web analytics tool. Google analytics can be difficult to understand so I designed a report to make it easier.
+Google Analytics can be difficult to understand, so I designed a report to make it easier.
 
 ### Page views
 
@@ -46,12 +54,16 @@ This page is a simple view of page views over a period of time. It's often usefu
 
 ### Web stats
 
-The below screenshot shows the most common web stats someone might ask for. This page of the report is particularly useful for sharing with senior stakeholders.
+This page shows the most common web stats someone might ask for. It's particularly useful for sharing with senior stakeholders.
 
 ![Screenshot of a report showing web stats for individual pages on a website](/images/web-stats.png)
 
 ## Page ratings
 
-It's important to understand content performance so you can iterate. This report shows very high-level stats on page ratings over a period of time. Citizens Advice uses a 'Yes/No' rating system for the question 'Did this advice help?'.
+Understanding how content performs helps you improve it. This report shows very high-level stats on page ratings over a period of time. Citizens Advice uses a 'Yes/No' rating for the question 'Did this advice help?'.
 
 ![Screenshot of a report showing page ratings for a number of different web pages](/images/page-ratings.png)
+
+## The result
+
+Other content designers and stakeholders use these reports to see how our content is performing. We've used them to improve pages.
