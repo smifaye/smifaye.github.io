@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/work/charity-donations.md",
+                "file": "content/work/forms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "charity-donations"
+              "title": "forms"
             }
           }
         ]
@@ -185,9 +185,15 @@
   },
   "active": "bcf401c9cde80805",
   "lastOpenFiles": [
+    "public/images/name.png",
+    "public/images/address-details.png",
+    "content/work/name.png",
+    "content/work/address-details.png",
+    "content/work/data-visualisation.md",
+    "content/work/forms.md",
+    "content/work/charity-donations.md",
     "content/work/ux-content.md",
     "content/work/cms-migration.md",
-    "content/work/charity-donations.md",
     "content/work/reusable-content.md",
     "content/work/future-proofing-content.md",
     "content/work/charity-donations.md.sb-8fbfb590-ndNVVE",
