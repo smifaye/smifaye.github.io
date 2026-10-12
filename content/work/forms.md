@@ -23,6 +23,7 @@ We followed the design system’s principles for forms. Each page asks one thing
 ![Screenshot of the form asking for the user's address details](/images/address-details.png)
 
 Hint text is where the content does the most work. On the phone number question, the label says “Phone number (optional)”. The hint says: “If not in the UK, include the country code. For example, +34 for Spain.” It doesn’t assume everyone has a UK number, and it gives an example so no one has to guess the format.
+
 ### Getting names right
 
 Names turned out to be the most important part of the project. Our research found that:
@@ -34,7 +35,7 @@ Names turned out to be the most important part of the project. Our research foun
 
 From this we made two hypotheses. A single full name field would be more inclusive across nationalities and cultures. And name fields should accept the characters and symbols that people use to express who they are. Both supported Mission Two: closing the gap in access and experience for marginalised people.
 
-We couldn’t move to a single full name field, because the legacy systems that receive the data need a first name and a last name. So we changed what we could. The fields now accept special characters, and the error messages for names are less strict. [Add the wording: the labels and help text for the name fields, and an error message. If you don’t have the “before” version, the “after” on its own is fine.]
+We couldn’t move to a single full name field, because the legacy systems that receive the data need a first name and a last name. So we changed what we could. The fields now accept special characters, and the error messages for names are less strict. 
 
 ![Screenshot of the name page](/images/name.png)
 
