@@ -3,7 +3,7 @@ slug: reusable-content
 title: Reusable content
 client: Citizens Advice
 tags: Content strategy, CMS
-summary: Set the principles for reusable content in our new CMS, and the team adopted them.
+summary: Set the principles for reusable content in our new CMS which the team adopted.
 ---
 
 Reusable content is a strength of our new CMS, Contentful. I led a project to test our assumptions about it, using the content model I designed. It means we can reuse content across many parts of the website and beyond.
